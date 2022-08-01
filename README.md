@@ -13,7 +13,11 @@ We also accept opinions and blog posts from CSS aficionados. If you have an insi
 
 # Credits
 
-This website is built using the [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+1. This website is built using the [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+
+2. The site is hosted on [Netlify](https://www.netlify.com/).
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c7a090f0-6b24-438c-89da-52ee83f66731/deploy-status)](https://app.netlify.com/sites/serene-rosalind-8c5a76/deploys)
 
 ### Installation
 
