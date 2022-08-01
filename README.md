@@ -1,24 +1,49 @@
-# The Toucaan Documentation Website
+# Website
 
-Static documentation for the Toucaan CSS Framework. 
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-Here ⤏ [https://toucaan.com](https://toucaan.com)
+### Installation
 
-### Credits
-
-This website uses [Docz](http://docz.site) for development and [Netlify](https://netlify.com) for hosting. 
-
-## Installation and usage
-
-Just install the dependencies, then run Docz devserver to make changes!
-
-```bash
-npm install
-npm run dev
+```
+$ yarn
 ```
 
-The website will be available at [http://localhost:3000](http://localhost:3000).
+### Local Development
 
-Feel free to submit a pull request for any changes that you wish to see on the docs. I also accept opinions and blog posts from CSS aficiandos. If you have an insight for me to learn from, do share by raising an issue.
+```
+$ yarn start
+```
 
-Toko, toko!
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+### Continuous Integration
+
+Some common defaults for linting/formatting have been set for you. If you integrate your project with an open source Continuous Integration system (e.g. Travis CI, CircleCI), you may check for issues using the following command.
+
+```
+$ yarn ci
+```
