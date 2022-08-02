@@ -30,7 +30,7 @@ const features = [
     imageUrl: 'img/focus.svg',
     description: (
       <>
-        Separate your UX/UI according to medium, and let Toucaan manage your CSS. Focus on intrinsicality. 
+        Implement designs according to the capability of the mediums you want to go after. 
       </>
     ),
   },
