@@ -11,6 +11,9 @@ Let's discover **Toucaan in less than 5 minutes**.
 Get started by **creating a new folder named `toucaan`** for your application. Then, run the following command:
 
 ```bash
+Within the root of your application.
+
+$ mkdir toucaan
 
 ```
 

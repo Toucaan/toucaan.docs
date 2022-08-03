@@ -93,6 +93,10 @@ const config = {
                 label: 'The basics',
                 to: 'docs/category/tutorial---basics',
               },
+              {
+                label: 'The book',
+                to: 'https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig#frontmatter',
+              }
             ],
           },
           {
