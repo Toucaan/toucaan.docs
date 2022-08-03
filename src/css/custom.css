@@ -51,7 +51,6 @@ h1.hero__title {
   font-size: calc(4vh + 4vw);
   display: inline-block;
   /* color: wheat; */
-  font-size: 12em; 
   text-shadow: .03em .03em 0 hsla(30, 70%, 50%,1);
   }
 /*
