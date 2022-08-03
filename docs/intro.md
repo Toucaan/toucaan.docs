@@ -8,9 +8,12 @@ Let's discover **Toucaan in less than 5 minutes**.
 
 ## Getting Started
 
-Get started by **creating a new application folder**.
+Get started by **creating a new folder named `toucaan`** for your application. Then, run the following command:
 
-Or **try Toucaan immediately** with **[Toucaan.new](https://Toucaan.new)**.
+```bash
+
+```
+
 
 ### What you'll need
 

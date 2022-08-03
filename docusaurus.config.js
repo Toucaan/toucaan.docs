@@ -34,14 +34,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Toucaan/toucaan/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Toucaan/toucaan.docs',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Toucaan/toucaan/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Toucaan/toucaan.docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -87,11 +87,11 @@ const config = {
             items: [
               {
                 label: 'Style Guide',
-                to: 'docs/',
+                to: 'docs/intro',
               },
               {
-                label: 'Second Doc',
-                to: 'docs/doc2',
+                label: 'The basics',
+                to: 'docs/category/tutorial---basics',
               },
             ],
           },

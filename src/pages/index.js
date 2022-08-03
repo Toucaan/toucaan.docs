@@ -11,7 +11,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useToucaanContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
@@ -30,7 +30,7 @@ const features = [
     imageUrl: 'img/focus.svg',
     description: (
       <>
-        Implement designs according to the capability of the mediums you want to go after. 
+        Implement deeper UX/UI according to the capability of the mediums you want to go after. 
       </>
     ),
   },
@@ -62,7 +62,7 @@ function Feature({imageUrl, title, description}) {
 }
 
 export default function Home() {
-  const context = useDocusaurusContext();
+  const context = useToucaanContext();
   const {siteConfig = {}} = context;
   return (
     <Layout
@@ -78,7 +78,7 @@ export default function Home() {
                 'button button--solid button--primary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs')}>
+              to={useBaseUrl('docs/intro')}>
               Get Started
             </Link>
           </div>

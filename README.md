@@ -13,7 +13,7 @@ We also accept opinions and blog posts from CSS aficionados. If you have an insi
 
 # Credits
 
-1. This website is built using the [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+1. This website is built using the [Toucaan 2](https://docusaurus.io/), a modern static website generator.
 
 2. The site is hosted on [Netlify](https://www.netlify.com/).
 
