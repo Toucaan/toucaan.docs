@@ -46,13 +46,12 @@
   --ifm-color-primary-lightest: #ffffff;
 }
 
-h1.hero__title {
+/* h1.hero__title {
   font-family: 'Fascinate', cursive;
   font-size: calc(4vh + 4vw);
   display: inline-block;
-  /* color: wheat; */
   text-shadow: .03em .03em 0 hsla(30, 70%, 50%,1);
-  }
+  } */
 /*
   h1.hero__title:after {
     content: attr(data-shadow);

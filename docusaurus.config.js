@@ -21,8 +21,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'toucaan', // Usually your GitHub org/user name.
-  projectName: 'toucaan.docs', // Usually your repo name.
+  // organizationName: 'toucaan', // Usually your GitHub org/user name.
+  // projectName: 'toucaan.docs', // Usually your repo name.
 
   presets: [
     [
