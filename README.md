@@ -10,12 +10,11 @@ We also accept opinions and blog posts from CSS aficionados. If you have an insi
 
 🙏🏻
 
+## Credits
 
-# Credits
+1. Built with [Docusaurus 2](https://docusaurus.io/).
 
-1. This website is built using the [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
-
-2. The site is hosted on [Netlify](https://www.netlify.com/).
+2. Hosted at [Netlify](https://www.netlify.com/).
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/fdf946bd-e24e-4a53-9c1d-ef0516c99d55/deploy-status)](https://app.netlify.com/sites/inspiring-clafoutis-2f5f61/deploys)
 
@@ -40,4 +39,3 @@ $ yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static content hosting service.
-

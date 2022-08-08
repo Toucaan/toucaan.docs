@@ -11,8 +11,8 @@
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Toucaan',
-  tagline: 'Intrinsic Web Design using Vanilla CSS.',
+  title: 'Toucaan CSS Framework',
+  tagline: 'Stack-Agnostic Modern Frontend Design using Vanilla CSS.',
   url: 'https://toucaan.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -34,14 +34,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Toucaan/toucaan.docs',
+            'https://github.com/Toucaan/toucaan.docs/blob/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Toucaan/toucaan.docs',
+            'https://github.com/Toucaan/toucaan.docs/blob/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -64,7 +64,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
           {
             to: 'blog',
@@ -90,7 +90,7 @@ const config = {
                 to: 'docs/intro',
               },
               {
-                label: 'The basics',
+                label: 'Fundamentals',
                 to: 'docs/category/tutorial---basics',
               },
               {

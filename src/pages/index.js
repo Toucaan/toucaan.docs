@@ -17,30 +17,30 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
+    title: 'Easy to use',
     imageUrl: 'img/easy.svg',
     description: (
       <>
-        Designed for ease of use and easy maintainabilty. Create web and mobile apps that last.
+        Optimized for simplicity and comfortable maintainabilty. Create web and mobile apps that last.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Focus on what matters',
     imageUrl: 'img/focus.svg',
     description: (
       <>
-        Implement deeper UX/UI according to the capability of the mediums you want to go after. 
+        Build accessible interfaces according to the intrinsic capabilities of the medium. Dive in deep. 
       </>
     ),
   },
   {
-    title: 'Intrinsic Typograhpy',
+    title: 'Intrinsic typograhpy',
     imageUrl: 'img/typography.svg',
     description: (
       <>
-        Scale text with geometric precision and scope it to your component
-        block. Never worry about overflows.
+        Scale type with geometric precision & scope it to a component
+        block. Never worry about overflow again.
       </>
     ),
   },
@@ -70,7 +70,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title" data-shadow='Intrinsic Web Design'>Intrinsic Web Design</h1>
+          <h1 className="hero__title">Intrinsic Web Design</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
