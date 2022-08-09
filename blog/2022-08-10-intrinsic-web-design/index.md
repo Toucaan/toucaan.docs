@@ -7,6 +7,9 @@ tags: [Red Goose, hello, css]
 
 Welcome to the [Toucaan Blog](https://toucaan.com/blog). This is a collection of articles and tutorials on the [Toucaan](https://toucaan.com) project.
 
+
+# Intrinsic Design
+
 Simply add Markdown files (or folders) to the `blog` directory.
 
 Regular blog authors can be added to `authors.yml`.

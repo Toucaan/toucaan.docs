@@ -12,7 +12,7 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Toucaan CSS Framework',
-  tagline: 'Stack-Agnostic Modern Frontend Design using Vanilla CSS.',
+  tagline: 'Stack-agnostic frontend design using vanilla CSS.',
   url: 'https://toucaan.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -91,7 +91,7 @@ const config = {
               },
               {
                 label: 'Fundamentals',
-                to: 'docs/category/tutorial---basics',
+                to: 'docs/category/toucaan---basics',
               },
               {
                 label: 'The book',

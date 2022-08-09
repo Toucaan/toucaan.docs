@@ -17,9 +17,7 @@ mkdir -p toucaan/{accessibility,app/{desktop,mobile,tablet,vehicle,television,wa
 
 ### Architecture
 
-The `mkdir` command above will create all the folders necessary for you to start working with Toucaan {link here}. 
-
-These folders will contain _all_ of the css necessary for your application's multiple frontends. 
+The `mkdir` command above will create all the folders necessary for you to start working with [Toucaan](https://toucaan.com). These folders will contain _all_ of the css necessary for your application's multiple frontends. 
 
 ![Toucaan architecture](img/toucaan-folders.jpg)
 

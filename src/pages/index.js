@@ -30,12 +30,12 @@ const features = [
     imageUrl: 'img/focus.svg',
     description: (
       <>
-        Build accessible interfaces according to the intrinsic capabilities of the medium. Dive in deep. 
+        Build accessible interfaces with focus on the intrinsic capability of the medium. Dive in deep. 
       </>
     ),
   },
   {
-    title: 'Intrinsic typograhpy',
+    title: 'Intrinsic typography',
     imageUrl: 'img/typography.svg',
     description: (
       <>
