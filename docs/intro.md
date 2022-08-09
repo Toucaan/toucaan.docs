@@ -4,9 +4,6 @@ sidebar_position: 1
 
 # Getting Started
 
-Kickstart **Intrinsic Design** on your app with Toucaan in just a few minutes.
-
-### Vanilla 
 **Create a new folder `toucaan`** somewhere in your project with the following command: 
 
 ```bash
