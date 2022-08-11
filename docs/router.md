@@ -6,11 +6,5 @@ sidebar_position: 3
 
 
 
-## Getting Started
 
-**Create a new folder `toucaan`** in your project as follows. Run the following command:
-
-```bash
-mkdir -p toucaan/{accessibility,app/{desktop,mobile,tablet,vehicle,television,watch},env/{helpers,tags},palette,router,typography,utils}
-
-```
+https://github.com/Toucaan/toucaan/blob/master/toucaan/router/portrait.css
