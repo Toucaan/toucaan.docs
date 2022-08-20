@@ -4,30 +4,34 @@ sidebar_position: 1
 
 # Getting Started
 
-The first step is to **create a new folder named `toucaan`** somewhere in your project using the following command: 
+The first step is to **create a new folder** named `toucaan` somewhere in your project using the following command: 
 
-```bash title="cd ./somewhere/in/your/project/"
+```bash title="Setup:"
+cd ./somewhere/in/your/project/
+
 mkdir -p toucaan/{accessibility,app/{desktop,mobile,tablet,vehicle,television,watch},env/{helpers,tags},palette,router,typography,utils}
 
 ```
 
-### Architecture
+The `mkdir` command above will create all the folders necessary for you to start working with [intrinsic design](https://toucaan.com). These folders will carry ALL THE STYLES necessary for your application's **multiple frontends**. 
 
-Here is how it will look: 
+
+Head over to the next step and set up [The CSS Router](router.md)?
+
+### The Architecture
+
+Here is what the folder structure looks like: 
 
 ![Toucaan architecture](img/toucaan-folders.jpg)
 
-The `mkdir` command above created all the folders necessary for you to start working with [intrinsic design](https://toucaan.com). These folders will contain **ALL THE STYLES needed for your application's multiple frontends**. 
-
 ### Quick discussion
 
-Or skip to the next step. [Set up the css router](router.md).
-
-Toucaan implements a simple architecture to cover the entire design space of the web-connected devices. There are [quite a few](https://bubblin.io/blog/the-new-landscape-of-the-web). 
-
-Toucaan uses a [simple css router](router.md) that prioritizes and loads the correct stylesheet for the _class_ of device a user is on. This router separates your stylesheets according to the type (or class) of device being served, and helps organize your CSS in the correct subfolders.
+Toucaan implements a simple architecture to cover the _entire design space_ of [the new web](https://bubblin.io/blog/the-new-landscape-of-the-web). There are quite a few devices connected to the web today and it is about not just mobile responsiveness. 
 
 Learn about the Intrinsic Design Space in the [next chapter](space.md).
 
+Toucaan uses a [simple css router](router.md) to prioritize and load the correct stylesheet for the _class_ of device the user is on. This router will separate your stylesheets according to the types (or classes) of devices being served, and help organize all your application CSS in the appropriate subfolders (see the screenshot above).
 
-Open `intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+
+
+> Open `intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
