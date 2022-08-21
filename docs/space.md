@@ -4,10 +4,7 @@ sidebar_position: 2
 
 # The Design Space
 
-[Skip to next step](router.md).
-
-
-The Intrinsic approach to design adopted by Toucaan caters to [the full scope of the new web](https://bubblin.io/blog/the-new-landscape-of-the-web). 
+The Intrinsic approach to design adopted by Toucaan caters to the [full scope of the new web](https://bubblin.io/blog/the-new-landscape-of-the-web). 
 
 It allows creation of interfaces that suit the new devices on the web like the electric vehicles, foldable tablets, smart watches, and many more without use of hardcoded MQ breakpoints. Designing "contextually relevant" interfaces helps the developer find the right solution according to the accessibility situation and intrinsic capability of a device. 
 

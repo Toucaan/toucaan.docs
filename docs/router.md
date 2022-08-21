@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # The CSS Router
 
-Toucaan uses a simple CSS router to prioritize and load the correct stylesheet for the _class of device_. 
+Toucaan uses a simple CSS router to prioritize and load the correct stylesheet for a given _class of device_. 
 
 To set it up, copy the following two files along with their contents in the `router` folder of our [repository](https://github.com/Toucaan/toucaan/tree/master/toucaan/router) on GitHub into the `toucaan/router` folder of your project. 
 
@@ -15,11 +15,8 @@ These two:
 
 Or if you have `git` installed, you can clone the official Toucaan repository and copy the files from there:
 
-```bash title="css router"
-
+```bash 
 cp -R ./cloned/toucaan/router/* ./your/project/toucaan/router/
-
-
 ```
 
 
