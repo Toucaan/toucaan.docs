@@ -1,8 +1,10 @@
 ---
 slug: intrinsic-design
 title: Intrinsic Design
-authors: [marvin, sonica]
+authors: [marvin, sonica, satie]
 tags: [design, toucaan, css, intrinsic]
+---
+
 ---
 
 Welcome to the [Toucaan Blog](https://toucaan.com/blog). 🎉
@@ -21,21 +23,19 @@ Secondly, there is a need to determine [what devices are on the web](https://bub
 
 ## How is Toucaan different?
 
-Toucaan is a new approach to design that snuck out of the bag while we were working on [Bubblin](https://bubblin.io) & [Red Goose](https://goose.red). It is a robust yet straightforward css framework that offers granular control and maintainability at scale. 
+Toucaan is a new approach to design that snuck out of the bag while we were working on [Bubblin](https://bubblin.io) & [Red Goose](https://goose.red). It is a robust and yet simple css framework that offers both granular control and maintainability at scale. 
 
-It allows developers to create meaningful interfaces that bank on the **intrinsic qualities** of the medium. Qualities like its physical size, orientation, foldability, touch or no touch, or even fullscreen view enabled in a notched environment, for example. 
+It allows developers to create meaningful interfaces that bank on the **intrinsic qualities** of the medium. Qualities like physical size, orientation, foldability, touch or no touch, or even fullscreen view enabled in a notched environment, for example. 
 
 Toucaan differentiates itself from other css frameworks in many ways. However, it outshines the older and traditional frameworks on at least four major fronts:
 
 1. A complete separation of device-specific design language without using hardcoded pixel widths as MQ breakpoints. Toucaan uses a [css router](https://bubblin.io/blog/a-css-router) to serve the suitable stylesheet instead.
 2. A mathematically grounded block-scoped intrinsically scaling type system.
-3. No use of a heavy `reset` or `normalize` to bulldoze the web browser. Toucaan replaces the reset model with a lighter and flexible [baseline](https://bubblin.io/blog/baseline-css) that can be configured for each app using the class-less principles.
+3. No use of a heavy `reset` or `normalize` css to bulldoze the web browser. Toucaan replaces the reset inclusion model with a lighter and flexible [baseline](https://bubblin.io/blog/baseline-css) method that can be configured for each app using class-less principles.
 4. Support new devices on the web like the Apple Watch, EVs with a web browser like the V9 on the Tesla Model S and Tesla Model 3, bendable or foldable smartphones and tablets, large projectors, and smart TVs.
 
-The list above isn't exhaustive or even fully discovered yet because Toucaan is still very much in development. Toucaan has been in the production environment at the [Red Goose](https://goose.red) for the past three months, but it is still early.
+The list above isn't exhaustive or even fully discovered yet. Toucaan is still very much in development, and we expect to find new patterns and styling combinations that work better for the end user and the developer in the long run. Today, we released the first public beta version of Toucaan to the general public following an in-the-production test at  [Red Goose](https://goose.red) for the past three months. 
 
-Today, we open up the first beta version (`1.0.0.beta`) of Toucaan to the general public. We wish to invite you to take Toucaan out for a spin and share your feedback on it. 
+Sonica, Satie, & I wish to invite you to take Toucaan out for a sortie and share your thoughts on it. Together, we aim to discover how we can best introduce and standardize _intrinsicality_ in modern application design. An approach that isn't encumbered by the limitations of responsive web design. 
 
-Our goal is to find out how we can best introduce intrinsicality in modern application design. An approach that isn't encumbered by the inherited limitations of responsive web design. And then standardize those processes. 
-
-We would love to hear your thoughts and include your ideas into the core framework. Contributions are certainly welcome!
+We would love to include your ideas in the core framework and welcome contributions wholeheartedly. Thank you for reading!
