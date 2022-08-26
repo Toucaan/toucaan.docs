@@ -24,61 +24,32 @@
 
 /* You can override the default Infima variables here. */
 
+/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #303846;
-  --ifm-color-primary-dark: #2b323f; /* rgba(80, 94, 248, 1);*/
-  --ifm-color-primary-darker: #29303c;
-  --ifm-color-primary-darkest: #222731;
-  --ifm-color-primary-light: #353e4d;
-  --ifm-color-primary-lighter: #374050;
-  --ifm-color-primary-lightest: #3e495b;
-  --ifm-link-color: #3038F6;
+  --ifm-color-primary: #2e7685;
+  --ifm-color-primary-dark: #295e78;
+  --ifm-color-primary-darker: #275571;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #cacaca;
-  --ifm-color-primary-dark: #b6b6b6;
-  --ifm-color-primary-darker: #acacac;
-  --ifm-color-primary-darkest: #8d8d8d;
-  --ifm-color-primary-light: #dedede;
-  --ifm-color-primary-lighter: #e8e8e8;
-  --ifm-color-primary-lightest: #ffffff;
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-/* h1.hero__title {
-  font-family: 'Fascinate', cursive;
-  font-size: calc(4vh + 4vw);
-  display: inline-block;
-  text-shadow: .03em .03em 0 hsla(30, 70%, 50%,1);
-  } */
-/*
-  h1.hero__title:after {
-    content: attr(data-shadow);
-    position: absolute;
-    top: .06em; left: .06em;
-    z-index: -1;
-    text-shadow: none;
-    background-image:
-      linear-gradient(
-        45deg,
-        transparent 45%,
-        hsla(48,20%,90%,1) 45%,
-        hsla(48,20%,90%,1) 55%,
-        transparent 0
-        );
-    background-size: .05em .05em;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;  
-    animation: shad-anim 15s linear infinite;
-    }
 
-@keyframes shad-anim {
-  0% {background-position: 0 0}
-  0% {background-position: 100% -100%}
-  }
-*/
 .navbar__title {
   font-family: 'Fascinate', cursive;
   font-size: 150%;

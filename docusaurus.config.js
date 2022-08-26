@@ -12,7 +12,7 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Toucaan CSS Framework',
-  tagline: 'Stack-Agnostic Vanilla CSS Framework for Mobile Apps and The Web.',
+  tagline: 'Stack-agnostic vanilla styling framework for mobile apps and the web.',
   url: 'https://toucaan.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
