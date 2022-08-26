@@ -5,28 +5,37 @@ authors: [marvin, sonica]
 tags: [design, toucaan, css, intrinsic]
 ---
 
-Welcome to the [Toucaan Blog](https://toucaan.com/blog)—the home of **modern intrinsic design** for mobile apps and the web. 
+Welcome to the [Toucaan Blog](https://toucaan.com/blog). 🎉
 
-Toucaan is a new approach to web and mobile application design that snuck out of the bag while we were working on [Bubblin](https://bubblin.io) & [Red Goose](https://goose.red). The framework is robust yet straightforward in implementation. It offers granular control and maintainability at scale and allows a developer to create meaningful interfaces that bank on the **intrinsic capabilities** of the medium. 
+![Total Banchod Toucaan](./toucaan-total-banner.jpg)
 
-Toucaan has been in production at the [Red Goose](https://goose.red) for the past three months. 
+Here you'll find a collection of articles and discussions on **intrinsic application design**. To wit, Toucaan is a **stack-agnostic vanilla styling framework for mobile apps and the web**. Meaning it doesn't require javascript or any other frontend library to operate. And it can be used to design native-like mobile apps using the web stack.
 
+You'll only need the `toucaan` folder of css inside your project (any web development stack) and a `sass` or `scss` processor to compile your stylesheets.
 
-![Total Ban Toucaan](./toucaan-total-banner.jpg)
+# What is Intrinsic Design?
 
-### What is Intrinsic Design?
+Intrinsic in the context of application design implies an experience that _belongs to a device_. This term was coined by the one and only Jenn Simmons while working at Mozilla on flex and grid-based layouts, but a curious mind could easily hop layouts and decide to explore what _belongs_ and what doesn't on a given medium for a whole lot of design vocabulary as well. 
 
-Intrinsic in the context of application design implies _belonging_ to a device. This term was coined by the one and only Jenn Simmons while working on flex and grid-based layouts at Mozilla, but the curious mind could easily hop layouts and explore (1) what _belongs_ and what doesn't on a given medium for the rest of the design vocabulary and (2) determine what [devices are on the web today](https://bubblin.io/blog/the-new-landscape-of-the-web) other than just mobile and desktop. 
+Secondly, there is a need to determine [what devices are on the web](https://bubblin.io/blog/the-new-landscape-of-the-web) today because the users are no longer limited to just mobile and desktop anymore. 
 
-Toucaan outshines the older traditional css frameworks on the following fronts at least:
+## How is Toucaan different?
 
-- Complete separation of device-specific design language without using hardcoded MQ breakpoints in pixel width. Toucaan uses a [css router](https://bubblin.io/blog/a-css-router) instead.
-- An intrinsically scaling mathematically grounded system of typography scoped to a component or block.
-- Avoid the use of a heavy `reset` or `normalize` and replace it with a lighter and more strategic [baseline](https://bubblin.io/blog/baseline-css)
-- Support new devices on the web like the Apple Watch, EVs like the Tesla Model S and Tesla Model 3, bendable or foldable smartphones and tablets, projectors, and TVs.
+Toucaan is a new approach to design that snuck out of the bag while we were working on [Bubblin](https://bubblin.io) & [Red Goose](https://goose.red). It is a robust yet straightforward css framework that offers granular control and maintainability at scale. 
 
-And many more, but the list isn't complete or discovered fully yet. We wish to invite you to take Toucaan out for a spin. Share your ideas and feedback on how to approach intrinsicality in the art of interfaces and application design, and standardize it. 
+It allows developers to create meaningful interfaces that bank on the **intrinsic qualities** of the medium. Qualities like its physical size, orientation, foldability, touch or no touch, or even fullscreen view enabled in a notched environment, for example. 
 
-We would love to see your ideas included in the core framework. Contributions are welcome.
+Toucaan differentiates itself from other css frameworks in many ways. However, it outshines the older and traditional frameworks on at least four major fronts:
 
+1. A complete separation of device-specific design language without using hardcoded pixel widths as MQ breakpoints. Toucaan uses a [css router](https://bubblin.io/blog/a-css-router) to serve the suitable stylesheet instead.
+2. A mathematically grounded block-scoped intrinsically scaling type system.
+3. No use of a heavy `reset` or `normalize` to bulldoze the web browser. Toucaan replaces the reset model with a lighter and flexible [baseline](https://bubblin.io/blog/baseline-css) that can be configured for each app using the class-less principles.
+4. Support new devices on the web like the Apple Watch, EVs with a web browser like the V9 on the Tesla Model S and Tesla Model 3, bendable or foldable smartphones and tablets, large projectors, and smart TVs.
 
+The list above isn't exhaustive or even fully discovered yet because Toucaan is still very much in development. Toucaan has been in the production environment at the [Red Goose](https://goose.red) for the past three months, but it is still early.
+
+Today, we open up the first beta version (`1.0.0.beta`) of Toucaan to the general public. We wish to invite you to take Toucaan out for a spin and share your feedback on it. 
+
+Our goal is to find out how we can best introduce intrinsicality in modern application design. An approach that isn't encumbered by the inherited limitations of responsive web design. And then standardize those processes. 
+
+We would love to hear your thoughts and include your ideas into the core framework. Contributions are certainly welcome!
