@@ -1,5 +1,5 @@
 ---
-sidebar_position: 12
+sidebar_position: 1
 ---
 
 # Getting Started
@@ -23,6 +23,25 @@ Head over to the next step and set up [The CSS Router](router.md)?
 Here is what the folder structure looks like: 
 
 ![Toucaan architecture](img/toucaan-folders.jpg)
+
+```bash
+root-of-Toucaan
+├── lib
+│   ├── core
+│   ├── server
+│   │   ├── generate.js
+│   │   ├── server.js
+│   │   └── ...and more files
+│   ├── static
+│   ├── build-files.js
+│   ├── copy-examples.js
+│   ├── generate-feed.js
+│   ├── publish-gh-pages.js
+│   ├── rename-version.js
+│   ├── start-server.js
+│   ├── versions.js
+│   └── write-translations.js
+```
 
 ### Quick discussion
 

@@ -78,7 +78,7 @@ export default function Home() {
                 'button button--solid button--primary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/intro')}>
+              to={useBaseUrl('docs/getting-started')}>
               Get Started
             </Link>
           </div>
