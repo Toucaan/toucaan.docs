@@ -17,7 +17,7 @@ To wit, Toucaan is a **stack-agnostic vanilla styling framework for mobile apps 
 
 It is very easy to [get started](/docs/getting-started) with Toucaan. 
 
-Simply clone the `toucaan` folder inside your project and start working on your mockups. You'll need a `sass` or `scss` processor to compile your stylesheets to the path. Read more about setup over here.
+Simply clone the `toucaan` folder inside your project and start implementing your mockups. You'll need a `sass` or `scss` processor to compile your stylesheets to the path. Read more about setup over here.
 
 # What is Intrinsic Design?
 

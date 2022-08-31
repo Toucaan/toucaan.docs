@@ -21,7 +21,7 @@ const features = [
     imageUrl: 'img/easy.svg',
     description: (
       <>
-        Optimized for simplicity and maintainabilty. Create web and mobile apps that last.
+        Designed for simplicity and maintainabilty. Create web and mobile applications that last.
       </>
     ),
   },
@@ -30,7 +30,7 @@ const features = [
     imageUrl: 'img/focus.svg',
     description: (
       <>
-        Build interfaces that bank on the intrinsic capabilities of the medium. Build meaningful UX/UI. 
+        Build accessible interfaces that rely on the intrinsic capabilities of the medium. Meaningful UX/UI only. 
       </>
     ),
   },
@@ -39,8 +39,7 @@ const features = [
     imageUrl: 'img/typography.svg',
     description: (
       <>
-        Scale type with geometric precision & scope it to the component
-        block. Never worry about overflow again.
+        Scale type with geometric precision & never worry about overflow again. Block-scoped content!
       </>
     ),
   },
@@ -93,7 +92,7 @@ export default function Home() {
                   <Feature
                     key={title}
                     title={title}
-                    // imageUrl={imageUrl}
+                    imageUrl={imageUrl}
                     description={description}
                   />
                 ))}

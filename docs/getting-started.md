@@ -16,31 +16,54 @@ mkdir -p toucaan/{accessibility,app/{desktop,mobile,tablet,vehicle,television,wa
 The `mkdir` command above will create all the folders necessary for you to start working with [intrinsic design](https://toucaan.com). These folders will carry ALL THE STYLES necessary for your application's **multiple frontends**. 
 
 
-Head over to the next step and set up [The CSS Router](router.md)?
+> Head over to the next step and set up [The CSS Router](router.md)?
 
-### The Architecture
+
+## Quick overview
+
+#### The Architecture
 
 Here is what the folder structure looks like: 
 
 ![Toucaan architecture](img/toucaan-folders.jpg)
 
+This is how css will be organized within the framework folders of Toucaan created for your application:
+
 ```bash
-root-of-Toucaan
-├── lib
-│   ├── core
-│   ├── server
-│   │   ├── generate.js
-│   │   ├── server.js
-│   │   └── ...and more files
-│   ├── static
-│   ├── build-files.js
-│   ├── copy-examples.js
-│   ├── generate-feed.js
-│   ├── publish-gh-pages.js
-│   ├── rename-version.js
-│   ├── start-server.js
-│   ├── versions.js
-│   └── write-translations.js
+project-root
+├── toucaan
+│   ├── accessibility
+│   │   ├── _darkmode.scss
+│   │   ├── _notch.scss
+│   │   └── _reducemotion.scss
+│   ├── app
+│   │   ├── desktop
+│   │   │   ├── components
+│   │   │   │   ├── _hero.scss
+│   │   │   │   ├── _form.scss
+│   │   │   │   └── Other style files.
+│   │   │   ├── layout
+│   │   │   │   └── _layout.scss
+│   │   │   └── desktop.scss
+│   │   ├── mobile
+│   │   │   ├── components
+│   │   │   │   ├── _hero.scss
+│   │   │   │   ├── _form.scss
+│   │   │   │   └── Other style files.
+│   │   │   ├── layout
+│   │   │   │   └── _layout.scss
+│   │   │   └── mobile.scss
+│   │   ├── tablet
+│   │   ├── television
+│   │   ├── vehicles
+│   │   └── watch
+│   ├── env
+│   │   ├── helpers
+│   │   └── tags
+│   ├── palette
+│   ├── router
+│   ├── typography
+│   └── utils
 ```
 
 ### Quick discussion
