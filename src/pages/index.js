@@ -30,7 +30,7 @@ const features = [
     imageUrl: 'img/focus.svg',
     description: (
       <>
-        Build accessible interfaces with intrinsic capabilities of the medium. Solve for meaningful UX/UI. 
+        Build accessible interfaces using the intrinsic capabilities of the medium. Solve for meaningful UX/UI. 
       </>
     ),
   },
@@ -65,11 +65,11 @@ export default function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Intrinsic Web Design with ${siteConfig.title}`}
+      title={`Intrinsic Design with ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">Intrinsic App Design</h1>
+          <h1 className="hero__title">Intrinsic Design</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link

@@ -13,7 +13,7 @@ Here you'll find a collection of articles and discussions on **intrinsic applica
 
 ![Total Banchod Toucaan](./toucaan-total-banner.jpg)
 
-To wit, Toucaan is a **stack-agnostic vanilla styling framework for mobile apps and the web**. Meaning it doesn't require javascript or any other frontend library to operate. And can be used to design intrinsically tuned web apps and native-like mobile apps using the web stack.
+To wit, Toucaan is a **stack-agnostic vanilla styling framework for mobile apps and the web**. Meaning it doesn't require javascript or any other frontend library to operate. And it can be used to design intrinsically tuned web and mobile apps using the web stack.
 
 It is very easy to [get started](/docs/getting-started) with Toucaan. 
 
@@ -21,7 +21,7 @@ Simply clone the `toucaan` folder inside your project and start implementing you
 
 # What is Intrinsic Design?
 
-Intrinsic in the context of application design implies an experience that _belongs to a device_. This term was coined by the one and only Jenn Simmons while working at Mozilla on flex and grid-based layouts, but a curious mind could easily hop layouts and decide to explore what _belongs_ and what doesn't on a given medium for a whole other lot of design vocabulary. 
+Intrinsic in the context of application design implies an experience that _belongs to a device_. This term was coined by the one and only Jen Simmons while working at Mozilla on flex and grid-based layouts, but a curious mind could easily hop layouts and decide to explore what _belongs_ and what doesn't on a given medium for a whole other lot of design vocabulary. 
 
 Moreover, there is a need to know [what devices are on the web](https://bubblin.io/blog/the-new-landscape-of-the-web) today because users are no longer limited to just mobile or desktop anymore. 
 
