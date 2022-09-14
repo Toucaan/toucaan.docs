@@ -4,16 +4,18 @@ sidebar_position: 1
 
 # Getting Started
 
-The first step is to add this repository at the root of your project, like so:
+The first step is to add Toucaan to your project. At the root:
 
 ```bash
     $ git submodule add https://github.com/Toucaan/toucaan
 ```
 
-The command above will add Toucaan to your project like a submodule. That's it! Toucaan is now ready for you to start working with. Implement your app's designs with deep support for the intrinsic qualities of the medium!
+The command above will add Toucaan to your project like a `git submodule`. And that's it! You can start working styling your app with Toucaan.
 
 
-This chapter is complete. Head over to the next step and set up [a css router](router.md) for your application?
+This chapter is complete. 
+
+Go to next step and [set up](setup.md) a `sass` preprocessor.
 
 
 ## Quick Overview

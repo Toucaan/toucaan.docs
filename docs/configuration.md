@@ -1,15 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
 # Configuration
 
-A significant part of setting up a project is defining what tools to use for the presentation layer. Toucaan itself is mainly vanilla css and doesn't require much set up that is tied to any web framework. 
-
-Once your project has the Toucaan submodule included, all you need next is an `scss` (or `sass`) preprocessor to output the required files. Sampled below is a `webpack` configuration that outputs device-specific stylesheets for [the css router](router.md) to deliver.  
-
-
-CSS is very much like setting the environment variables on the client side correctly. Once you have added Toucaan to your project, the next step is to configure it. 
+Sprinkling css into an app is much like setting the environment variables on the client side correctly. Once you have added Toucaan to your project, the next step is to configure it. 
 
 
 

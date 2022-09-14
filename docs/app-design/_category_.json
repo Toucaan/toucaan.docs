@@ -1,8 +1,8 @@
 {
-  "label": "App Designing",
+  "label": "App Design",
   "position": 9,
   "link": {
     "type": "generated-index",
-    "description": "5 minutes to learn the most important Toucaan concepts."
+    "description": "Designing mobile (native) apps using Toucaan in five minutes."
   }
 }
