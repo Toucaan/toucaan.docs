@@ -4,13 +4,16 @@ sidebar_position: 1
 
 # Getting Started
 
-The first step is to add this repository at the root of your project, like so:
+The first step is to **create a new folder** named `toucaan` somewhere in your project using the following command: 
 
-```bash
-    $ git submodule add https://github.com/Toucaan/toucaan
+```bash title="Setup:"
+cd ./somewhere/in/your/project/
+
+mkdir -p toucaan/{accessibility,app/{desktop,mobile,tablet,vehicle,television,watch},env/{helpers,tags},palette,router,typography,utils}
+
 ```
 
-The command above will add Toucaan to your project like a submodule. That's it! Toucaan is now ready for you to start working with. Implement your app's designs with deep support for the intrinsic qualities of the medium!
+The `mkdir` command above will create all the folders necessary for you to start working with [intrinsic design](https://toucaan.com). These folders will carry ALL THE STYLES necessary for your application's **multiple frontends**. 
 
 
 This chapter is complete. Head over to the next step and set up [a css router](router.md) for your application?
@@ -20,9 +23,9 @@ This chapter is complete. Head over to the next step and set up [a css router](r
 
 ### The Architecture
 
-Here is what the folder structure looks like once checked out: 
+Here is what the folder structure looks like: 
 
-![Toucaan architecture](img/toucaan-folders.jpg)
+![Toucaan architecture](./img/toucaan-folders.jpg)
 
 This is how css will be organized within the framework folders of Toucaan created for your application:
 

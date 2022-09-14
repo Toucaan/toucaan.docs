@@ -1,6 +1,6 @@
 ---
 slug: intrinsic-design
-title: Intrinsic Design
+title: Meet Intrinsic Design
 authors: [marvin, sonica, satie]
 tags: [design, toucaan, css, intrinsic]
 ---
@@ -10,6 +10,8 @@ tags: [design, toucaan, css, intrinsic]
 Welcome to the [Toucaan Blog](https://toucaan.com/blog). 🎉
 
 Here you'll find a collection of articles and discussions on **intrinsic application design**. 
+
+<!--truncate-->
 
 ![Total Banchod Toucaan](./toucaan-total-banner.jpg)
 

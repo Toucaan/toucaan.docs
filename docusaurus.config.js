@@ -12,7 +12,7 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Toucaan CSS Framework',
-  tagline: 'Stack-agnostic vanilla styling framework for mobile apps and the web.',
+  tagline: 'Stack-agnostic vanilla styling framework for mobile and web apps.',
   url: 'https://toucaan.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -62,7 +62,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'getting-started',
             position: 'left',
             label: 'Documentation',
           },
@@ -87,7 +87,7 @@ const config = {
             items: [
               {
                 label: 'Style Guide',
-                to: 'docs/intro',
+                to: 'docs/getting-started',
               },
               {
                 label: 'Fundamentals',

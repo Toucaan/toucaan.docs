@@ -30,7 +30,7 @@ const features = [
     imageUrl: 'img/focus.svg',
     description: (
       <>
-        Build accessible interfaces using the intrinsic capabilities of the medium. Solve for meaningful UX/UI. 
+        Build accessible interfaces using the intrinsic capabilities of the medium. Drive meaningful UX/UI. 
       </>
     ),
   },
@@ -39,7 +39,7 @@ const features = [
     imageUrl: 'img/typography.svg',
     description: (
       <>
-        Scale type with geometric precision. Never worry about overflows with block-scoped content.
+        Scale type with geometric precision. Never worry about text overflows or broken content again.
       </>
     ),
   },
