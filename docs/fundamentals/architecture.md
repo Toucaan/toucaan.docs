@@ -1,10 +1,10 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Getting Started
+# Architecture
 
-The first step is to **create a new folder** named `toucaan` somewhere in your project using the following command: 
+Let us **create a new folder** named `toucaan` somewhere in your project using the following command: 
 
 ```bash title="Setup:"
 cd ./somewhere/in/your/project/
@@ -13,21 +13,15 @@ mkdir -p toucaan/{accessibility,app/{desktop,mobile,tablet,vehicle,television,wa
 
 ```
 
-The `mkdir` command above will create all the folders necessary for you to start working with [intrinsic design](https://toucaan.com). These folders will carry ALL THE STYLES necessary for your application's **multiple frontends**. 
+The `mkdir` command above will create all the folders necessary for you to start working with [intrinsic design](https://toucaan.com). These folders will carry ALL THE CSS necessary for your application's **multiple frontends**. 
 
-
-This chapter is complete. Head over to the next step and set up [a css router](router.md) for your application?
-
-
-## Quick Overview
-
-### The Architecture
+### Quick Overview
 
 Here is what the folder structure looks like: 
 
 ![Toucaan architecture](./img/toucaan-folders.jpg)
 
-This is how css will be organized within the framework folders of Toucaan created for your application:
+This is how Toucaan organizes all css pertaining to your application's presentation layer within the framework itself.
 
 ```bash
 project-root
@@ -68,7 +62,7 @@ project-root
 
 ### Brief Explanation
 
-Toucaan implements a simple architecture to cover the **entire design space** of [the new web](https://bubblin.io/blog/the-new-landscape-of-the-web). There are several new types of devices connected to the web today and mobile responsiveness approach _isn't_ enough anymore.  
+Toucaan implements a simple architecture to cover the **entire design space of [the new web](https://bubblin.io/blog/the-new-landscape-of-the-web)**. There are several new types of devices connected to the web today and mobile responsiveness approach _isn't_ enough anymore.  
 
 Learn about the **Intrinsic Design Space** in the [next chapter](space.md).
 

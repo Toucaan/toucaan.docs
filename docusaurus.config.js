@@ -91,7 +91,7 @@ const config = {
               },
               {
                 label: 'Fundamentals',
-                to: 'docs/category/toucaan---basics',
+                to: 'docs/category/fundamentals',
               },
               {
                 label: 'The book',

@@ -1,15 +1,12 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 ---
 
-# Setup 
-A significant part of setting up a project is defining what tools to use for the presentation layer. Since Toucaan itself is mainly vanilla css (except for user defined styles) it doesn't require much tooling to get started with on any web framework. 
+# Installation
+Toucaan uses the `sass` preprocessor to output stylesheets by default. It can easily be configured to utilize another preprocessor like LESS or STYLUS.  
 
-## SASS 
-Once your project has the Toucaan submodule included all you need is a `sass` or `scss` preprocessor in your pipeline to output the required stylesheets.
-
-Shown below is a `webpack` configuration for a typical Nodejs-Express-frontend app: 
-
+### Webpack  
+Shared below is a sample `webpack` config for a typical `node-express` app: 
 
 ```js title="webpack.config.js"
 const path = require('path')
@@ -163,6 +160,7 @@ module.exports = {
 }
 ```
 
-The [sample file](https://github.com/Toucaan/toucaan/blob/master/webpack.config.js.sample) is included along with the Toucaan submodule and is available for reference or customization by the end user. 
+The [sample file](https://github.com/Toucaan/toucaan/blob/master/webpack.config.js.sample) is included for reference or customization by the end user. 
+Since each web framework follows a slightly different set of rules and conventions, setting up the preprocessing pipeline with `sass` is therefore left to the author. 
 
-Since web frameworks follow different set of conventions and rules, it is left with the author to determine the best way to set up SASS on their projects.
+Go to next step and [configure](./configuration.md) Toucaan for your project.

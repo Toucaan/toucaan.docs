@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 3
 ---
 
 # The CSS Router
@@ -13,7 +13,7 @@ These two:
 1. https://raw.githubusercontent.com/Toucaan/toucaan/master/toucaan/router/portrait.css
 2. https://raw.githubusercontent.com/Toucaan/toucaan/master/toucaan/router/landscape.css
 
-Or if you have `git` installed, you can clone the official Toucaan repository and copy the files from there:
+Or if you have `git` installed, you can add the official Toucaan submoduleto your project without worrying about each file separately.
 
 ```bash 
 cp -R ./cloned/toucaan/router/* ./your/project/toucaan/router/
