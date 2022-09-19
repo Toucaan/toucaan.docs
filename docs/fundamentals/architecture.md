@@ -15,6 +15,8 @@ mkdir -p toucaan/{accessibility,app/{desktop,mobile,tablet,vehicle,television,wa
 
 The `mkdir` command above will create all the folders necessary for you to start working with [intrinsic design](https://toucaan.com). These folders will carry ALL THE CSS necessary for your application's **multiple frontends**. 
 
+
+
 ### Quick Overview
 
 Here is what the folder structure looks like: 

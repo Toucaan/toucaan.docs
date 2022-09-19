@@ -1,29 +1,16 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
 
-# Introduction
+# General Tips
 
-## Web app vs. mobile app.
-There are subtle differences between a responsive website and a mobile app. The first one that comes to mind is the lack of browser UI. Obviously, 🙂.  Mobile apps generally don’t have a url bar, or the back or forward buttons, or reload unless the app is a browser itself. 
+The general rule of thumb is to think of your web-app's UX/UI like a mobile developer. Always design for native mobile apps but implement web components using properties like intrinsic scaling, flex box, grids, and back it all up  with strongly cached frontend using a serviceworker.
 
-If we removed the browser UI from the picture, it turns out that there will be literally zero difference between the real estate that is available to a mobile app or a webapp loaded into a browser window. 
-
-Sure, there will be network requests to complete before a screen is painted for a user to interact with on a webapp, but from a design standpoint, there is absolutely no difference at all. 
-
-The number of pixels to draw on screen is equal for web and native both. It is relevant to lay here that the network requests too can be done away with mostly, using a high resolution serviceworker. 
-
-And now we are talking about literally no difference between a webapp written in php or rails or node and a mobile app written in swift. Both applications can perform really well and will be indistinguishable from each other as long as the design and experience of the webapp is kept first class. Only in very extreme applications, like gaming or binary asset processing would the performance feel a pressure, but there too a web-based application using webassembly could dent the appeal of going native.
-
-Container and stack aside, there are several other places where responsive web design and mobile UI do not exactly reconcile. The following list enumerates some of those differences and is followed by our recommendations on intrinsic app design so as to have the best outcome with your Red Goose app.
-
-The general rule of thumb is to think of your webapp's UX/UI like a mobile developer. And this means a tight mobile design that scales intrinsically, and a super optimized and cached web application.
-
-This list is in no way an exhaustive resource but it should get you started on the right path:
+The list below is in not an exhaustive resource but it will set you on the right path:
 
 ### TO-DOs
 
-1. Lose the footer at the bottom of your website. See how [Red Goose](https://goose.red) uses a semantic footer element with a full-page dedicated to footer links.
+1. Lose the footer at the bottom of your mobile website. See how [Red Goose](https://goose.red) uses a semantic footer element with a full-page dedicated to footer links.
 2. Go for an "app-like" interface on your webapp at every opportunity, especially on mobile views. 
 3. Simplicity is the ultimate sophistication. Use a simple slide-in or slide-out for hiding menus. Less fancy is always better.
 4. Split your webapp's functionality into levels and bring out only the most essential ones to the top.

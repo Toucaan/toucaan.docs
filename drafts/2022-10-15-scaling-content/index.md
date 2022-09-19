@@ -7,7 +7,7 @@ tags: [text, scale, css, intrinsic]
 
 ---
 
-As mentioned in the previous essay, Toucaan utilizes an intrinsically scaling type system instead of a formulaic one or the one that is limited by container queries.
+Toucaan utilizes an intrinsically scaling type system instead of a formulaic one or the one that is limited by container queries.
 
 <!--truncate-->
 

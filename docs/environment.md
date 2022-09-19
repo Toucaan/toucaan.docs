@@ -2,14 +2,15 @@
 sidebar_position: 4
 ---
 
-# Environment
+# Environment Variables
 
-Sprinkling css into an app is very much like setting the _Environment Variables_ for your app on the client side. Specify your app's color palette, choose the right typeface, apply a few sane defaults that make the over experience of your app speak of your unbeatable brand.
+Sprinkling css into an app is very much like setting up the Environment Variables for your app to render correctly on the client side. 
 
-Let's walk through Toucaan to configure it for best results. 
+Deciding on a color palette, choosing the right typefaces or font-families, applying a few sane initial defaults for your app to speak of your brand,
+there is so much you can do with css. Toucaan makes it really easy to organize and incredibly fast to configure and reconfigure the environment for your app on-the-go!
 
 
-Open the desktop.scss file at toucaan/app/desktop/ on your favorite editor and scroll to the bottom. This is where you'll import all your application-specific or component-specific css.
+Open the `desktop.scss` file at toucaan/app/desktop/ on your favorite editor and scroll to the bottom. This is where you'll import all your application-specific or component-specific css.
 
 
 

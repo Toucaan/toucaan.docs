@@ -11,9 +11,10 @@ Welcome to the [Toucaan Blog](https://toucaan.com/blog). 🎉
 
 Here you'll find a collection of articles and discussions on **intrinsic application design**. 
 
-<!--truncate-->
 
 ![Total Banchod Toucaan](./toucaan-total-banner.jpg)
+
+<!--truncate-->
 
 To wit, Toucaan is a **stack-agnostic vanilla styling framework for mobile apps and the web**. Meaning it doesn't require javascript or any other frontend library to operate. And it can be used to design intrinsically tuned web and mobile apps using the web stack.
 
