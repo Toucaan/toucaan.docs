@@ -20,8 +20,9 @@ Go to the next step and [install](./installation.md) a `sass` preprocessor.
 
 
 :::tip
+Recommended to review the [Architecture of Toucaan](core-concepts/architecture). The core concepts are important!
+:::
 
-Reader is recommended to spend some time and review the [Architecture of Toucaan](fundamentals/architecture.md).  
-
-
-
+:::note
+This is an early version of Toucaan (< 1.0.0). Our documentation and tooling is in the state of flux and you're likely to encounter a few breaking changes in the next few weeks. 
+:::

@@ -2,20 +2,9 @@
 sidebar_position: 2
 ---
 
-# Architecture
+# The Architecture
 
-Let us **create a new folder** named `toucaan` somewhere in your project using the following command: 
-
-```bash title="Setup:"
-cd ./somewhere/in/your/project/
-
-mkdir -p toucaan/{accessibility,app/{desktop,mobile,tablet,vehicle,television,watch},env/{helpers,tags},palette,router,typography,utils}
-
-```
-
-The `mkdir` command above will create all the folders necessary for you to start working with [intrinsic design](https://toucaan.com). These folders will carry ALL THE CSS necessary for your application's **multiple frontends**. 
-
-
+Toucaan caters to the [full scope of the new web](https://bubblin.io/blog/the-new-landscape-of-the-web). 
 
 ### Quick Overview
 

@@ -27,6 +27,6 @@ From the plot, it is easy to conclude that responsive design is all but one solu
 
 Toucaan is not a single design system. It is rather a conventional css framework with handpicked lessons from several sources. Toucaan is a logical approach to the art of application design that is much better at scaling and easier to maintain over the years.
 
-Read more about intrinsic design and the fundamentals of [a css router](https://bubblin.io/blog/a-css-router) for an in-depth analysis. 
+Read more about intrinsic design and the core-concepts of [a css router](https://bubblin.io/blog/a-css-router) for an in-depth analysis. 
 
 Open `space.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.

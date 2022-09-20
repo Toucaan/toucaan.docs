@@ -3,7 +3,7 @@ sidebar_position: 2
 ---
 
 # Installation
-Toucaan uses the [sass-lang](https://sass-lang.com/) pre-processor to output stylesheets by default. However, one can easily configure Toucaan to utilize another processor like LESS or STYLUS.  
+Toucaan uses the [sass-lang](https://sass-lang.com/) pre-processor to output stylesheets by default. 
 
 ### Webpack  
 Displayed below is sample `webpack` config for a typical `node/express` app.
@@ -169,6 +169,6 @@ module.exports = {
 A [sample file](https://github.com/Toucaan/toucaan/blob/master/webpack.config.js.sample) is included for reference or customization by the end user. 
 
 
-Since each web framework is different and follows a slightly different set of rules or conventions, the preprocessing pipeline with `sass` or another tool is therefore left to the author as an exercise. 
+Since each web framework is different and follows a slightly different set of rules or conventions, the preprocessing pipeline with `sass` or another tool like `LESS` or `Stylus` is therefore left to the author as an exercise. 
 
 Go to next step and [configure](./configuration.md) Toucaan for your project.

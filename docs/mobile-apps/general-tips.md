@@ -18,7 +18,7 @@ The list below is in not an exhaustive resource but it will set you on the right
 
 ## The DOs
 
-1. Your web app must be fast and performant. Checkout [Lighthouse](https://developers.google.com/web/tools/lighthouse) to understand performance-budgeting and speed.
+1. Your web app must be fast and performant. Checkout [Lighthouse](https://developers.google.com/web/tools/lighthouse) to understand performance-budgeting and test speed.
 2. Your website must be (at least) responsive. A non-responsive website cannot be converted into an "acceptable" mobile app.
 3. Intrinsic web design is recommended for "native-like" experience. As mentioned before, refer the manual of [Toucaan CSS framework](https://toucaan.com) for intrinsic app design on web.
 4. It is recommended to setup your development toolchain with a running Red Goose iOS/Android simulator. Point the url of your Red Goose app to `localhost` to develop for the mobile in realtime. Read more about [app development](https://github.com/Red-Goose/app.fitspacepro.com#local-web-app-development) using Red Goose with the webstack.

@@ -4,11 +4,25 @@ sidebar_position: 3
 
 # Configuration
 
-One of the important ways Toucaan is different from other css frameworks is that it **does not use** a typical `<link href="path/to/styles.css"/>` tag to connect to your app's HTML with the stylesheets. 
+One of the important ways Toucaan is different from other css frameworks is that it _does not use_ a typical link…
 
-Toucaan uses a [css router based on css @imports](fundamentals/router.md) instead. 
+> `<link href="path/to/stylesheet.css" rel="stylesheet"/>` 
 
-Consider the following [code](https://github.com/Toucaan/toucaan/blob/master/_config.scss) inside a `<style></style>` tag placed in your document's `<head/>`:
+…tag to connect to your app's HTML with the stylesheets. 
+Toucaan uses a **css router** instead. 
+
+:::info CSS @imports 
+
+Notice the use of asynchronous CSS @imports below in the routing code. The appropriate stylesheet is _prioritized_ and served to the browser according to the matched orientation of the viewport and route in observance. 
+
+Read more about Toucaan's [css router](core-concepts/router.md) and its implementation for intrinsic design.
+:::
+
+:::info SASS @imports 
+Toucaan also uses SASS imports but only at the level of user-defined styles. 
+:::
+
+Consider the following [code](https://github.com/Toucaan/toucaan/blob/master/_config.scss) inside the `<style></style>` tag placed directly into your document's `<head/>`:
 
 ```css title="Put the following code inside your document's <head></head> tag."
 
@@ -18,7 +32,7 @@ Consider the following [code](https://github.com/Toucaan/toucaan/blob/master/_co
     /* Replace with fonts you like. */
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap&text="RedGosithub"'); 
 
-    /* Axes of Intrinsic Design. Read @https://toucaan.com/docs/fundamentals/space */
+    /* Axes of Intrinsic Design. Read @https://toucaan.com/docs/core-concepts/space */
     @import url('/toucaan/router/portrait.css') screen and (orientation: portrait);
     @import url('/toucaan/router/landscape.css') screen and (orientation: landscape);
 
@@ -35,7 +49,7 @@ Consider the following [code](https://github.com/Toucaan/toucaan/blob/master/_co
         }
     }
 
-    /* Global variables below: */
+    /* Global utility variables here: */
     :root {
         --vmin: 1vmin;
 

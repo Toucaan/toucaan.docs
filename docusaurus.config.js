@@ -90,8 +90,8 @@ const config = {
                 to: 'docs/getting-started',
               },
               {
-                label: 'Fundamentals',
-                to: 'docs/category/fundamentals',
+                label: 'Core Concepts',
+                to: 'docs/category/core-concepts',
               },
               {
                 label: 'The book',
