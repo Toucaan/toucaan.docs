@@ -10,9 +10,11 @@ Toucaan caters to the [full scope of the new web](https://bubblin.io/blog/the-ne
 
 Toucaan organizes all css pertaining to your application's presentation layer within the framework itself.
 
-Here is what its folder structure looks like: 
+Here is what its internal structure looks like: 
 
 ![Toucaan architecture](./img/toucaan-folders.jpg)
+
+### Project structure
 
 ```bash
 project-root

@@ -11,7 +11,7 @@ Toucaan uses just one [utility variable](./variables.md) called the `--fs` to sc
 The value of `--fs` is set according to the nature of device under test using the formula of [viewport squarishness](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). 
 
 
-## Desktop browser
+## Desktop 
 Since desktop browsers are viewed in landscape mostly, the formula for `--fs` is as follows:
 
 ```css title="Setting the --fs variable on a desktop browser"
@@ -43,10 +43,10 @@ Now the `--fs` unit above can be used to describe any html element size like any
 }
 ```
 
-Observe the scaling of element and the text within. The text size would be pinned intrinsically to the size of the element. 
+Observe the scaling of element and the text within. The text is always pinned to the intrinsic size of the element. 
 
 ### Demos
-View [CSS is Awesome](https://codepen.io/marvindanig/pen/bGGRZdE) example with intrinsic scaling.
+View the [CSS is Awesome](https://codepen.io/marvindanig/pen/bGGRZdE) example with intrinsic scaling.
 
 View the [homepage of Red Goose](https://goose.red) that demonstrates intrinsic scaling.
 
