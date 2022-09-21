@@ -4,9 +4,50 @@ sidebar_position: 7
 
 # Intrinsic Typography
 
-Toucaan uses just one intrinsic typography variable `--fs` to scale textual content. Element size derive of an `--fs` unit (example: `calc(4 * var(--fs))`) can be likened to how any other css unit like `em` or `rem` is calculated for a specific piece content. 
+Toucaan uses just one [utility variable](./variables.md) called the `--fs` to scale **all content**. 
 
-`--fs` stands for font size. 
+`--fs` stands for font-size.
 
-## The `--fs` Unit
+The value of `--fs` is set according to the nature of device under test using the formula of [viewport squarishness](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). 
+
+
+## Desktop browser
+Since desktop browsers are viewed in landscape mostly, the formula for `--fs` is as follows:
+
+```css title="Setting the --fs variable on a desktop browser"
+@media (min-aspect-ratio: 2 / 1) { /* Length : Breadth ratio > 2 */
+  :root {
+    --shorter-edge: 100vmin; /* Always pick the shorter side for better control on scalability. */
+    --fs: calc(var(--shorter-edge) / 100);
+  }
+}
+
+@media (max-aspect-ratio: 2 / 1) { /* Length : Breadth ratio < 2 */
+  :root {
+    --shorter-edge: 50vw;
+    --fs: calc(var(--shorter-edge) / 100);
+  }
+}
+```
+
+### Blockscoped Scaling
+Now the `--fs` unit above can be used to describe size of any html element like any other css unit `em`, `px`, or `rem`. 
+
+##### Example:
+
+```css
+.square {
+    width: calc(20 * var(--fs));
+    height: calc(20 * var(--fs));
+    font-size: calc(20 * var(--fs) / 5); /* font size is pinned to the width of the element */
+}
+```
+
+However, the scaling of element and the text within will occur intrinsically according to the size of the element. 
+
+### Demo
+View [CSS is Awesome](https://codepen.io/marvindanig/pen/bGGRZdE) example with intrinsic scaling.
+
+
+
 
