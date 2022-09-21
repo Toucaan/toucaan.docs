@@ -31,7 +31,7 @@ Since desktop browsers are viewed in landscape mostly, the formula for `--fs` is
 ```
 
 ### Blockscoped Scaling
-Now the `--fs` unit above can be used to describe size of any html element like any other css unit `em`, `px`, or `rem`. 
+Now the `--fs` unit above can be used to describe any html element size like any other css unit `em`, `px`, or `rem`. 
 
 ##### Example:
 
@@ -43,10 +43,12 @@ Now the `--fs` unit above can be used to describe size of any html element like 
 }
 ```
 
-However, the scaling of element and the text within will occur intrinsically according to the size of the element. 
+Observe the scaling of element and the text within. The text size would be pinned intrinsically to the size of the element. 
 
-### Demo
+### Demos
 View [CSS is Awesome](https://codepen.io/marvindanig/pen/bGGRZdE) example with intrinsic scaling.
+
+View the [homepage of Red Goose](https://goose.red) that demonstrates intrinsic scaling.
 
 
 

@@ -4,16 +4,16 @@ sidebar_position: 3
 
 # Configuration
 
-One of the important ways Toucaan is different from other css frameworks is that it _does not use_ a typical link…
+One of the important ways Toucaan is different from other css frameworks is that it **does not use a typical link**…
 
 > `<link href="path/to/stylesheet.css" rel="stylesheet"/>` 
 
-…tag to connect to your app's HTML with the stylesheets. 
+…**tag to connect to your app's HTML with the stylesheet**. 
 Toucaan uses a **css router** instead. 
 
 :::info CSS @imports 
 
-Notice the use of asynchronous CSS @imports below in the routing code. The appropriate stylesheet is _prioritized_ and served to the browser according to the matched orientation of the viewport and route in observance. 
+Notice the use of asynchronous CSS @import in the routing code below. The appropriate stylesheet is _prioritized_ and served to the browser according to the matched orientation and type of the viewport. 
 
 Read more about Toucaan's [css router](core-concepts/router.md) and its implementation for intrinsic design.
 :::
@@ -93,9 +93,7 @@ Consider the following [code](https://github.com/Toucaan/toucaan/blob/master/_co
     }
 </style>
 ```
-The basic configuration shown above is included with the Toucaan submodule. Make sure that the routes to the router files [portrait.css, landscape.css] are correct and accessible on the server.
+The basic configuration shown above is included with the Toucaan submodule. Make sure that the path to assets (i.e. files like portrait.css, landscape.css, and other distribution files) are correct and accessible via the server.
 
 Go to the next chapter and set [Environment Variables](./environment.md).
 
-##### Contribute to this page?
-Open `docs/configuration.md` and edit or add the lines you wish to. The site **reloads automatically** and displays your changes.
