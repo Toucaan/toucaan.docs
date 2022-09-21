@@ -4,9 +4,9 @@ sidebar_position: 1
 
 # Framework Overview
 
-Toucaan organizes all of the css required for your application within its framework folders. There is no separate `normalize`, `reboot`, or `reset` that is imported into the application from outside.
+Toucaan organizes all of the css required by your application within its framework folders. There is no separate stylesheet or `normalize`, or `reboot`, or `reset` that is imported from the outside into the application.
 
-Everything that is used lives within the premise of the application.
+Everything that is used by an app, lives in the app.
 
 ```bash
 project-root
