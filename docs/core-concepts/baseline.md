@@ -4,9 +4,9 @@ sidebar_position: 6
 
 # Baseline Assets
 
-Unlike traditional css frameworks, Toucaan does not use a heavy reset or normalize. It uses a very small set of pre-configured baseline assets to ensure cross-browser consistency. 
+Unlike traditional css frameworks, Toucaan does not use a heavy reset or normalize. It uses a very small set of pre-opted baseline css to ensure cross-browser consistency. 
 
-For example, the following two blocks of code are added in the style tag of your document at head level, like so: 
+For example, only the following two blocks of code are added by default, like so: 
 
 ```css title="baseline.css > html element"
 
@@ -40,14 +40,14 @@ For example, the following two blocks of code are added in the style tag of your
         font-display: swap;
         font-display: optional;
 
-        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        -webkit-tap-highlight-color: var(--black);
         -webkit-backface-visibility: hidden;
 
         line-height: calc(1.5 * 4 * var(--vmin));  /* Or 1.5 */
 
-        /* Colors + contrast (These go into the color palette.) */
-        color: var(--foreground-primary);
-        background-color: var(--background);
+        /* Colors  (These go into the color palette.) */
+        color: var(--lightmode-primary-text-color:);
+        background-color: var(--lightmode-primary-background-color);
 
         /* Dimensions */
         border: none;
@@ -64,9 +64,7 @@ For example, the following two blocks of code are added in the style tag of your
 
 ```
 
-
-
-Intrinsic design relies on the fact that the modern web browsers have evolved to a point where a heavy-handed reset or a massive CSS normalization is no longer required.
+Toucaan relies on the fact that the modern web browsers have evolved to a point where a heavy-handed reset or massive CSS normalization is no longer required. 
 
 
 

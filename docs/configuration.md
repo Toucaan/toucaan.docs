@@ -4,11 +4,11 @@ sidebar_position: 3
 
 # Configuration
 
-One of the important ways Toucaan is different from other css frameworks is that it **does not use a typical link**…
+One of the several ways Toucaan is different from other traditional css frameworks is that it **does not use a typical link**…
 
 > `<link href="path/to/stylesheet.css" rel="stylesheet"/>` 
 
-…**tag to connect to your app's HTML with the stylesheet**. 
+…**tag to connect stylesheets to your app's HTML**. 
 Toucaan uses a **css router** instead. 
 
 :::info CSS @imports 
