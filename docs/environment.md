@@ -4,20 +4,24 @@ sidebar_position: 4
 
 # Environment Variables
 
-Sprinkling css into an app is much like setting up the **Environment Variables** for your app to render correctly on the client side. While controlling the environment on the client-side may sound like a powerful thing for a developer to lift, the sheer number of properties and options available make it a formidable task to manage without proper literature.
+Toucaan considers sprinkling css into the mix is like setting up the **environment variables for your app to render correctly on the client side**. It's a part of the responsibilities that a frontend developer must bear. While this may sound like a powerful thing for the developer to lift, the sheer number of options available to configure each time makes it a formidable task.
 
-Toucaan makes it easy to organize and manage the css environment(s) but with essential care.
+With Toucaan you can organize and manage _all_ of the environment related possibilities from one place.
 
 ## Vendor Normalization
-Expand the `env` folder inside the `toucaan` submodule.
+Vendor inconsistencies form the first soft layer of environment variables that your app must configure. Unlike other css frameworks, Toucaan doesn't use a brute force `reset` or `normalize` to bulldoze the browser. 
+
+**Toucaan uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.**
+
+Expand the `env` folder with your Toucaan submodule. Inside you'll see two subfolders named `helpers` and `tags`, each carrying some default styles for a few `html` tags and `psuedos` that most applications require. 
 
 ![Environment architecture](./img/env-folders.jpg)
 
-Inside the `env` folder you'll find subfolders named `helpers` and `tags`, each carrying style for a few `html` tags and `psuedos` that most applications would require. You can customize it according to the html vocabulary of your app.
+You can customize each according to the vocabulary of your app.
 
 ### Desktop example
 
-This is how the environment for Desktop browser is set from within the `app/desktop` folder.
+This is how the environment for a desktop browser is set:
 
 ```css title="Open ./toucaan/app/desktop/desktop.scss"
 /* Notch handling isn't required on desktops. Delete the line below: */
@@ -36,6 +40,11 @@ This is how the environment for Desktop browser is set from within the `app/desk
 
 /* and so on… */
 ```
+
+:::caution
+Remember that the desktop browser environment usually falls on the landscape axis of intrinsic design, whereas the mobile environment would fall on the portrait axis.
+:::
+
 
 ### Mobile example
 Similarly, the environment of mobile phones is set like so:
