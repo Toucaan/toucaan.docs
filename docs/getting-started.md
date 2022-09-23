@@ -4,11 +4,13 @@ sidebar_position: 1
 
 # Getting Started
 
-The first step is to add Toucaan to your project. 
+### Installation
+
+Add Toucaan to your project, like so: 
 
 
 
-```bash title="./your/project/root/:"
+```bash title="in/your/project/at/root/"
 git submodule add https://github.com/Toucaan/toucaan
 ```
 
@@ -16,11 +18,11 @@ The command above will add Toucaan to your project like a [git submodule](https:
 
 Now you can start **implementing your app's multiple frontends** with Toucaan. 
 
-Go to the next step and [install](./installation.md) a `sass` preprocessor.
+Go to the next step and [set up](./preprocessor) the `sass` preprocessor.
 
 
 :::tip
-Recommended to review the [Architecture of Toucaan](core-concepts/architecture). The core concepts are important!
+Review the [Architecture of Toucaan](core-concepts/architecture)? Read through the core concepts quickly!
 :::
 
 :::caution
