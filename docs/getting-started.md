@@ -30,4 +30,4 @@ This is an early version of Toucaan (< 1.0.0). Our documentation and tooling is 
 :::
 
 :::info Inline Documentation
-Toucaan's [sourcecode](https://github.com/Toucaan/toucaan) is thoroughly documented in-line to help you configure the css of your application easily with proper understanding. Questions or contributions on the same are most welcome.
+Toucaan's [sourcecode](https://github.com/Toucaan/toucaan) is also documented in-line. Contributions and improvements are very welcome.

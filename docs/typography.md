@@ -4,11 +4,14 @@ sidebar_position: 7
 
 # Intrinsic Typography
 
-Toucaan uses just one [utility variable](./variables.md) called the `--fs` to scale **all content**. 
+Toucaan utilizes a singular [utility variable](./variables.md) called the `--fs` to scale **all content**. `--fs` stands for font-size here.
 
-`--fs` stands for font-size.
+The value of `--fs` is determined by the nature of device under test using the [basis of viewport squarishness](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). 
 
-The value of `--fs` is set according to the nature of device under test using the formula of [viewport squarishness](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). 
+:::warning Pending documentation
+More documentation w.r.t typesetting, typography, and scaling components to come here later. 
+:::
+
 
 
 ## Desktop 

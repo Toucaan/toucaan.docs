@@ -16,20 +16,19 @@ Toucaan uses the [baseline method](https://bubblin.io/blog/baseline-css) instead
 
 ![Environment architecture](./img/env-folders.jpg)
 
-Inside the `env` folder you'll find two subfolders named `helpers` and `tags`, each carrying some default styles for a few `html` tags and `psuedos` that most applications require. 
+Inside the ENV folder you'll find two subfolders named `helpers` and `tags` each carrying a few default reset type of rules, but only for baseline tags and a few pseudo-classes that most applications often require. 
 
-
-You can customize each according to the vocabulary of your app.
+This can customized according to the HTML vocabulary of your app.
 
 ### Desktop
 
-This is how the environment for a desktop browser is set:
+This is how the environment for a desktop browser is _reset_:
 
 ```css title="Open ./toucaan/app/desktop/desktop.scss"
-/* Notch handling isn't required on desktops. Delete the line below: */
+/* Notch handling isn't required on desktops. */
 /* @import '../../accessibility/notch';  */
 
-/* ~ Other css and type defaults here */
+/* ~ Other css and typeset defaults come here */
 
 /* Notice the first Environment Variable. */
 @import '../../env/helpers/universal'; 
@@ -44,14 +43,15 @@ This is how the environment for a desktop browser is set:
 ```
 
 :::tip
-Remember that a browser on a desktop usually displays on the landscape axis of intrinsic design whereas mobile displays on the portrait axis.
+Remember that the browser on a desktop usually displays along the landscape-axis of intrinsic design whereas mobile does so along the portrait-axis.
 :::
 
 
-### Mobile example
-Similarly, the environment of mobile phones is set like so:
+### Mobile 
+Like with the desktop, the environment of a mobile browser is set like so:
 
 ```css title="Open ./toucaan/app/mobile/mobile.scss"
+/* Read more about the notch → https://bubblin.io/blog/notch */
 @import '../../accessibility/notch'; 
 
 /* ~ Other css and type defaults here */
@@ -69,7 +69,7 @@ Similarly, the environment of mobile phones is set like so:
 ```
 
 :::tip
-Start small with just desktop environment initially. Take it a step further to supporting mobile next, and so on until you cover the remaining scope of Intrinsic Design.
+Configure just the desktop environment first. Take it forward from there, and build support for the mobile next, and so on until you cover all the devices on the web or the entire scope of Intrinsic Design.
 :::
 
 

@@ -6,8 +6,9 @@ sidebar_position: 3
 
 Toucaan has a different way of connecting stylesheets to your app's HTML. Unlike traditional css frameworks, Toucaan **does not use** a typical link tag in the `<head></head>` of the webpage.
 
-
-> `<link href="path/to/stylesheet.css" rel="stylesheet"/>` ← ❌ DO NOT USE!
+:::warning No link tag!
+`<link href="path/to/stylesheet.css" rel="stylesheet"/>` ← ❌ DO NOT USE!
+:::
 
 Toucaan uses [a css router](core-concepts/router.md) instead. 
 
