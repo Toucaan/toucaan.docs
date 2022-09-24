@@ -3,16 +3,15 @@ sidebar_position: 2
 ---
 
 # Preprocessor (SASS)
-By default Toucaan uses the [sass-lang](https://sass-lang.com/) pre-processor to output stylesheets for the the different type of devices on the web (See `webpack` example below). Since each web framework is different and follows a slightly different path or conventions, setting up the preprocessing pipeline with `sass` or another tool like `LESS` or `Stylus` is left to the author as an exercise.
+By default Toucaan uses the [sass-lang](https://sass-lang.com/) pre-processor to output stylesheets for the the different type of devices on the web (see the `webpack` example below). Since each web framework is different and follows a slightly different set of conventions, setting up the preprocessing pipeline with `sass` or another tool like `LESS` or `Stylus` is left to the author as an exercise.
 
 
 
 ### Webpack  
 Displayed below is sample `webpack` config for a typical `node/express` app.
 
-:::tip
-
-Notice that Toucaan requires separate stylesheets for the desktop, tablet, mobile, and any other type of device on the web that you wish to support. Read about the [Intrinsic Approach to Design](./core-concepts/space.md) adopted by Toucaan.
+:::info
+Notice that Toucaan outputs separate stylesheets for the desktop, tablet, mobile, and other types of devices on the web that you wish to support. Read about the [Intrinsic Approach to Design](./core-concepts/space.md) adopted by Toucaan.
 
 :::
 

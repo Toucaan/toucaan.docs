@@ -4,26 +4,16 @@ sidebar_position: 3
 
 # HTML Configuration
 
-Toucaan has different way of connecting stylesheets to your app's HTML. Unlike traditional css frameworks, it **does not use** a typical link tag in the `<head></head>` of the webpage.
+Toucaan has a different way of connecting stylesheets to your app's HTML. Unlike traditional css frameworks, Toucaan **does not use** a typical link tag in the `<head></head>` of the webpage.
 
-> ❌ `<link href="path/to/stylesheet.css" rel="stylesheet"/>` 
+
+> `<link href="path/to/stylesheet.css" rel="stylesheet"/>` ← ❌ DO NOT USE!
 
 Toucaan uses [a css router](core-concepts/router.md) instead. 
 
-:::info CSS @imports 
+Consider the following [block of code](https://github.com/Toucaan/toucaan/blob/master/_config.scss) that is placed directly into your document's `<head></head>` tag:
 
-Notice the use of asynchronous CSS @import in the routing code below. The appropriate stylesheet is _prioritized_ and served to the browser according to the intrinsic properties of the matched viewport. 
-
-Read more about Toucaan's [css router](https://bubblin.io/blog/a-css-router) and its implementation for intrinsic design.
-:::
-
-:::info SASS @imports 
-Toucaan also uses SASS imports but only at the level of user-defined styles. 
-:::
-
-Consider the following [block of code](https://github.com/Toucaan/toucaan/blob/master/_config.scss) within the `<style></style>` tag that is placed directly into your document's head:
-
-```css title="Put the following code inside your document's <head></head> tag."
+```css title="Put the following code inside your document's head."
 
 <style>
     /* Always set Charset. Recommended reading: https://www.w3.org/International/questions/qa-css-charset.en */
@@ -110,7 +100,19 @@ Consider the following [block of code](https://github.com/Toucaan/toucaan/blob/m
 }
 </style>
 ```
-The basic configuration shown above is included with the Toucaan submodule. Make sure that the path to assets i.e. files like portrait.css, landscape.css, and other stylesheets for distribution is correct and accessible via the server.
+
+:::info CSS @imports 
+Notice the use of asynchronous CSS @import in the routing code below. The appropriate stylesheet is _prioritized_ and served to the browser according to the intrinsic properties of the matched viewport. 
+
+Read more about Toucaan's [css router](https://bubblin.io/blog/a-css-router) and its implementation for intrinsic design.
+:::
+
+:::info SASS @imports 
+Toucaan also uses SASS imports but only at the level of user-defined styles. 
+:::
+
+
+The basic configuration shown above is included with the Toucaan submodule. Make sure that the path to the router assets i.e. files like portrait.css, landscape.css, and the compiled assets i.e. other stylesheets for device specific distribution is correct and accessible over the server.
 
 Go to the next chapter and set up the [Environment Variables](./environment.md).
 

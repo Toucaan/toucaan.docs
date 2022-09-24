@@ -4,22 +4,24 @@ sidebar_position: 4
 
 # Environment Variables
 
-Toucaan considers sprinkling css into the mix is like setting up the **environment variables for your app to render correctly on the client side**. It's a part of the responsibilities that a frontend developer must bear. While this may sound like a powerful thing for the developer to lift, the sheer number of options available to configure each time makes it a formidable task.
+Sprinkling css into an app is a lot like configuring the **environment variables for your app to render correctly on the client side**. It is a part of the responsibilities that a frontend developer must bear. While it may sound like a powerful thing for the developer to lift, the sheer number of options and properties available to configure make it a formidable task.
 
-With Toucaan you can organize and manage _all_ of the environment related possibilities from one place.
+Toucaan helps organize and manage _all_ possibilities of the environment from one place.
 
 ## Vendor Normalization
-Vendor inconsistencies form the first soft layer of environment variables that your app must configure. Unlike other css frameworks, Toucaan doesn't use a brute force `reset` or `normalize` to bulldoze the browser. 
+Handling vendor inconsistencies up close forms the first soft layer of environment configuration that Toucaan must manage for you. Traditional css frameworks require a `reset.css`, `reboot.css`, or `normalize.css` to be included before any other styles or framework defaults can be included. Toucaan **doesn't use this** strategy. 
 
-**Toucaan uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.**
+Toucaan uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.
 
-Expand the `env` folder with your Toucaan submodule. Inside you'll see two subfolders named `helpers` and `tags`, each carrying some default styles for a few `html` tags and `psuedos` that most applications require. 
 
 ![Environment architecture](./img/env-folders.jpg)
 
+Inside the `env` folder you'll find two subfolders named `helpers` and `tags`, each carrying some default styles for a few `html` tags and `psuedos` that most applications require. 
+
+
 You can customize each according to the vocabulary of your app.
 
-### Desktop example
+### Desktop
 
 This is how the environment for a desktop browser is set:
 
@@ -41,8 +43,8 @@ This is how the environment for a desktop browser is set:
 /* and so on… */
 ```
 
-:::caution
-Remember that the desktop browser environment usually falls on the landscape axis of intrinsic design, whereas the mobile environment would fall on the portrait axis.
+:::tip
+Remember that a browser on a desktop usually displays on the landscape axis of intrinsic design whereas mobile displays on the portrait axis.
 :::
 
 
@@ -70,14 +72,13 @@ Similarly, the environment of mobile phones is set like so:
 Start small with just desktop environment initially. Take it a step further to supporting mobile next, and so on until you cover the remaining scope of Intrinsic Design.
 :::
 
-## Configuration
-In the last chapter we were introduced to the `_config.scss` file that Toucaan requires to link stylesheets with the app's HTML.
 
+## The Color Palette
+
+### Configuration
+In the last chapter we were introduced to the `_config.scss` file that Toucaan requires to link stylesheets with the app's HTML.
 
 Break down your default styling strategy into smaller device-compatible units that are uniquely configurable. For example, handling the notch on a few common smart phones isn't a concern for the desktop css. 
 
-## Color Palette
 Decide on a color palette, choose the right typefaces or host a font-family yourself, typeset with a few sane initial defaults, paint a selection or inactive state color–there are so many css configurations possible! 
 
-## Inline Documentation
-Toucaan's [submodule](https://github.com/Toucaan/toucaan) comes with in-line documentation throughout in order to help you configure the css of your application easily with proper understanding. Questions or contributions on the same are most welcome.

@@ -28,3 +28,6 @@ Review the [Architecture of Toucaan](core-concepts/architecture)? Read through t
 :::caution
 This is an early version of Toucaan (< 1.0.0). Our documentation and tooling is in the state of flux and you're likely to encounter a few breaking changes in the next few weeks. 
 :::
+
+:::info Inline Documentation
+Toucaan's [sourcecode](https://github.com/Toucaan/toucaan) is thoroughly documented in-line to help you configure the css of your application easily with proper understanding. Questions or contributions on the same are most welcome.
