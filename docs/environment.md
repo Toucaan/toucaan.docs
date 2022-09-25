@@ -73,12 +73,10 @@ Configure just the desktop environment first. Take it forward from there, and bu
 :::
 
 
-## The Color Palette
-
 ### Configuration
-In the last chapter we were introduced to the `_config.scss` file that Toucaan requires to link stylesheets with the app's HTML.
+Part of the configuration options provided in the `_config.scss` file (see the [last chapter](./configuration.md)) are also environment related properties. 
 
-Break down your default styling strategy into smaller device-compatible units that are uniquely configurable. For example, handling the notch on a few common smart phones isn't a concern for the desktop css. 
+Decide on a color palette, choose the right typeface(s), host the type or otherwise, apply initial defaults, paint a color for text selection in active and inactive states, and so on. The key is to break it down into small piece and config as you build intrinsic UX/UI for each device category as you go along.
 
-Decide on a color palette, choose the right typefaces or host a font-family yourself, typeset with a few sane initial defaults, paint a selection or inactive state color–there are so many css configurations possible! 
 
+Go to the next chapter on [Intrinsic Typography](./typography).

@@ -4,9 +4,9 @@ sidebar_position: 7
 
 # Intrinsic Typography
 
-Toucaan utilizes a singular [utility variable](./variables.md) called the `--fs` to scale **all content**. `--fs` stands for font-size here.
+Toucaan utilizes a singular [utility variable](./variables.md) called the `--fs` to scale **all** content. The value of the `--fs` unit is determined by the nature of device being served using the [criteria of viewport squarishness](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). 
 
-The value of `--fs` is determined by the nature of device under test using the [basis of viewport squarishness](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). 
+The variable name `--fs` stands for Font Size here.
 
 :::warning Pending documentation
 More documentation w.r.t typesetting, typography, and scaling components to come here later. 
@@ -49,9 +49,9 @@ Now the `--fs` unit above can be used to describe any html element size like any
 Observe the scaling of element and the text within. The text is always pinned to the intrinsic size of the element. 
 
 ### Demos
-View the [CSS is Awesome](https://codepen.io/marvindanig/pen/bGGRZdE) example with intrinsic scaling.
+See the [CSS is Awesome](https://codepen.io/marvindanig/pen/bGGRZdE) example with intrinsic scaling.
 
-View the [homepage of Red Goose](https://goose.red) that demonstrates intrinsic scaling.
+View the [Homepage of Red Goose](https://goose.red) that demonstrates intrinsic scaling.
 
 
 
