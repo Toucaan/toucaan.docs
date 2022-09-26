@@ -4,23 +4,23 @@ sidebar_position: 2
 
 # The Design Space
 
-The Intrinsic approach to design adopted by Toucaan caters to the [full scope of the new web](https://bubblin.io/blog/the-new-landscape-of-the-web). 
-
-It allows creation of interfaces that suit the new devices on the web like the electric vehicles, foldable tablets, smart watches, and many more without use of hardcoded MQ breakpoints. Designing "contextually relevant" interfaces helps the developer find the right solution according to the accessibility situation and intrinsic capability of a device. 
+Toucaan is an Intrinsic Approach to Design. It allows creation of interfaces that exploit the intrinsic capabilities of the medium. By designing "contextually relevant" experiences, the developer not only finds the right solution for a given medium but also they address the accessibility situation in a meaningful way. 
 
  
 ### The Axes of Intrinsic Design 
 
 Toucaan's architecture is a simple implementation of the routes required along the [two axes of intrinsic design](/blog/intrinsic-design). 
-Below is a map of all the web-enabled devices plotted along the two axes in the increasing order of physical size. 
+Below is a plot of all the web-enabled devices plotted along the two axes in the increasing order of physical size. 
 
 ![Toucaan's Intrinsic Design Space](img/intrinsic-design-space.jpg)
 
 ### How is it different from Responsive Design?
 
-From the diagram above, one can see that the intrinsic approach is considerably different from responsive. Unlike with the responsive web design, the intrinsic approach uses a css router (see the [next chapter](router.md)) to separate stylesheets for various mediums instead of the width based hard-coded MQ breakpoints, for example. 
+From the diagram above, one can see that the intrinsic space is considerably larger than the responsive one. Unlike with the responsive web design, the intrinsic approach uses a css router (see the [next chapter](router.md)) to separate stylesheets for various mediums .No hard-coded MQ breakpoints are used, for example. 
 
-Intrinsic does not even consider mobile and desktop on the same axis of design. Mobile is on the `y-axis` of design orientation, whereas the desktop is on the `x`, and therefore the designer is expected to _not_ work on both mockups together with a break point to switch between the two. 
+Intrinsic does not even consider mobile and desktop on the same axis of design. Mobile is on the `y-axis` of intrinsic orientation, whereas the desktop is on the `x-axis`, and therefore the designer is expected to work on desktops and mobile separately without having they mockups switched with a break point between the two. 
+
+
 From the plot, it is easy to conclude that responsive design is all but one solution point in the overall design space of intrinsically capable mediums. 
 
 ### Is Toucaan a Design System?
