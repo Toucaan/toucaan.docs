@@ -3,7 +3,7 @@ sidebar_position: 1
 ---
 
 # Introduction
-Toucaan allows implementation of intrinsic app design using the web stack.
+Toucaan allows implementation of intrinsic app design for mobile apps using plain old HTML and CSS.
 
 
 There are several differences between a responsive designed website and a true mobile app. Not to mention the difference in performance due to modules that take advantage of the low-level system or simply an offline experience.
