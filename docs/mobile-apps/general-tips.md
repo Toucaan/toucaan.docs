@@ -70,7 +70,7 @@ There isn't much that the web cannot do today. ❤️
 
 4. No third party payments are allowed inside the App Store. Use in-app purchases for payment functionality on your app. Custom development may be required on case-to case basis.
 
-In general it is safe to state that any business can harmonize the design values between their webapp and mobile apps no matter what space they are in. It is your interest to not overdo or overbuild native functionality that would become a burden in future.
+In general it is safe to say that any web-app could be converted into a great looking and performant mobile app no matter what space of business they're in. It is in the app owner's interest to not overdo or overbuild native functionality so as to keep the maintenance cost low.
 
-Always explore the economical 'web only' option first, and only then jump into full-blown iOS or Android app development if so desired. Of course the latter option is not only going to cost much more to build, but also to maintain and operate alongside a separate webapp.
+Always consider the web-based option first!
 
