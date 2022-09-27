@@ -2,31 +2,34 @@
 sidebar_position: 2
 ---
 
-# The Design Space
+# 3. The Design Space
 
-Toucaan is an Intrinsic Approach to Design. It allows creation of interfaces that exploit the intrinsic capabilities of the medium. By designing "contextually relevant" experiences, the developer not only finds the right solution for a given medium but also they address the accessibility situation in a meaningful way. 
+Intrinsic approach to design is different from the responsive one in that it allows creation of interfaces that are **contextually relevant**—meaning, a befitting UX/UI that exploits the intrinsic capability of the medium. Interfaces that "belong to" a device.
+
+By designing for contextually relevant experiences, a developer not only finds the right solution for a given problem on a medium but also address the accessibility situation in a deeper meaningful way. 
+
+Toucaan is an implementation of the Intrinsic Approach to design.
 
  
 ### The Axes of Intrinsic Design 
 
-Toucaan's architecture is a simple implementation of the routes required along the [two axes of intrinsic design](/blog/intrinsic-design). 
-Below is a plot of all the web-enabled devices plotted along the two axes in the increasing order of physical size. 
+Toucaan's architecture is a simple implementation of the routes required along the [two axes of intrinsic design](/blog/intrinsic-design). Observe the plot below showing browser sporting web devices along the axes of intrinsic design in the **increasing order of physical size**. 
 
 ![Toucaan's Intrinsic Design Space](img/intrinsic-design-space.jpg)
 
-### How is it different from Responsive Design?
+### How is this different from Responsive Design?
 
-From the diagram above, one can see that the intrinsic space is considerably larger than the responsive one. Unlike with the responsive web design, the intrinsic approach uses a css router (see the [next chapter](router.md)) to separate stylesheets for various mediums .No hard-coded MQ breakpoints are used, for example. 
+From the plot above, one can see that the intrinsic space is considerably larger than the responsive one. In fact responsive design is just a subset of solutions within the intrinsic design space (marked with red-lines above).
 
-Intrinsic does not even consider mobile and desktop on the same axis of design. Mobile is on the `y-axis` of intrinsic orientation, whereas the desktop is on the `x-axis`, and therefore the designer is expected to work on desktops and mobile separately without having they mockups switched with a break point between the two. 
+Main difference are that an intrinsic implementation does not consider mobile web and desktop web on the same axis of design. Mobile falls on the `y-axis` or `portrait` axis of intrinsic design because most people hold and view mobile in portrait orientation, whereas the desktop falls on the `x-axis` or the `landscape` axis of intrinsic design. 
+
+Thusly, a designer doesn't need to correlate the two mediums or work out a functional relationship between the desktop and mobile views with a break point the two to switch. No consideration to switching of the context need be given.
+
+In fact, intrinsic design doesn't use hard-coded MQ breakpoints to switch stylistic presentation. The intrinsic approach uses a css router (see the [next chapter](router.md)) to separate stylesheets for different mediums on different axes of design. 
 
 
-From the plot, it is easy to conclude that responsive design is all but one solution point in the overall design space of intrinsically capable mediums. 
 
 ### Is Toucaan a Design System?
 
-Toucaan is not a single design system. It is rather a conventional css framework with handpicked lessons from several sources. Toucaan is a logical approach to the art of application design that is much better at scaling and easier to maintain over the years.
+Toucaan is not a single design system. It is rather a vanilla css framework with handpicked lessons from several sources. Toucaan is also a recipe in motion with a perpetual aim of being better at accessibility, scaling, and maintainability over the years.
 
-Read more about intrinsic design and the core-concepts of [a css router](https://bubblin.io/blog/a-css-router) for an in-depth analysis. 
-
-Open `space.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.

@@ -2,13 +2,13 @@
 sidebar_position: 6
 ---
 
-# Baseline Assets
+# 5. Baseline Assets
 
-Unlike traditional css frameworks, Toucaan does not use a heavy reset or normalize. It uses a very small set of pre-opted baseline css to ensure cross-browser consistency. 
+Unlike traditional css frameworks, Toucaan does not use a `normalize.css` or reset css file to override browser defaults. Toucaan baselines on a very small set of pre-opted rules to ensure a **starting point for cross-browser consistency**. 
 
-For example, only the following two blocks of code are added by default, like so: 
+For a start, only the following two blocks of code are added by default, like so: 
 
-```css title="baseline.css > html element"
+```css title="baseline.css = * + <html> + <body> elements"
 
     html {
         /* Always set the background color */
@@ -64,9 +64,8 @@ For example, only the following two blocks of code are added by default, like so
 
 ```
 
-Toucaan relies on the fact that the modern web browsers have evolved to a point where a heavy-handed reset or massive CSS normalization is no longer required. 
+Toucaan relies on the fact that the modern web browsers have evolved to a point where a heavy-handed reset or generic normalization is no longer required. 
 
+### Environment Variables
 
-
-
-https://github.com/Toucaan/toucaan/blob/master/toucaan/router/portrait.css
+Vendor normalization is considered a part of initial framework configuration or setting up of the [environment variables](../environment.md). The author is expected to set baseline rules for _only_ the tags they formally use in their application. 
