@@ -4,23 +4,23 @@ sidebar_position: 2
 
 # General Tips
 
-The list below is in not exhaustive but will set you somewhat on the right path:
+The list below is in not exhaustive but will somewhat set you in the right direction:
 
-1. Think of your website's mobile UX/UI as the interface of the app.
+1. Design for mobile apps but implement the components using HTML and CSS only. JS must be the last resort!
 
-2. Design for native mobile apps but implement the components using properties HTML and CSS only. 
+2. Think of your mobile website as the interface of your mobile app in fullscreen mode. 
 
-3. Use intrinsic scaling to scale content (text, images, etc.).
+3. Use intrinsic scaling to scale content (text, images, etc.). See [intrinsic typography](./../typography.md) and [utility variables](./../variables.md).
 
 4. Use flexbox or grids for layouts. 
 
-5. Enable strongly page-level caching using a serviceworker. Going PWA is a must!
+5. Default to PWA architecture. Enable strong page-level caching using a service-worker.
 
 6. Optimize for the returning user instead of new user acquisition.
 
 7. Use only a subset of your desktop workflow within you app workflow. Keep it simple. 
 
-8. The Point of Entry (POE) for your app and the point of entry of your web app are not the same. Always use the login page as the POE of your mobile app unless you know what you're doing.
+8. The Point of Entry (POE) for your app and the point of entry of your web app are not the same. Use the `/login` page as the POE of your mobile app unless you know what you're doing.
 
 ### Example:
 

@@ -5,7 +5,7 @@ sidebar_position: 1
 # Introduction
 Toucaan makes it possible to create "app-like" layouts for mobile apps using plain old HTML and CSS. 
 
-The central idea of [intrinsic design](../../blog/2022-08-10-intrinsic-web-design/) is to create user interfaces that "belong to" a device, and what better way for an app to belong to mobile than by making its user experience truly app-like. 
+The central idea of [intrinsic design](https://toucaan.com/blog/intrinsic-web-design) is to create user interfaces that "belong to" a device, and what better way for an app to belong to mobile than by making its user experience truly app-like. 
 
 ### Responsive Design
 There are a number of differences between a responsively designed mobile website and a mobile app. Not to mention the differences in localized performance due to app taking advantage of a low-level system at hand or simply an offline experience.
