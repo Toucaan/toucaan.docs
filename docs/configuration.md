@@ -103,9 +103,9 @@ Consider the following [block of code](https://github.com/Toucaan/toucaan/blob/m
 ```
 
 :::info CSS @imports 
-Notice the use of asynchronous CSS @import in the routing code below. The appropriate stylesheet is _prioritized_ and served to the browser according to the intrinsic properties of the matched viewport. 
+Notice the use of asynchronous CSS @import in the routing code above. The appropriate stylesheet is _prioritized_ and served to the browser according to the matched _class_ of device. 
 
-Read more about Toucaan's [css router](https://bubblin.io/blog/a-css-router) and its implementation for intrinsic design.
+Read more about Toucaan's [css router](https://bubblin.io/blog/a-css-router) and its implementation philosophy.
 :::
 
 :::info SASS @imports 

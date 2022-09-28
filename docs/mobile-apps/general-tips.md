@@ -60,7 +60,7 @@ There isn't much that the web cannot do today. ❤️
 
 21. Sometimes Apple or Google will reject your app for a seemingly ad-hoc reason. Look at the reasons provided by them for such a rejection, alleviate those issues (or appeal) and re-submit your app for approval. This is the normal process.
 
-## The Donts
+## The Don'ts
 
 1. No footer with links. An app screen will never carry a footer like a website does. Try and create a page for the collection of footer links and provide just one inconspicuous link to such a page (view).
 
@@ -68,9 +68,9 @@ There isn't much that the web cannot do today. ❤️
 
 3. No third party or competitor branding (like an Android logo inside an iOS app) or names must be present on your app. Apple & Google are extremely sensitive about this.
 
-4. No third party payments are allowed inside the App Store. Use in-app purchases for payment functionality on your app. Custom development may be required on case-to case basis.
+4. No third party payments are allowed inside the App Store. Use in-app purchases for payment functionality on your app. Custom development may be required on case-to-case basis for this.
 
-In general it is safe to say that any web-app could be converted into a great looking and performant mobile app no matter what space of business they're in. It is in the app owner's interest to not overdo or overbuild native functionality so as to keep the maintenance cost low.
+In general, it is safe to say that any web-app could be published like a mobile app no matter which line of business they are in. It is in the owner's interest to not overdo or overbuild native functionality in parallel to what exists on their web app already. 
 
 Always consider the web-based option first!
 
