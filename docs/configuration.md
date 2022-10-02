@@ -6,8 +6,8 @@ sidebar_position: 3
 
 Toucaan has a different way of connecting stylesheets to your app's HTML. Unlike traditional css frameworks, Toucaan **does not use** a typical link tag in the `<head></head>` of the webpage.
 
-:::warning No link tag!
-`<link href="path/to/stylesheet.css" rel="stylesheet"/>` ← ❌ DO NOT USE!
+:::warning Do not use the link tag!
+`<link href="path/to/stylesheet.css" rel="stylesheet"/>`  ❌ 
 :::
 
 Toucaan uses [a css router](core-concepts/router.md) instead. 
@@ -23,6 +23,7 @@ Consider the following [block of code](https://github.com/Toucaan/toucaan/blob/m
     /* Use font-subsetting whenever possible */
     @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap&text="RedGosithub"'); 
 
+    /* Router level-0 Start*/
     :root {
         /* Do not remove or alter the lines within this block     */
         /* Recommended reading: https://bubblin.io/blog/a-css-router */
@@ -33,8 +34,9 @@ Consider the following [block of code](https://github.com/Toucaan/toucaan/blob/m
     /* Portrait ⇋ landscape intrinsicality switch. */
     @import url(var(--portrait-axis)) screen and (orientation: portrait);
     @import url(var(--landscape-axis)) screen and (orientation: landscape);
+    /* Router level-0 End*/
 
-    /* --vmin stands for base unit of intrinsic blockscoped typography. */
+    /* --vmin is a utility variable for the base unit of intrinsic blockscoped typography. */
     @media only screen and (orientation: portrait) {
         :root {
             /* Fallback if vmin is not supported. */
