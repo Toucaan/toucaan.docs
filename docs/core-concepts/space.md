@@ -31,5 +31,5 @@ In fact, intrinsic design doesn't use hard-coded MQ breakpoints to switch stylis
 
 ### Is Toucaan a Design System?
 
-Toucaan is not a single design system. It is rather a vanilla css framework with handpicked lessons from several sources. Toucaan is also a recipe in motion with a perpetual aim of being better at accessibility, scaling, and maintainability over the years.
+Toucaan is an _all-encompassing highly scalable design system_. It aims to cover more mediums on the web than ever before with a focus on accessibility, scaling, and maintainability over the years. To sum it up, Toucaan is a recipe in motion with a perpetual aim of being better at supporting all kinds of web devices.
 

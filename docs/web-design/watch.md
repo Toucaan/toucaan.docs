@@ -9,8 +9,7 @@ Designing for the tiniest form-factor on the web has a few unique challenges.
 
 ### 1. Extreme Minimalism
 
-The first thing to internalize about an Apple Watch is that it is the _tiniest_ screen on Earth with a decent web browser (webkit). And yet, despite its small size, the resolution it comes in is similar to that of a smartphone. A petite Apple Watch for women, for example,
-is only 40mm in size, but it resolves to 324px x 394px. That's on the lower-end of the width for a smartphone in absolute pixels. 
+The first thing to internalize about an Apple Watch is that it is the _tiniest_ screen on Earth with a decent web browser (webkit). And yet, despite its small size, the resolution it comes in is similar to that of a smartphone. A petite Apple Watch, for example, is only 40mm in size, but it resolves to 324px x 394px. That's on the lower-end of width that a smartphone has in absolute pixels. 
 
 ![Watch Dimensions](./img/viewport-dimensions-apple-watch.jpeg "The real estate on an Apple Watch in portrait orientation.")
 
@@ -104,7 +103,7 @@ Unless absolutely necessary, avoid form submission over the watch. Some form ele
 As expected of a tiny screen, the form controls move the screen into fullscreen mode at each input. This means that it is important to label your form elements correctly and have the appropriate ARIA roles attached to the fields so that users know what they’re doing while filling up the form.
 
 
-### Conclusion
+### 11. Conclusion
 
 Now that you understand the Apple Watch better, you can design a better looking and a more accessible page with Toucaan for your users. Go for it!
 
