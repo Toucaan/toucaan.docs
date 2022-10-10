@@ -3,8 +3,13 @@ sidebar_position: 2
 ---
 
 # Preprocessor (SASS)
-By default Toucaan uses the [sass-lang](https://sass-lang.com/) pre-processor to output stylesheets for the the different type of devices on the web (see the `webpack` example below). Since each web framework is different and follows a slightly different set of conventions, setting up the preprocessing pipeline with `sass` or another tool like `LESS` or `Stylus` is left to the author as an exercise.
+Toucaan uses [sass-lang](https://sass-lang.com/) (default) to output user created stylesheets for your application. 
 
+You can output multiple stylesheets configured differently for each type of devices on the web (see the `webpack` example below) and restrict delivery of only contextually relevant css for a given medium. You can also configure Toucaan to deliver `mobile.css` to all the smartphone users and still use the `desktop.css` or the `tablet.css` as a backup layout.
+
+:::tip web frameworks
+Since each web framework is different and follows a slightly different set of conventions, setting up the preprocessing pipeline with `sass` or another preprocessor like `less` or `stylus` is left to the author as an exercise.
+:::
 
 
 ### Webpack  

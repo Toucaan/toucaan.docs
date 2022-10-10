@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 6
 ---
 
-# Desktop Design
+# Intrinsic Desktop
 
 Designing for the desktop could imply two things:
 

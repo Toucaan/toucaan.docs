@@ -1,8 +1,8 @@
 ---
-sidebar_position: 5
+sidebar_position: 3
 ---
 
-# Designing for Watch
+# Designing for the Watch
 
 
 Designing for the tiniest form-factor on the web has a few unique challenges.

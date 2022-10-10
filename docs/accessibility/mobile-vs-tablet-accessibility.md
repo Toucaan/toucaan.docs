@@ -2,4 +2,4 @@
 sidebar_position: 7
 ---
 
-# Other Web Devices
+# Mobile vs. Tablet 
