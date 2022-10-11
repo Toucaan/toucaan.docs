@@ -86,7 +86,7 @@ const config = {
             title: 'Learn',
             items: [
               {
-                label: 'Style Guide',
+                label: 'Getting Started',
                 to: 'docs/getting-started',
               },
               {
