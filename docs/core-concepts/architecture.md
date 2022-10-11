@@ -6,7 +6,7 @@ sidebar_position: 2
 
 ### Folder Structure
 
-Displayed below is the folder structure of how Toucaan will organize _all_ the css your application will require.
+Displayed below is the folder structure of how Toucaan will organize _all_ the css that your application will require.
 
 **"Everything that is used by an app, lives within the app!"**
 
