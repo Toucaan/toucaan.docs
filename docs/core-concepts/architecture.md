@@ -5,7 +5,11 @@ sidebar_position: 2
 # 2. The Architecture
 
 ### Folder Structure
-Displayed below is the folder structure of how Toucaan organizes _all_ css.
+
+Displayed below is the folder structure of how Toucaan will organize _all_ the css your application will require.
+
+**"Everything that is used by an app, lives within the app!"**
+
 
 ```bash
 project-root
@@ -44,12 +48,9 @@ project-root
 │   └── utils
 ```
 
-By design, Toucaan keeps all of the css required by your application in one place. Meaning, **everything that is used by an app, lives within the app!**
-
-
 ### Brief Explanation
 
-Toucaan follows a simple styling architecture that mirrors the reality of devices in the world today. It covers support for **[all the new devices on web](https://bubblin.io/blog/the-new-landscape-of-the-web) with a complete coverage of the [formal intrinsic design space](space.md)**. 
+Toucaan follows a simple styling architecture that mirrors the diversity of devices that are on the web today. It covers support for **[all the web devices possible](https://bubblin.io/blog/the-new-landscape-of-the-web) using the principles of [intrinsic design](space.md)**. 
 
 
 ### Quick Overview
@@ -59,5 +60,5 @@ Here is what its internal structure looks like with a File Explorer:
 ![Toucaan architecture](./img/toucaan-folders.jpg)
 
 
-Learn more about the **Formal Intrinsic Design Space** in the [next chapter](space.md).
+Learn more about the **Intrinsic Design Space** in the [next chapter](space.md).
 

@@ -32,4 +32,4 @@ Toucaan requires configuration of environment variables to ensure consistency ac
 
 Copy the contents of the folder `tags/baseline` and `helpers` into your local `env` folder, and you're all set.
 
-🔥
+You _did it yourself!_🔥

@@ -94,7 +94,7 @@ const config = {
                 to: 'docs/category/core-concepts',
               },
               {
-                label: 'The book',
+                label: 'The Toucaan Book (On Pre-order)',
                 to: 'https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig#frontmatter',
               }
             ],

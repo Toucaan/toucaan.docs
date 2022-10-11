@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Responsive or Intrinsic?
 
-[TODO: Editing.]
+[TODO: Editing required.]
 
 Responsive Web Design is merely a subset of Intrinsic Web Design. Responsive is limited to considering application design of mobile and desktop UI mostly, but it also does not recognize the fact that mobile UI is portrait UI on the y-axis of a rectangle whereas the desktop UI is landscape UI on the x-axis of a rectangle.
 

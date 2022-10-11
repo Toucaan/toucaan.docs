@@ -11,10 +11,9 @@ Toucaan has a different way of connecting stylesheets to your app's HTML.
 :::
 
 Unlike traditional css frameworks, Toucaan **does not use** a typical link tag in the `<head></head>` section of your webpage. It uses [a css router](core-concepts/router.md) instead. 
+Copy the following [block of code](https://github.com/Toucaan/toucaan/blob/master/_config.scss) and paste it directly into your document's head tag:
 
-Consider the following [block of code](https://github.com/Toucaan/toucaan/blob/master/_config.scss) that is copied directly into your document's `<head></head>` tag:
-
-```css title="Copy the following code in the <head></head> section."
+```css title="Critical CSS:"
 
 <style>
     /* Always set Charset. Recommended reading: https://www.w3.org/International/questions/qa-css-charset.en */
@@ -104,12 +103,12 @@ Consider the following [block of code](https://github.com/Toucaan/toucaan/blob/m
 </style>
 ```
 
-Notice the use of asynchronous CSS @import in the routing code above. The appropriate stylesheet is _prioritized_ and served to the browser according to the matched _class_ of device. 
+Notice the use of asynchronous CSS @import (not sass imports!) in the routing code above. The appropriate stylesheet is _prioritized_ and served to the browser according to the matched _class_ of device. 
 
 Read more about Toucaan's [css router](https://bubblin.io/blog/a-css-router) and its implementation philosophy.
 
 :::info SASS @imports 
-Toucaan also uses SASS imports but only for **user-defined** styles. 
+Toucaan uses SASS imports also, but only for **user-defined** styles. 
 :::
 
 
