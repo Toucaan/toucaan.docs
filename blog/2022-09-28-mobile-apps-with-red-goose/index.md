@@ -192,7 +192,7 @@ Now on `mobile.css,` you can go after an "app-like" environment with the followi
 }
 ``` 
 
-There are a few more tips w.r.t mobile app design that you can refer [here](./../../docs/mobile-apps/general-tips).
+There are a few more tips w.r.t mobile app design that you can refer [here](./../../docs/native-apps/general-tips).
 
 ### Meet Toucaan
 

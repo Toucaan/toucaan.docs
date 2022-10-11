@@ -2,4 +2,4 @@
 sidebar_position: 2
 ---
 
-# The Sub-Inch Smartwatch 
+# Usability on a watch 

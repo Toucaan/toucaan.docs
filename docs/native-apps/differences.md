@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 7
 ---
 
-# Main Diffs
+# Other Differences
 
 ### Responsive Design
 There are a number of differences between a responsively designed mobile website and a mobile app. Not to mention the difference in performance due to the app taking advantage of low-level system or simply an offline experience.

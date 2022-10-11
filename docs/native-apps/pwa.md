@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-# PWA or TWA
+# PWA/TWA
 
 As the support for the service worker api grows, going PWA by default is an absolute must. The approach, however, would vary from one app to another.
 

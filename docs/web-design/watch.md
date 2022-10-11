@@ -1,27 +1,27 @@
 ---
-sidebar_position: 3
+sidebar_position: 5
 ---
 
-# Designing for the Watch
+# Designing for a watch
 
 
 Designing for the tiniest form-factor on the web has a few unique challenges.
 
 ### 1. Extreme Minimalism
 
-The first thing to internalize about an Apple Watch is that it is the _tiniest_ screen on Earth with a decent web browser (webkit). And yet, despite its small size, the resolution it comes in is similar to that of a smartphone. A petite Apple Watch, for example, is only 40mm in size, but it resolves to 324px x 394px. That's on the lower-end of width that a smartphone has in absolute pixels. 
+The first thing to internalize about an Apple Watch is that it is the _tiniest_ screen on Earth with a decent web browser (webkit). And yet, despite its small size, the resolution it comes in is similar to that of a smartphone. A petite Apple Watch, for example, is only 40mm in size, but it resolves to 324px x 394px. That's almost the width of a smartphone in absolute pixels. 
 
 ![Watch Dimensions](./img/viewport-dimensions-apple-watch.jpeg "The real estate on an Apple Watch in portrait orientation.")
 
 
 
-Since all of your UX/UI is supposed to be packed inside a piece of glass that's just 1.57" long on its diagonal, extreme minimalism is the only way to go about it. 
+Since all of your UX/UI is supposed to be packed inside a piece of glass that's just 1.57" along its diagonal, extreme minimalism is the only way to go about it. 
 
-- Display only one piece of information on the screen at a time.
-- Use the full width of the Watch screen.
+- Display only one piece of information in the middle of the screen at a time.
+- Always use the full width of the Watch screen.
 - Group similar elements together to help users find the information they want easily.
-- Use circular buttons instead of squarish ones.
-- Avoid use of complex controls for your app on the Watch.
+- Use circular buttons instead of square or rectangular ones.
+- Avoid complex choices on the Watch.
 - Content-heavy page should be left-aligned.
 
 
