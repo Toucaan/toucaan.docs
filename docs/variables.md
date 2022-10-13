@@ -4,10 +4,10 @@ sidebar_position: 7
 
 # Utility Variables
 
-Toucaan uses a number of utility variables that enable _deterministic_ control over UX/UI. The word deterministic here means applying style without guesswork about the browser window or assumptions about how the content will reflow. 
+Toucaan uses a number of utility variables that enable _deterministic_ control over UX/UI. The word deterministic here means applying styles without approximation about how the browser window would scale. 
 
-The deterministic approach, for example, compels having the knowledge of the length or height of the UI container, the scroll, beforehand in multiples of the ICB–the Initial Containing Block (or the fold or viewport). It forces the designer to create intrinsically scaling components with a clear view of how the content (text, images, etc.) would scale upon resizing the window or upon change in the physical size of the glowing glass.
-
+The deterministic approach, for example, compels having the knowledge of the length or height of the UI container (the length of scroll) beforehand in multiples of the ICB–the Initial Containing Block. It also compels understanding of how types would scale within a component _without triggering a reflow_.
+ 
 ##### Example:
 The custom property `--fs` for `font-size` discussed in the [last chapter](./typography.md) is an example of utility variable.
 

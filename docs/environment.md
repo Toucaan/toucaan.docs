@@ -4,19 +4,18 @@ sidebar_position: 4
 
 # Environment Variables
 
-Sprinkling css into an app is a lot like configuring the **environment variables for your app** to render correctly on the client-side. It is just one part of the responsibilities that a frontend developer (or designer) must bear. 
+Sprinkling css into an app is a lot like configuring the **environment variables for your app** to render correctly on the client-side. It is just one part of the responsibilities that a frontend developer (or designer) must bear. While it may sound like a powerful thing to do, but the sheer number of options available to configure before an environment becomes fully realized makes it a formidable task.
 
-While this may sound like a powerful thing to do, but the sheer number of options and properties available to configure before the environment for each medium is fully realized makes it a formidable task.
-
-Toucaan helps organize and manage _all_ the possibilities of the environment for all kinds of devices from one place.
+Toucaan helps you organize and manage _all_ the possibilities of client-side environments from one place.
 
 ### Vendor Normalization
 The first step is vendor normalization to smooth over the last remaining cross-browser inconsistencies between the modern browsers and to guarantee the delivered experience. Handling vendor inconsistencies up close is the first _soft_ layer of environment configuration that Toucaan must manage for you. 
 
-Traditional css frameworks generally require or inject a `reset.css`, `reboot.css`, or `normalize.css` automatically before any other application style or framework defaults are applied. Toucaan **does not use this** strategy. 
+Traditional frameworks require injecting a `reset.css`, `reboot.css`, or `normalize.css` before any other application style or framework defaults are applied, but Toucaan **does not use this** strategy. 
 
-It uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.
+**It uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.**
 
+> A ToDo app doesn't need to reset how vendors handle the `video` tag, for example. 
 
 ### Env folder
 
@@ -24,13 +23,12 @@ Open the `env` folder to reveal its contents:
 
 ![Environment architecture](./img/env-folders.jpg "selection, selection in inactive state etc.")
 
-Inside the `env` folder you'll find two subfolders named `helpers` and `tags` each carrying a few initial defaults. Only a few baseline tags and pseudo-classes are included in the environment by default but you can add more into the context as per need. 
+Inside the `env` folder you'll find two subfolders named `helpers` and `tags` each carrying a few initial defaults. Only a few baseline tags and pseudo-classes are included in the environment by default but you can add more into the context as needed. 
 
 :::tip vocabulary
 The `env` must be customized according to the actual HTML vocabulary of your app. 
 :::
 
-**Example:** An email app doesn't need to reset a thousand other tags that a browser could handle like the `video` or the `audio` tag and so on.
 
 ### Desktop's Case
 
@@ -54,13 +52,15 @@ This is how the environment for a desktop browser is _reset_:
 /* and so on… */
 ```
 
-:::info
-Remember that the browser on a desktop usually displays along the landscape-axis of intrinsic design whereas the mobile does so along the portrait-axis. So the parameters for the intrinsically scaling typography system would be different for each medium. More on this later.
+Take a look at the `desktop.scss` file to see a [real desktop reset](https://github.com/Toucaan/toucaan/blob/master/app/desktop/desktop.scss) followed by the space for application styles to be written by you.
+
+:::tip
+A desktop displays along the landscape-axis of intrinsic design, whereas a mobile on the portrait-axis. 
 :::
 
 
 ### Mobile's Case 
-Like with the desktop, the environment of a mobile browser is set like so:
+Like with the desktop, the environment of a mobile browser can be set like so:
 
 ```css title="Open ./toucaan/app/mobile/mobile.scss"
 /* Read more about the notch → https://bubblin.io/blog/notch */
@@ -80,8 +80,10 @@ Like with the desktop, the environment of a mobile browser is set like so:
 /* and so on… */
 ```
 
+:::tip
+Since most developers and designers like to work on a desktop, Toucaan recommends to **configure the desktop environment first**. Not mobile or mobile-first! 
+:::
 
-Since most developers and designers like to work on a desktop, Toucaan recommends to **configure the desktop environment first**. Not mobile-first! And then take it forward from there to mobile and then to tablets until you have built support for all the other kinds of devices on the web like EVs, foldable phones or tablets, watch, and TVs or projectors. 
 
 
 ### Head Level Configuration

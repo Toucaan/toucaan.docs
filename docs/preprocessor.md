@@ -3,22 +3,13 @@ sidebar_position: 2
 ---
 
 # Preprocessor (SASS)
-Toucaan uses [sass-lang](https://sass-lang.com/) (default) to output user created stylesheets for your application. 
-
-You can output multiple stylesheets configured differently for each type of devices on the web (see the `webpack` example below) and restrict delivery of only contextually relevant css for a given medium. You can also configure Toucaan to deliver `mobile.css` to all the smartphone users and still use the `desktop.css` or the `tablet.css` as a backup layout.
-
-:::tip web frameworks
-Since each web framework is different and follows a slightly different set of conventions, setting up the preprocessing pipeline with `sass` or another preprocessor like `less` or `stylus` is left to the author as an exercise.
-:::
-
+Toucaan uses [sass-lang](https://sass-lang.com/) preprocessor (default) to process user written styles.
 
 ### Webpack  
 Displayed below is sample `webpack` config for a typical `node/express` app.
 
-:::info
-Notice that Toucaan outputs separate stylesheets for the desktop, tablet, mobile, and other types of devices on the web that you wish to support. Read about the [Intrinsic Approach to Design](./core-concepts/space.md) adopted by Toucaan.
 
-:::
+Notice the separate stylesheets (or modules) for the desktop, tablet, mobile, watch, electric vehicles, and other types of devices on the web. This is as per the [Intrinsic Approach to Design](./core-concepts/space.md) adopted by Toucaan.
 
 ```js title="webpack.config.js"
 const path = require('path')
@@ -174,7 +165,9 @@ module.exports = {
 
 This [sample file](https://github.com/Toucaan/toucaan/blob/master/webpack.config.js.sample) is included for reference or customization by the end user along with the Toucaan submodule. 
 
+:::info web frameworks
+Since each web framework is different and follows a slightly different set of conventions, setting up the preprocessing pipeline with `sass` or another preprocessor like `less` or `stylus` is left to the author as an exercise.
+:::
 
- 
 
 Go to next step and [configure](./configuration.md) Toucaan for your project.

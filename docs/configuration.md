@@ -6,12 +6,15 @@ sidebar_position: 3
 
 Toucaan has a different way of connecting stylesheets to your app's HTML. 
 
-:::warning Do not use the link tag!
-`<link href="/some/stylesheet.css" rel="stylesheet"/>`          ❌ 
+Unlike the traditional css frameworks, it does not use a link tag, like so: 
+
+:::warning No link tag!
+    ❌ <link href="/some/stylesheet.css" rel="stylesheet"/>`  ← Don't use this.
 :::
 
-Unlike traditional css frameworks, Toucaan **does not use** a typical link tag in the `<head></head>` section of your webpage. It uses [a css router](core-concepts/router.md) instead. 
-Copy the following [block of code](https://github.com/Toucaan/toucaan/blob/master/_config.scss) and paste it directly into your document's head tag:
+### Critical CSS and A CSS Router
+
+Toucaan uses [a css router](core-concepts/router.md) to connect stylesheets with HTML instead. Copy the following [block of code](https://github.com/Toucaan/toucaan/blob/master/_config.scss) and paste it directly into your document's head tag:
 
 ```css title="Critical CSS:"
 
@@ -103,7 +106,7 @@ Copy the following [block of code](https://github.com/Toucaan/toucaan/blob/maste
 </style>
 ```
 
-Notice the use of asynchronous CSS @import (not sass imports!) in the routing code above. The appropriate stylesheet is _prioritized_ and served to the browser according to the matched _class_ of device. 
+Notice the use of asynchronous CSS @import (not sass import) in the routing code above. The appropriate stylesheet is _prioritized_ and served to the browser according to the matched _class_ of device. 
 
 Read more about Toucaan's [css router](https://bubblin.io/blog/a-css-router) and its implementation philosophy.
 
