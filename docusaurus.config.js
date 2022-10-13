@@ -83,7 +83,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Learn',
+            title: 'Learn & Build',
             items: [
               {
                 label: 'Getting Started',
@@ -94,8 +94,12 @@ const config = {
                 to: 'docs/category/core-concepts',
               },
               {
-                label: 'The Toucaan Book (On Pre-order)',
-                to: 'https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig#frontmatter',
+                label: 'Web Design',
+                to: 'docs/category/web-design',
+              },
+              {
+                label: 'Native Apps',
+                to: 'docs/category/native-apps',
               }
             ],
           },
@@ -128,6 +132,11 @@ const config = {
                 label: 'GitHub',
                 href: 'https://github.com/Toucaan/toucaan',
               },
+              {
+                label: 'The Toucaan Book (On Pre-order)',
+                to: 'https://bubblin.io/cover/the-toucaan-framework-by-marvin-danig#frontmatter',
+              }
+
             ],
           },
           {
@@ -136,7 +145,7 @@ const config = {
             items: [
               {
                 label: 'License',
-                href: 'https://github.com/Toucaan/toucaan/blob/master/LICENSE.md',
+                href: 'https://github.com/Toucaan/toucaan.research/blob/master/LICENSE.md',
               },
             ],
           },
