@@ -28,7 +28,7 @@ The fact that the hardware industry rolls out new consumer devices each year wit
 
 ### How is this different from Responsive Design?
 
-From the plot above, one can see that responsive design is just **one point of solution** in the overall intrinsic design space (marked with red-lines above). One way to visualize the difference between responsive design and intrinsic design is to consider the differences between mobile web and native apps. A well-designed mobile app belongs to a mobile intrinsically.
+From the plot above, one can see that responsive design is just **one point of solution** in the overall intrinsic design space (marked with red-lines above). One way to visualize the difference between responsive design and intrinsic design is to consider the differences between mobile web and native apps. A native app often feels more natural to use on mobile because its layout and design elements belong to a mobile intrinsically.
 
 
 From a technical standpoint, the main difference between intrinsic and responsive approaches is that the intrinsic implementation does not consider mobile web and desktop web on the same axis of design. 

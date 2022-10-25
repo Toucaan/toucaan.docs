@@ -4,22 +4,20 @@ sidebar_position: 4
 
 # Environment Variables
 
-Sprinkling css into an app is a lot like configuring the **environment variables for your app** to render correctly on the client-side. It is just one part of the responsibilities that a frontend developer (or designer) must bear. 
+Sprinkling css into an app is a lot like configuring the **environment variables for your app to render correctly on the client-side**.  
 
-While this may sound like a powerful thing to do, to manage env variables on a remote machine, but the sheer number of options available to configure before an environment becomes fully realized makes it a formidable task. 
+While it may sound like a powerful thing to do, to control the environment on the client-side, it is just one part of the responsibilities that a frontend developer (or designer) must bear. The sheer number of options and properties available within the vocabulary of css makes it a formidable task to configure and fully realize the potential of the browser environment. 
 
-This is where Toucaan helps design and deliver properly and thoroughly configured frontend applications.
-Toucaan lets you manage _all_ the possibilities of client-side environments from one place.
+This is where Toucaan helps deliver a properly and thoroughly configured frontend application.
+It lets you manage _all_ the possibilities of client-side environment from one place.
 
 ### Vendor Normalization
-Handling vendor inconsistencies up close and ground-up is the first _soft_ layer of setting environment variables for your application. 
 
+The first _soft_ layer of setting environment variables for your application is _handling the vendor inconsistencies_ up and close, and ground-up. Traditionally, applications have required injecting a heavy `reset.css` `reboot.css` or `normalize.css` before any other application style could be included, but Toucaan **does not use this** strategy at all. 
 
-Traditionally, application development has required injecting a heavy `reset.css`, `reboot.css`, or `normalize.css` before any other application styles could be written, but Toucaan **does not use this strategy at all**. 
+Toucaan uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.
 
-> A todo app, for example, doesn't require a lone of css code to reset how the vendors handled the `video` tag. 
-
-**Toucaan uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.**
+> Why so? A todo app will not require the block of normalization code that fixes vendor inconsistencies of a `video` tag, for example. 
 
 
 ### The Env Folder
