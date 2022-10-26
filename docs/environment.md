@@ -6,14 +6,11 @@ sidebar_position: 4
 
 Sprinkling css into an app is a lot like configuring the **environment variables for your app to render correctly on the client-side**.  
 
-While it may sound like a powerful thing to do, to control the environment on the client-side, it is just one part of the responsibilities that a frontend developer (or designer) must bear. The sheer number of options and properties available within the vocabulary of css makes it a formidable task to configure and fully realize the potential of the browser environment. 
-
-This is where Toucaan helps deliver a properly and thoroughly configured frontend application.
-It lets you manage _all_ the possibilities of client-side environment from one place.
+While it may sound like a powerful thing to do,  setting up the environment on the client-side is just one part of the responsibilities that a frontend developer (or designer) must bear. Toucaan makes it easy to deliver a properly configured frontend environment to your application from one place. 
 
 ### Vendor Normalization
 
-The first _soft_ layer of setting environment variables for your application is _handling the vendor inconsistencies_ up and close, and ground-up. Traditionally, applications have required injecting a heavy `reset.css` `reboot.css` or `normalize.css` before any other application style could be included, but Toucaan **does not use this** strategy at all. 
+The first _soft_ layer of setting up environment variables for your application is _handling the vendor inconsistencies_ up and close. Toucaan does this ground-up. Traditionally, applications have required injecting a heavy `reset.css` `reboot.css` or `normalize.css` before any other application style could be included, but Toucaan **does not use this** strategy. 
 
 Toucaan uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.
 
