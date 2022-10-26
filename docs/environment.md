@@ -4,17 +4,21 @@ sidebar_position: 4
 
 # Environment Variables
 
-Sprinkling css into an app is a lot like configuring the **environment variables for your app to render correctly on the client-side**.  
+Sprinkling css into an app is a lot like configuring the **environment variables for your app to render correctly on the client-side**.  While this may sound like a powerful thing to do, setting up the environment on the client-side is just one of the responsibilities that a frontend developer (or designer) must bear. 
 
-While it may sound like a powerful thing to do,  setting up the environment on the client-side is just one part of the responsibilities that a frontend developer (or designer) must bear. Toucaan makes it easy to deliver a properly configured frontend environment to your application from one place. 
+Toucaan makes it easy to configure and deliver a fully-realized browser environment from one place.
 
 ### Vendor Normalization
 
-The first _soft_ layer of setting up environment variables for your application is _handling the vendor inconsistencies_ up and close. Toucaan does this ground-up. Traditionally, applications have required injecting a heavy `reset.css` `reboot.css` or `normalize.css` before any other application style could be included, but Toucaan **does not use this** strategy. 
+The first _soft_ layer of setting up environment variables for your application is _handling the vendor inconsistencies_ up and close. Toucaan does this ground-up. 
+
+Traditionally, applications have required injecting a fairly heavy reset, reboot, or normalize css file before any other application style could be included. Toucaan **does not use this** strategy. 
 
 Toucaan uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.
 
-> Why so? A todo app will not require the block of normalization code that fixes vendor inconsistencies of a `video` tag, for example. 
+:::info Why is this the case?
+A todo app will likely not require the block of normalization code meant for `video` tag, for example. 
+:::
 
 
 ### The Env Folder
