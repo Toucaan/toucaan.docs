@@ -2,4 +2,6 @@
 sidebar_position: 4
 ---
 
-# Mobile _or_ Tablet 
+# Mobile or Tablet 
+
+Quick tip–keep the design of your app for tablets and phone separate. 
