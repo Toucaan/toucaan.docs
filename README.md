@@ -1,12 +1,12 @@
 # Website
 
-The documentation and blog for Toucaan. Toko toko!
+The documentation and blog for Toucaan. Toco toco!
 
 Live site ⤏ [https://toucaan.com](https://toucaan.com)
 
-Contributors are invited to submit pull requests for any changes that they wish to see on the docs. Or the framework. 
+Contributors are invited to submit pull requests for any changes that they wish to see on the docs. Or on the framework. 
 
-We also accept opinions and blog posts from CSS aficionados. If you have an insight for us to see, and learn from, please do share it here by raising an issue.
+We accept opinions and blog posts from CSS aficionados. If you have an insight for us to look at and learn from, please do share your link here on the repo by raising an issue.
 
 🙏🏻
 

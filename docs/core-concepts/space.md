@@ -4,9 +4,9 @@ sidebar_position: 2
 
 # 3. The Design Space
 
-Intrinsic Approach to design is very different from the responsive one. 
+Intrinsic Approach to design is very different from a responsive one. 
 
-By definition, intrinsic implies interfaces that "belong to" a device. Interfaces that are **contextually relevant** for the medium they are built for. Intrinsic Design is a design philosophy to drive home an optimum experience that use the _intrinsic qualities_ of a device like its physical size, orientation, pointer-driven or not, and other accessibility constraints or considerations. 
+By definition, intrinsic implies designing interfaces that "belong to" a device. Meaning, interfaces that are **contextually relevant** for the medium they are built for. Intrinsic Design is more of a design philosophy that aims to drive an optimum experience on a medium using the _intrinsic qualities_ of the device. Qualities like the physical size, orientation, pointer-driven or not, and other accessibility constraints and considerations. 
 
 Build UX/UI befitting user's personal choice of hardware and its underlying capability.
  

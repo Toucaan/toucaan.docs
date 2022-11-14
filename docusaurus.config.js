@@ -9,21 +9,32 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const lightCodeTheme = require("prism-react-renderer/themes/github")
+const darkCodeTheme = require("prism-react-renderer/themes/dracula")
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Toucaan CSS Framework',
-  tagline: 'Stack-agnostic vanilla styling framework for mobile and web apps.',
+  tagline: 'Stack-agnostic vanilla styling framework for mobile apps and websites.',
   url: 'https://toucaan.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   // organizationName: 'toucaan', // Usually your GitHub org/user name.
   // projectName: 'toucaan.docs', // Usually your repo name.
-
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true
+      }
+    ]
+  ],
   presets: [
     [
       'classic',
@@ -34,22 +45,51 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Toucaan/toucaan.docs/blob/master/',
+            'https://github.com/Toucaan/toucaan.docs/blob/master/'
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Toucaan/toucaan.docs/blob/master/',
+            'https://github.com/Toucaan/toucaan.docs/blob/master/'
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
-    ],
+          customCss: require.resolve('./src/css/custom.css')
+        }
+      })
+    ]
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-pwa',
+      {
+        debug: true,
+        offlineModeActivationStrategies: [
+          'appInstalled',
+          'standalone',
+          'queryString'
+        ],
+        pwaHead: [
+          {
+            tagName: 'link',
+            rel: 'icon',
+            href: '/img/toucaan.png'
+          },
+          {
+            tagName: 'link',
+            rel: 'manifest',
+            href: '/manifest.json' // your PWA manifest
+          },
+          {
+            tagName: 'meta',
+            name: 'theme-color',
+            content: 'rgb(37, 194, 160)'
+          }
+        ]
+      }
+    ]
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -57,27 +97,27 @@ const config = {
         title: 'Toucaan',
         logo: {
           alt: 'Toucaan CSS Framework Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.svg'
         },
         items: [
           {
             type: 'doc',
             docId: 'getting-started',
             position: 'left',
-            label: 'Documentation',
+            label: 'Documentation'
           },
           {
             to: 'blog',
             label: 'Blog',
-            position: 'left',
+            position: 'left'
           },
           // Please keep GitHub link to the right for consistency.
           {
             href: 'https://github.com/Toucaan/toucaan',
-            label: 'GitHub',
             position: 'right',
-          },
-        ],
+            className: 'header-github-link'
+          }
+        ]
       },
       footer: {
         style: 'dark',
@@ -87,19 +127,19 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: 'docs/getting-started',
+                to: 'docs/getting-started'
               },
               {
                 label: 'Core Concepts',
-                to: 'docs/category/core-concepts',
+                to: 'docs/category/core-concepts'
               },
               {
                 label: 'Web Design',
-                to: 'docs/category/web-design',
+                to: 'docs/category/web-design'
               },
               {
                 label: 'Native Apps',
-                to: 'docs/category/native-apps',
+                to: 'docs/category/native-apps'
               }
             ],
           },
@@ -116,10 +156,13 @@ const config = {
               },
               {
                 label: 'Team',
-                href: 'https://goose.red/team',
+                href: 'https://goose.red/team'
               },
-
-            ],
+              {
+                label: 'Sponsorship',
+                to: 'https://github.com/sponsors/marvindanig',
+              }
+            ]
           },
           {
             title: 'More',
@@ -146,9 +189,9 @@ const config = {
               {
                 label: 'License',
                 href: 'https://github.com/Toucaan/toucaan.research/blob/master/LICENSE.md',
-              },
-            ],
-          },
+              }
+            ]
+          }
         ],
         // logo: {
         //   alt: 'Red Goose Community',
@@ -159,9 +202,22 @@ const config = {
         // },
 
         // Please do not remove the credits, help to publicize Toucaan :)
-        copyright: `Red Goose, Inc. Copyright © ${new Date().getFullYear()}.`,
+        copyright: `Red Goose, Inc. Copyright © ${new Date().getFullYear()}.`
       },
-    }),
-};
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme
+      },
+      colorMode: {
+        disableSwitch: false
+      },
+      metadata: [
+        {
+          name: 'keywords',
+          content: 'css4, css, blog, intrinsic, app, design, system'
+        }
+      ]
+    })
+}
 
-module.exports = config;
+module.exports = config
