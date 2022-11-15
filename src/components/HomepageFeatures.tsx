@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
     image: "/img/undraw-mg-mundo.svg",
     description: (
       <>
-        Design for the new web. Create layouts for desktop, mobile, tablet, watch, TVs, and EVs quickly. 
+        Design for <a href='https://bubblin.io/blog/the-new-landscape-of-the-web'>The New Web</a>. Serve thoughtful experiences to users on desktop, mobile, tablet, smartwatch, TVs, and EVs.
       </>
     ),
   },
@@ -33,7 +33,7 @@ const FeatureList: FeatureItem[] = [
     image: "/img/undraw-mg-book.svg",
     description: (
       <>
-        Build accessible interfaces using the intrinsic capabilities of the medium. Drive meaningful UX/UI. 
+        Build accessible interfaces using the intrinsic qualities of the medium. Drive meaningful UX/UI with deterministic layouts.
       </>
     ),
   },

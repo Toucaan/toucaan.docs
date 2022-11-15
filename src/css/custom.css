@@ -120,19 +120,21 @@ html[data-theme="dark"] .navbar__link:hover {
 
 .hero__logo {
   background-image: url(/img/logo.svg);
-  background-size: 100% 100%;
+  background-size: auto;
   background-repeat: no-repeat;
   display: block;
-  width: 207px;
-  height: 150px;
+  width: 20vmin;
+  height: 15vmin;
   margin: 0 auto;
+  padding: 0;
+  border: 0;
 }
 
 html[data-theme="dark"] .hero__logo {
-  width: 207px;
-  height: 150px;
+  width: 20vmin;
+  height: 15vmin;
   background-image: url(/img/logo-dm.svg);
-  background-size: 100% 100%;
+  background-size: auto auto;
 }
 
 .hero__title {
@@ -270,14 +272,20 @@ html[data-theme="dark"] .markdown li {
   }
 }
 
-/* .navbar__title {
+.fascinate {
   font-family: 'Fascinate', cursive;
-  font-size: 150%;
+  background-clip: none;
   color: currentColor;
-  filter: invert(50%); 
+  filter: hue-rotate(50%); 
 }
 
-h1.hero__title, .hero__subtitle {
+.navbar__title {
+  font-family: 'Fascinate', cursive;
+  font-size: 140%;
   color: currentColor;
-  filter: invert(50%); 
-} */
+  filter: hue-rotate(50%); 
+}
+
+html[data-theme="dark"] .navbar__logo{
+  filter: invert(100%) grayscale(100%) sepia(100%) hue-rotate(240deg);
+}

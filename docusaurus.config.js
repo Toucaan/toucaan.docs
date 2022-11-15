@@ -15,7 +15,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Toucaan CSS Framework',
-  tagline: 'Stack-agnostic vanilla styling framework for mobile apps and websites.',
+  tagline: 'A stack-agnostic vanilla styling framework for mobile apps and websites.',
   url: 'https://toucaan.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -202,7 +202,7 @@ const config = {
         // },
 
         // Please do not remove the credits, help to publicize Toucaan :)
-        copyright: `Red Goose, Inc. Copyright © ${new Date().getFullYear()}.`
+        copyright: `Marvin Danig & Red Goose Inc., Copyright © ${new Date().getFullYear()}.`
       },
       prism: {
         theme: lightCodeTheme,

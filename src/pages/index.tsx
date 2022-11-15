@@ -15,7 +15,7 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import WaveBottomShapeDivider from "@site/src/components/WaveBottomShapeDivider";
 import WaveTopShapeDivider from "@site/src/components/WaveTopShapeDivider";
-import ConferenceTalkLogos from "@site/src/components/ConferenceTalkLogos";
+import MaintainerTalkLogos from "@site/src/components/MaintainerTalkLogos";
 import HeroTitleSecondary from "@site/src/components/HeroTitleSecondary";
 import HomePageMetadata from "@site/src/components/HomePageMetadata";
 import styles from "./index.module.css";
@@ -25,15 +25,10 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero--primary", styles.heroBanner)}>
       <div className="container">
-        <picture className="hero__logo">
-          {/* <source srcset="/img/logo-dm.svg" media="(prefers-color-scheme:dark)" />
-          <img
-            className="hero__logo"
-            src="/img/logo.svg"
-            alt=""
-          /> */}
-        </picture>
-        <h1 className="hero__title">Meet Intrinsic Design with Toucaan</h1>
+        <a href="http://toucaan.com">
+          <picture className="hero__logo"></picture>
+        </a>
+        <h1 className="hero__title">Meet Intrinsic Design with <span className="fascinate">Toucaan</span>.</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className="hero__subsubtitle">(No javascript required)</p>
         <div className={styles.buttons}>
@@ -60,11 +55,11 @@ export default function Home(): JSX.Element {
         <HomepageFeatures />
         <WaveBottomShapeDivider />
         <HeroTitleSecondary
-          title="Design intrinsically scaling apps that belong a device."
+          title="Create intrinsically scaling apps that belong to a device."
           ctaText="Read the basics 📖"
           ctaLink="/docs/category/core-concepts"
         />
-        <ConferenceTalkLogos />
+        <MaintainerTalkLogos />
       </main>
     </Layout>
   );
