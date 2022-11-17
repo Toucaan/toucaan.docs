@@ -15,7 +15,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula")
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Toucaan CSS Framework',
-  tagline: 'Intrinsic design strategies, patterns, and resources for the new web and the app stores.',
+  tagline: 'A stack-agnostic vanilla styling framework for mobile apps and websites.',
   url: 'https://toucaan.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',

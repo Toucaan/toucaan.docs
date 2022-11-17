@@ -28,8 +28,7 @@ function HomepageHeader() {
         <a href="http://toucaan.com">
           <picture className="hero__logo"></picture>
         </a>
-        <h1 className="hero__title">Good design with <span className="fascinate">Toucaan</span> is accessible to all.</h1>
-        {/* <h1 className="hero__title">Meet Intrinsic Design with <span className="fascinate">Toucaan</span>.</h1> */}
+        <h1 className="hero__title">Meet Intrinsic Design with <span className="fascinate">Toucaan</span>.</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <p className="hero__subsubtitle">(No javascript required)</p>
         <div className={styles.buttons}>
