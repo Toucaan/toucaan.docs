@@ -10,10 +10,10 @@
 }
 
 .logo {
-  height: 80px;
+  height: 6vmin;
   margin-left: 10px;
   margin-right: 10px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .title {

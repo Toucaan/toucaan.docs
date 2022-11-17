@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
 ---
 
-# 1. General Overview
+# 3. Framework Overview
 
 Toucaan is a stack-agnostic vanilla styling framework. Meaning, it's just plain CSS to boot, install, and design your applications with. Toucaan can be used with any frontend development framework of your choice without having to rely on a specific package manager (like `npm` of `node`) that may come with the web framework.
 

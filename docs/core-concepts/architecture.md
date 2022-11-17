@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 4
 ---
 
-# 2. The Architecture
+# 4. Framework Architecture
 
 Toucaan's Design Principle: **"Everything that is used by an app, lives within the app!"**
 

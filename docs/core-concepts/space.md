@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# 3. The Design Space
+# 2. The Design Space
 
 Intrinsic Approach to design is very different from a responsive one. 
 
@@ -47,7 +47,14 @@ Toucaan doesn't use hardcoded MQ break-points to switch between mobile and deskt
 
 ### Is Toucaan a Design System?
 
-Toucaan is a _robust and expansive_ design system. It aims to cover more mediums on the web than before by using logical separation of viewports namely the desktop, mobile, tablet, vehicle, smartwatch, and TV/projectors etc. Toucaan has a deep focus on **accessibility and scalability**, and architected with **durability and maintainability over the years** as the main pillars of its internal design. 
+Toucaan is a simple css framework. It is _not_ a design system and this is intentional. 
 
-At this stage, Toucaan is also a recipe in motion so all kinds of feedback and contribution is welcome.
+Toucaan is aimed at makers who like to design their apps themselves––as in, keep the control over design elements without any debt from outside. One of the main reasons why Toucaan doesn't overstep into becoming a design system is to avoid the prescriptive nature of a design system. All websites using a design system end up looking the same. The idea of pre-built styled components kills the opportunity for the maker to dive in and apply their own design logic (or skill) into the application.
 
+A design system could be built on top of Toucaan, but that will probably have to live on a separate repository elsewhere.
+
+### What is the end-goal of Toucaan?
+
+Toucaan aims to cover more mediums on the web today than a responsive framework could support. By splitting the canvas of digital design into industrywide categories of the viewports (or products) like the desktop, mobile, tablet, vehicle, smartwatch, and TV/projectors, Toucaan not only makes room for deep focus on **intrinsically oriented experiences (accessibility and scalability)** but also forces the developer to arrive at an architecture that is both **durable and maintainable over the years.** 
+
+At this stage, Toucaan is a recipe in motion, so all kinds of feedback and contribution are welcome.

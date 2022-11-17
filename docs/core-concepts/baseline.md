@@ -2,7 +2,7 @@
 sidebar_position: 6
 ---
 
-# 5. Baseline Assets
+# 6. Baseline Assets
 
 Unlike traditional css frameworks, Toucaan does not use a `normalize.css` or reset css file to override browser defaults. Toucaan baselines on a very small set of pre-opted rules to ensure a **starting point for cross-browser consistency**. 
 

@@ -3,7 +3,10 @@ sidebar_position: 1
 ---
 
 # Introduction
-Toucaan makes it possible to create "app-like" layouts for mobile and desktop apps using plain old HTML and CSS. This is the central theme of [Intrinsic Design](https://toucaan.com/blog/intrinsic-design). It enables the developer to create user-interfaces that "belong to" a device, and that often leads to mobile layouts that are closer to the design language of native apps than anything else. 
+Toucaan makes it possible to create "app-like" layouts for mobile and desktop apps. Use plain HTML and CSS to create screens for your _native_ mobile app and navigate between them seamlessly using [portals](https://github.com/WICG/portals). 
+
+
+This is an experimental region of Toucaan. And in part one of the core themes of [Intrinsic Design](https://toucaan.com/blog/intrinsic-design). 
 
 ### App Workflow
 

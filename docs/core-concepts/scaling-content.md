@@ -2,7 +2,7 @@
 sidebar_position: 7
 ---
 
-# 6. Scaling Content
+# 7. Scaling Content
 
 
 :::warning Pending documentation

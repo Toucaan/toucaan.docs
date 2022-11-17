@@ -2,7 +2,7 @@
 sidebar_position: 8
 ---
 
-# 7. DIY Framework
+# 8. DIY Framework
 
 Let us **create a new folder** named `toucaan` somewhere in your project using the following command: 
 
