@@ -202,7 +202,7 @@ const config = {
         // },
 
         // Please do not remove the credits, help to publicize Toucaan :)
-        copyright: `Marvin Danig & Red Goose Inc., Copyright © ${new Date().getFullYear()}.`
+        copyright: `Red Goose Inc., Copyright © ${new Date().getFullYear()}.`
       },
       prism: {
         theme: lightCodeTheme,

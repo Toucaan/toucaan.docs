@@ -15,7 +15,8 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import WaveBottomShapeDivider from "@site/src/components/WaveBottomShapeDivider";
 import WaveTopShapeDivider from "@site/src/components/WaveTopShapeDivider";
-import MaintainerTalkLogos from "@site/src/components/MaintainerTalkLogos";
+import SponsorLogos from "@site/src/components/SponsorLogos";
+import FOSSCreditLogos from "@site/src/components/FOSSCreditLogos";
 import HeroTitleSecondary from "@site/src/components/HeroTitleSecondary";
 import HomePageMetadata from "@site/src/components/HomePageMetadata";
 import styles from "./index.module.css";
@@ -56,10 +57,11 @@ export default function Home(): JSX.Element {
         <WaveBottomShapeDivider />
         <HeroTitleSecondary
           title="Create intrinsically scaling apps that belong to a device."
-          ctaText="Read the basics 📖"
+          ctaText="Learn the basics 📖"
           ctaLink="/docs/category/core-concepts"
         />
-        <MaintainerTalkLogos />
+        <SponsorLogos />
+        <FOSSCreditLogos />
       </main>
     </Layout>
   );
