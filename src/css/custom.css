@@ -39,7 +39,7 @@
   --ifm-code-font-size: 95%;
 
   --color-main-background: #fff;
-  --color-link-background: #d9def5;
+  --color-link-background: #fff5f5; /* #d9def5 */
 }
 
 html[data-theme="dark"] {

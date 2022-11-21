@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # HTML Configuration
 
-Toucaan has a different way of connecting stylesheets to your app's HTML. 
+Toucaan has a unique way of connecting stylesheets to your app's HTML. 
 
 Unlike the traditional css frameworks, it does not use a link tag, like so: 
 
