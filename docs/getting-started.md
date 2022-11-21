@@ -17,7 +17,7 @@ git submodule add https://github.com/Toucaan/toucaan
 The command above will install Toucaan to your project like a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)[^1]. That's it.
 Now you can start **implementing your application's multiple frontends** with Toucaan.
 
-Go to the next step and [set up](./preprocessor) the `sass` preprocessor.
+Go to the [next step](./preprocessor) and set up the preprocessor.
 
 
 :::tip 

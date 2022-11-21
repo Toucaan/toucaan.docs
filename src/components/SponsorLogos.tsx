@@ -12,7 +12,7 @@ type SponsorItem = {
 
 const SponsorList: SponsorItem[] = [
   {
-    imageSrc: "/img/logos/redgoose-logo-sponsor.png",
+    imageSrc: "/img/logos/redgoose-logo-sponsor.svg",
     alt: "Red Goose",
     url: "https://goose.red"
   },

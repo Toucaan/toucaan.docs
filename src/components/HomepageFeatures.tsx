@@ -11,15 +11,6 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: "Intrinsic typography",
-    image: "/img/undraw_toucaan_content.svg",
-    description: (
-      <>
-        Scale type with geometric precision. Scope content to a component boundary and never worry about overflow again.
-      </>
-    ),
-  },
-  {
     title: "Universal distribution",
     image: "/img/undraw-mg-mundo.svg",
     description: (
@@ -28,6 +19,16 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
+  {
+    title: "Deterministic control",
+    image: "/img/undraw_toucaan_content.svg",
+    description: (
+      <>
+        Scale type with geometric precision. Shape content according to component shape. Paginate designs in multiples of ICB.
+      </>
+    ),
+  },
+
   {
     title: "Accessibility first",
     image: "/img/undraw-mg-book.svg",
