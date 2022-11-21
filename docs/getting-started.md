@@ -20,16 +20,23 @@ Now you can start **implementing your application's multiple frontends** with To
 Go to the [next step](./preprocessor) and set up the preprocessor.
 
 
+
 :::tip 
-Review the [Architecture of Toucaan](core-concepts/architecture)? Glance through the core concepts quickly!
+Review the [Architecture of Toucaan](core-concepts/architecture) and glance through the core concepts quickly.
 :::
 
 :::info Inline Documentation
 Toucaan's [sourcecode](https://github.com/Toucaan/toucaan) is also documented in-line. Contributions and improvements are very welcome.
 :::
 
+### Not using git?
+You can [set-up the framework](./core-concepts/diy.md) manually (DIY) in just a few commands and use any version control you like.
+
+
 :::caution
 This is an early version of Toucaan (< 1.0.0). Our documentation and tooling is in the state of flux and you're likely to encounter a few breaking changes in the next few weeks. 
 :::
+
+
 
 [^1]: Please add and commit the `.gitmodules` file to your project.

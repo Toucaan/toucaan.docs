@@ -11,5 +11,5 @@ This term was coined by the one and only [Jen Simmons](https://twitter.com/jensi
 
 ### How is it different from Responsive Design?
 
-One way to visualize the difference between responsive and intrinsic design is to consider the differences between native mobile apps and the mobile web. A native app would often feel more natural to use on the phone because its layout and design language usually belong to a phone, whereas mobile web design is more likely a squished version of desktop design hidden under a hamburger menu. More discussion [here](/docs/core-concepts/space#how-is-this-different-from-responsive-design).
+One way to visualize the difference between responsive and intrinsic design is to consider the differences between a native mobile app and mobile web. A native app often feels more natural to use on the phone because its overall layout, design language, and performance usually belongs to a phone. Whereas mobile web design is more likely going to be a squished version of desktop design hidden under a hamburger menu. Read more about this [here](/docs/core-concepts/space#how-is-this-different-from-responsive-design).
 
