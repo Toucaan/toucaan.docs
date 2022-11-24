@@ -4,13 +4,13 @@ sidebar_position: 4
 
 # Environment Variables
 
-Sprinkling css into an app is a lot like configuring the **environment variables for your app to render correctly on the client-side**.  While this may sound like a powerful thing to do, setting up the environment on the client-side is just one of the responsibilities that a frontend developer (or designer) must bear. 
+Sprinkling css into an application is a lot like configuring the **Environment Variables of your app to render correctly on the client side**.  While this may sound powerful, setting up the environment on the client side is just one of the responsibilities that a front-end developer (or designer) must endure. 
 
-Toucaan makes it easy to configure and deliver a fully-realized browser environment from one place.
+Toucaan makes it easy to configure and deliver a **fully realized** browser environment from one place.
 
 ### Vendor Normalization
 
-The first _soft_ layer of setting up environment variables for your application is _handling the vendor inconsistencies_ up and close. Toucaan does this ground-up. 
+The first _soft_ layer of setting up environment variables for your application is handling vendor inconsistencies up and close. Toucaan does this ground-up. 
 
 Traditionally, applications have required injecting a fairly heavy reset, reboot, or normalize css file before any other application style could be included. Toucaan **does not use this** strategy. 
 

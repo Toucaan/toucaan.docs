@@ -1,15 +1,14 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Preprocessor (SASS)
-Toucaan uses [sass-lang](https://sass-lang.com/) preprocessor (default) to process user written styles.
+Toucaan uses [sass-lang](https://sass-lang.com/) preprocessor (default) to process _user written_ styles.
 
 ### Webpack  
 Displayed below is sample `webpack` config for a typical `node/express` app.
 
-
-Notice the separate stylesheets (or modules) for the desktop, tablet, mobile, watch, electric vehicles, and other types of devices on the web. This is as per the [Intrinsic Approach to Design](./core-concepts/space.md) adopted by Toucaan.
+Observe the separation of stylesheets (or modules) for the desktop, tablet, mobile, smartwatch, electric vehicles, and other _classes_ of devices on the web. Toucaan treats each _class_ of a device as a separate medium, thus allowing the designer to incorporate as much _intrinsicality of the medium_ (like physical size, viewable distance, pointer-driven or not) as possible, according to [Principles of Intrinsic Design](./core-concepts/space.md).
 
 ```js title="webpack.config.js"
 const path = require('path')
@@ -163,11 +162,11 @@ module.exports = {
 }
 ```
 
-This [sample file](https://github.com/Toucaan/toucaan/blob/master/webpack.config.js.sample) is included for reference or customization by the end user along with the Toucaan submodule. 
+The [sample file](https://github.com/Toucaan/toucaan/blob/master/webpack.config.js.sample) displayed above is included for reference or customization by the end user along with the Toucaan submodule. 
 
 :::info web frameworks
 Since each web framework is different and follows a slightly different set of conventions, setting up the preprocessing pipeline with `sass` or another preprocessor like `less` or `stylus` is left to the author as an exercise.
 :::
 
 
-Go to next step and [configure](./configuration.md) Toucaan for your project.
+Go to [next step](./environment.md) and set up Environment Variables of your app.
