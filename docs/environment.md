@@ -4,20 +4,20 @@ sidebar_position: 4
 
 # Environment Variables
 
-Sprinkling css into an application is a lot like configuring the **Environment Variables of your app to render correctly on the client side**.  While this may sound powerful, setting up the environment on the client side is just one of the responsibilities that a front-end developer (or designer) must endure. 
+Sprinkling css into an application is a lot like configuring the **Environment Variables of your app to render correctly on the client side**. Setting up the environment on the client side is also about understanding the context of fronted design that one must accept while filling the viewport with their app. 
 
-Toucaan makes it easy to configure and deliver a **fully realized** browser environment from one place.
+Toucaan makes it easy to conceptualize, configure, and deliver a **fully realized** browser environment from one place in your project.
 
 ### Vendor Normalization
 
-The first _soft_ layer of setting up environment variables for your application is handling vendor inconsistencies up and close. Toucaan does this ground-up. 
+The first soft layer of setting up environment variables for your application is handling vendor inconsistencies up and close. 
 
-Traditionally, applications have required injecting a fairly heavy reset, reboot, or normalize css file before any other application style could be included. Toucaan **does not use this** strategy. 
+Traditionally, applications have required injecting a fairly heavy reset, reboot, or normalize css file before other application styles could be included. Toucaan **does not use this** strategy. 
 
 Toucaan uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.
 
-:::info Why is this the case?
-A todo app will likely not require the block of normalization code meant for `video` tag, for example. 
+:::info Why no normalize?
+A to-do app will likely not require the block of normalization code meant for the `video` tag, for example. One could shed unused css programmatically at the build stage, but such a set up often leads to dead code within the project.
 :::
 
 

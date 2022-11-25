@@ -2,20 +2,19 @@
 sidebar_position: 2
 ---
 
-# Configuration
+# Basic Configuration
 
-Toucaan has a unique way of connecting stylesheets to your app's HTML. 
+Toucaan has a unique way of connecting stylesheets to your app's HTML. Unlike the traditional css frameworks, it does not use a link tag.
 
-Unlike the traditional css frameworks, it does not use a link tag, like so: 
-
-:::info No link tag!
-    <link href="/some/stylesheet.css" rel="stylesheet"/>`  ← Don't use this! 🚫
-:::
+> `<link href="/some/stylesheet.css" rel="stylesheet"/>`  ← Don't use this! 🚫
 
 
-Instead, Toucaan uses [a css router](core-concepts/router.md) to connect the right stylesheet to your app's HTML for a given device (or medium) along with a small set of critical css rules that may be important for your app's design layer. Observe and copy the following [block of code](https://github.com/Toucaan/toucaan/blob/master/_config.scss) and paste it directly into your document's head tag:
+Toucaan uses [a css router](core-concepts/router.md) instead to _prioritize and serve_ the right stylesheet according to user's medium or _class_ of device. Critical rules of css that may be important for your app's design or brand layer may also be served alongside the router as shown below. 
+
 
 ### The CSS Router
+
+Copy the following [block of code](https://github.com/Toucaan/toucaan/blob/master/_config.scss) and paste it directly into your document's head tag:
 
 ```css title="CSS router level-0, @font-faces, and other initial critical css."
 <style>
@@ -106,7 +105,7 @@ Instead, Toucaan uses [a css router](core-concepts/router.md) to connect the rig
 </style>
 ```
 
-Notice the use of **asynchronous CSS @import** (and not SASS imports) in the routing code above. The appropriate stylesheet is _prioritized_ and served to the browser according to the matched _class_ of device. 
+Notice the use of **asynchronous CSS @import** (and not SASS imports) in the routing code above!
 
 Read more about Toucaan's [css router](https://bubblin.io/blog/a-css-router) and its implementation philosophy.
 
