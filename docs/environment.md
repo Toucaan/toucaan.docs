@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # Environment Variables
 
-Sprinkling css into an application is a lot like configuring the **Environment Variables of your app to render correctly on the client side**. Setting up the environment on the client side is also about understanding the context of fronted design that one must accept while filling the viewport with their app. 
+Sprinkling css into an application is a lot like configuring the **Environment Variables** of your app to render correctly on the client side. Setting up the environment on the client side is also about understanding the context of fronted design that one must accept while filling the viewport with their app. 
 
 Toucaan makes it easy to conceptualize, configure, and deliver a **fully realized** browser environment from one place in your project.
 

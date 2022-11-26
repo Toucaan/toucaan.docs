@@ -6,10 +6,10 @@ sidebar_position: 2
 
 Toucaan has a unique way of connecting stylesheets to your app's HTML. Unlike the traditional css frameworks, it does not use a link tag.
 
-> `<link href="/some/stylesheet.css" rel="stylesheet"/>`  ← Don't use this! 🚫
+    <link href="/some/stylesheet.css" rel="stylesheet"/>  ← Do not use this! 🚫
 
 
-Toucaan uses [a css router](core-concepts/router.md) instead to _prioritize and serve_ the right stylesheet according to user's medium or _class_ of device. Critical rules of css that may be important for your app's design or brand layer may also be served alongside the router as shown below. 
+Toucaan uses [a css router](core-concepts/router.md) instead to _prioritize_ and serve the right stylesheet according to user's medium or _class_ of device. Critical rules of css that may be important for your app's design or the brand layer may also be served along with the router as shown below. 
 
 
 ### The CSS Router
@@ -105,16 +105,16 @@ Copy the following [block of code](https://github.com/Toucaan/toucaan/blob/maste
 </style>
 ```
 
-Notice the use of **asynchronous CSS @import** (and not SASS imports) in the routing code above!
+Notice the use of **asynchronous CSS @import** (and not SASS @import) in the routing code above!
 
 Read more about Toucaan's [css router](https://bubblin.io/blog/a-css-router) and its implementation philosophy.
 
-:::tip SASS @imports 
-Toucaan uses SASS imports also, but only for **user-defined** styles. 
+:::info CSS @import vs. SASS @import
+Toucaan uses both css @imports and sass @imports. As a framework convention, Toucaan puts css imports to use for framework code only, whereas sass imports are meant for **user-defined** or application style. 
 :::
 
 
-The basic configuration shown above is included with the Toucaan [submodule](https://github.com/Toucaan/toucaan/blob/master/_config.scss) (that you installed earlier). Make sure that the path to the router assets (i.e. css files like `portrait.css` and `landscape.css`) and the compiled assets (i.e. **user-defined stylesheets** for device specific distribution) is correct and accessible over the server.
+The basic HTML linking configuration shown above is included with the Toucaan [submodule](https://github.com/Toucaan/toucaan/blob/master/_config.scss) (that you installed earlier). Ensure the paths to the router assets (i.e. css files like `portrait.css` and `landscape.css`) and the compiled assets (i.e. **user-defined stylesheets** for device specific distribution) are correct and accessible over the wire.
 
 Go to the [next chapter](./processor) and set up SASS pipeline for your application's style.
 
