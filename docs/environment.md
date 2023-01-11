@@ -6,7 +6,7 @@ sidebar_position: 4
 
 Sprinkling css into an application is a lot like configuring the **Environment Variables** of your app to render correctly on the client side. Setting up the environment on the client side is also about understanding the context of fronted design that one must accept while filling the viewport with their app. 
 
-Toucaan makes it easy to conceptualize, configure, and deliver a **fully realized** browser environment from one place in your project.
+Toucaan makes it easy to configure and deliver a _fully realized_ browser client environment with appropriate settings for your app from one place.
 
 ### Vendor Normalization
 
@@ -16,7 +16,7 @@ Traditionally, applications have required injecting a fairly heavy reset, reboot
 
 Toucaan uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.
 
-:::info Why no normalize?
+:::info Why no Normalize?
 A to-do app will likely not require the block of normalization code meant for the `video` tag, for example. One could shed unused css programmatically at the build stage, but such a set up often leads to dead code within the project.
 :::
 

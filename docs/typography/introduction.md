@@ -1,32 +1,51 @@
 ---
-sidebar_position: 7
+sidebar_position: 1
 ---
 
-# Intrinsic Typography
+# Introduction
 
-Toucaan utilizes a singular [utility variable](./variables.md) called the `--fs` to scale **all** content across the application. The value of the `--fs` unit is arrived at by evaluating the nature and orientation of device being served using the [Criteria of Viewport Squarishness](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). 
+Toucaan utilizes a singular [utility variable](./variables.md) called the `--fs` to scale content across **all** mediums for your application. 
 
-The variable name `--fs` stands for Font Size, so you can set `font-size` property of an element, like so:
+The value of the `--fs` unit variable is set according to the class and orientation of the device being served using the [criteria of "viewport squarish-ness"](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). 
+The variable name `--fs` stands for Font Size.
 
 ```css
 .element {
-  font-size: calc(4 * var(--fs));  /* A contrived example */
+  font-size: calc(4 * var(--fs));  /* A contrived example. */
 }
 ```
 
-:::warning Pending documentation
+A more involved and close to real world example using the `--fs` utility variable would be something like this: 
+
+```css
+/* Define the element width to 25 times the value of --fs (usually set to 1vmin). */
+--element-width: calc(25 * var(--fs));
+/* The number of letters that you want to fit into one line within your `div.element`. */
+--letter-count: 40;                       
+
+.element {
+  width: var(--element-width);
+  font-size: calc(var(--element-width) / var(--letter-count));
+}
+```
+
+<!-- :::warning Pending documentation
 More documentation w.r.t typesetting, typography, and scaling components to come here later. 
-:::
+::: -->
 
 
+## Example
 
-## Case of the Desktop 
-Since desktop browsers are viewed in landscape mostly, the value of `--fs` is determined as follows:
+A key requirement of understanding intrinsic scaling is to understand how to set the value of `--fs` for a given medium. 
+Given below is the case of the desktop. Since desktop browsers are mostly viewed in landscape mode, the value of `--fs` is set like so:
 
 ```css title="Setting the --fs variable on a desktop browser"
+/* Test for square-ishness of the viewport using an aspect-ratio MQ.        */
+/* Set the value of --fs utility variable using the value of shorter edge.  */
+
 @media (min-aspect-ratio: 2 / 1) { /* Length : Breadth ratio > 2 */
   :root {
-    --shorter-edge: 100vmin; /* Always pick the shorter side for better control of variation in size. */
+    --shorter-edge: 100vmin;        /* Use the shorter edge of the viewport for better control of Δ upon resizing. */
     --fs: calc(var(--shorter-edge) / 100);
   }
 }
@@ -39,33 +58,7 @@ Since desktop browsers are viewed in landscape mostly, the value of `--fs` is de
 }
 ```
 
-The same formula can be flipped over for a desktop monitor held in portrait orientation, just like we'd do on a mobile.
-
-### Block-scoping Text Scaling
-The `--fs` unit utility variable can be used to assign size to an element just like any other css unit `em`, `px`, or similar. 
-
-##### Example:
-
-```css
-.square {
-    width: calc(20 * var(--fs));
-    height: calc(20 * var(--fs));
-    font-size: calc(20 * var(--fs) / 5); /* font size is pinned to the width of the element */
-}
-```
-
-Observe the scaling of element and the text within. The size of the text is always pinned to the intrinsic size of the element!
-
-#### Demos
-See the [CSS is Awesome](https://codepen.io/marvindanig/pen/bGGRZdE) example with intrinsic scaling.
-
-View the [Homepage of Red Goose](https://goose.red) that demonstrates intrinsic scaling.
-
-
-## Case of the Mobile 
-
-More literature here.
-
+The formula above can be flipped for a desktop monitor that is installed in portrait orientation. Think of vertically mounted desktop monitor as a scaled up physical version of mobile view.
 
 ## Case of Physical Units
 
@@ -117,7 +110,7 @@ This is an experimental chapter with an immature technology. It is not safe for 
 :::
 
 
-:::info CSS Standards 
+:::info CSS Standard
 In the past, CSS standards required browsers to display absolute units correctly even on a computer screens. But since the number of incorrect implementations always outnumbered the correct ones… the requirement was finally dropped in 2011. [source](https://www.w3.org/Style/Examples/007/units.en.html)
 
 CSS Custom Properties can potentially reverse and solve for this past requirement via crowdsourcing digital mappings for as many hardware as possible. Read [more](https://bubblin.io/blog/inch).
