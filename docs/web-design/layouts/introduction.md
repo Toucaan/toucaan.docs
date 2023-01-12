@@ -5,6 +5,11 @@ sidebar_position: 1
 # Introduction
 It is possible to choose one or several of the many different “layout modes” with Toucaan. 
 
+:::warning Pending documentation
+More documentation w.r.t preferred layout mode and scaled pagination to come here later. 
+:::
+
+
 ### What is a Layout Mode?
 A css layout mode, sometimes called layout, is an algorithm that determines the position and size of boxes based on the way they interact with their sibling and ancestor boxes. Think of each layout mode as is its own little sub-language within css. The default layout mode is Flow, but one can opt in to Flexbox or Grid or Table by changing the display property on the parent container. 
 

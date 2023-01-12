@@ -104,4 +104,4 @@ Here are some of the things for you to configure:
 
 The key here is to break it down into small piece and config the framework as you go on to build intrinsic UX/UI for each device category that you end up supporting for your users. Contextualize properties like `touch-action: auto` and `pointer: coarse` according to the need of the medium and move them out of the way from environments that do not require those.
 
-Go to the next chapter on [Intrinsic Typography](./typography).
+Go to the next chapter on [Intrinsic Typography](./typography/introduction.md).

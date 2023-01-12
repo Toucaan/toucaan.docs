@@ -23,6 +23,6 @@ The custom property `--fs` for `font-size` discussed in the [next chapter](./typ
 
 To put it in simple terms, a styling layer can "belong to" the device _only_ when the kind of device and its underlying capabilities are known ahead of the render. 
 
-:::warning Pending documentation
+<!-- :::warning Pending documentation
 More documentation w.r.t typesetting, typography, and scaling components to come here later. 
-:::
+::: -->

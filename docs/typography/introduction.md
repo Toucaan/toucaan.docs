@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Introduction
 
-Toucaan utilizes a singular [utility variable](./variables.md) called the `--fs` to scale content across **all** mediums for your application. 
+Toucaan utilizes a singular [utility variable](../variables.md) called the `--fs` to scale content across **all** mediums for your application. 
 
 The value of the `--fs` unit variable is set according to the class and orientation of the device being served using the [criteria of "viewport squarish-ness"](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). 
 The variable name `--fs` stands for Font Size.

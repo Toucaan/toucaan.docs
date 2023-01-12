@@ -61,9 +61,7 @@ body {
 }
 ```
 
-Interestingly, Apple [recommends](https://developer.apple.com/design/human-interface-guidelines/watchos/visual-design/display-sizes/)
-using relative sizing and dynamic type to ensure that the items expand or contract naturally to fit the available space. This is great
-because we do just that with [blockscoped typography](../typography.md)!
+Interestingly, Apple [recommends](https://developer.apple.com/design/human-interface-guidelines/watchos/visual-design/display-sizes/) using relative sizing and dynamic type to ensure that the items expand or contract naturally to fit the available space. This is great because we do just that with [blockscoped typography](../typography/introduction.md)!
 
 ### 6. The WatchOS Meta Tag
 

@@ -10,7 +10,7 @@ The list below is in not exhaustive but will somewhat set you in the right direc
 
 2. Think of your mobile website as the interface of your mobile app in fullscreen mode. 
 
-3. Use intrinsic scaling to scale content (text, images, etc.). See [intrinsic typography](./../typography.md) and [utility variables](./../variables.md).
+3. Use intrinsic scaling to scale content (text, images, etc.). See [intrinsic typography](./../typography/introduction.md) and [utility variables](./../variables.md).
 
 4. Use flexbox or grids for layouts. 
 
