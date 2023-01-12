@@ -12,10 +12,10 @@ Among other things, the deterministic approach compels the designer to have suff
 
 Toucaan measures this in multiples of ICB or the _Initial Containing Block_. 
  
-:::info
-Toucaan doesn't use pre-composed utility classes to avoid the prescriptive nature of such a design system. This is intentional. 
+:::info Not a utility-first framework
+Toucaan doesn't provide pre-designed utility classes to avoid the prescriptive nature of such a design system. This is intentional. By avoiding such utilities, the design debt of the framework is kept low. 
 
-By avoiding the design debt of utility classes, Toucaan puts the responsibility of designing unique interfaces with the maker. It solves for uniqueness of visual and tactile experience instead of leading all applications using one particular framework to look one and the same. 
+Toucaan puts the entire responsibility of actual design with the end user. This way it solves for uniqueness of visual and tactile outcome instead of leading all applications using one particular framework to look the same. 
 :::
 
 ##### Example:

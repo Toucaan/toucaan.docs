@@ -1,5 +1,5 @@
 ---
-slug: page-lengths-in-intrinsic-design
+slug: how-to-use-the-new-css-variant-units-svh-lvh-dvh-on-mobile
 title: How to use the new css variant units svh, lvh, or dvh on mobile?
 authors: [marvin]
 tags: [toucaan, intrinsic, deterministic, design]
@@ -7,7 +7,7 @@ tags: [toucaan, intrinsic, deterministic, design]
 
 CSS viewport units like `vw`, `vh`, `vmin`, and `vmax` have had great browser support over the years. While these units work just fine in almost all scenarios there is one particular case on the mobile medium where the height viewport unit fails subtly. 
 
-![New CSS Units are like Marvel Variants](https://i.redd.it/i73598e01ti31.jpg)
+![New CSS Units are like Marvel Variants](https://i.redd.it/i73598e01ti31.jpg 'Marvel Artwork by Mark Bagley')
 
 <!--truncate-->
 
