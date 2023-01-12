@@ -117,6 +117,12 @@ const config = {
             label: 'Blog',
             position: 'left'
           },
+          // {
+          //   to: 'community',
+          //   docId: 'support',
+          //   label: 'Community',
+          //   position: 'left'
+          // },
           // Please keep GitHub link to the right for consistency.
           {
             href: 'https://github.com/Toucaan/toucaan',

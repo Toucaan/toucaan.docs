@@ -6,8 +6,7 @@ sidebar_position: 1
 
 Toucaan utilizes a singular [utility variable](../variables.md) called the `--fs` to scale content across **all** mediums for your application. 
 
-The value of the `--fs` unit variable is set according to the class and orientation of the device being served using the [criteria of "viewport squarish-ness"](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). 
-The variable name `--fs` stands for Font Size.
+The value of the `--fs` unit variable is set according to the type and orientation of the device being served using the [criteria of "viewport squarish-ness"](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). The variable name `--fs` stands for Font Size.
 
 ```css
 .element {
@@ -36,8 +35,7 @@ More documentation w.r.t typesetting, typography, and scaling components to come
 
 ## Example
 
-A key requirement of understanding intrinsic scaling is to understand how to set the value of `--fs` for a given medium. 
-Given below is the case of the desktop. Since desktop browsers are mostly viewed in landscape mode, the value of `--fs` is set like so:
+A key requirement of understanding intrinsic scaling is to understand how to set the value of `--fs` for a given medium. Displayed below is the case of the desktop. Since desktop browsers are mostly viewed in landscape mode, the value of `--fs` is set like so:
 
 ```css title="Setting the --fs variable on a desktop browser"
 /* Test for square-ishness of the viewport using an aspect-ratio MQ.        */
