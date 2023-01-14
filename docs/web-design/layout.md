@@ -6,7 +6,7 @@ sidebar_position: 2
 Toucaan allows you to choose any **layout mode** for your application that fits your use-case. 
 
 :::tip How to choose the layout mode?
-- Is your application more app-like a digital exchange or stocks app? If yes, then go for grid or flexbox.
+- Is your application more app-like a digital exchange or stocks app? If yes, then go for grid or Flexbox.
 - Is your application content heavy-like Wikipedia or a blog? Go for flow based layout.
 :::
 
@@ -14,7 +14,7 @@ Toucaan allows you to choose any **layout mode** for your application that fits 
 ### What is a Layout Mode?
 A css layout mode, sometimes called layout, is an algorithm that determines the position and size of boxes based on how they interact with their siblings and ancestors within the DOM. 
 
-Think of each layout mode as its own little design-language. The default layout mode of the browser is Flow, but one can opt-in to [Flexbox](flexbox.md) or [Grid](grid.md), or ~~Table~~ by changing the display property on the parent container. 
+Think of each layout mode as its own little design-language. The default layout mode of the browser is Flow, but one can opt-in to Flexbox or Grid, or ~~Table~~ by changing the display property on the parent container. 
 
 1. Normal flow — all elements are part of normal flow until you do something to take them out of it. Normal flow includes block layout, designed for laying out boxes such as paragraphs and inline layout, which lays out inline items such as text.
 2. Flex - Flexible box layout, designed for laying out complex pages that can be resized smoothly.
