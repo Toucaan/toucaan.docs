@@ -26,8 +26,9 @@ html, body {
 }
 ```
 
-:::tip
-Keep your scroll length in check! More than 80% people do not scroll below the fold at all.
+:::tip Tips
+1. Keep your scroll length in check! More than 80% people do not scroll below the fold at all.
+2. Infinite scrolls can also be engineered in multiples of the `--page` utility variable, although technically most of that responsibility is held by JavaScript in multiples of ICB. 
 :::
 
 
@@ -42,11 +43,15 @@ The `--page` variable represents the full screen area on a browser that is above
 
 ### Fractional Pagination. 
 
-It is perfectly alright to design mock-ups that aren't exactly a integer multiples of a `--page`. 
+It is perfectly alright to roll out webpages (scrolls) that aren't exactly an integer multiple of a `--page` variable. 
 
 ```css
 /* On mobile: */
 body {
-  height: calc(6.5 * 100dvmax); /* A six-and-a-half--pages long scroll on mobile. */ 
+  height: calc(6.5 * 100dvh); /* A six-and-a-half--pages long scroll on mobile. */ 
 }
 ```
+
+:::tip
+Notice the use of the css unit `dvh` for `--page` utility variable on mobile and not `dvmax` because in landscape mode, you want the page to reflect the shorter side as the height of the page. `dvmax` on the other hand always points to the bigger edge.
+:::
