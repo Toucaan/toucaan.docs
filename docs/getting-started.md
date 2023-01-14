@@ -9,7 +9,6 @@ sidebar_position: 1
 Add Toucaan to your project, like so: 
 
 
-
 ```bash title="in/your/project/at/root/"
 git submodule add https://github.com/Toucaan/toucaan
 ```
@@ -32,7 +31,7 @@ Toucaan's [sourcecode](https://github.com/Toucaan/toucaan) is also documented in
 :::
 
 :::caution
-This is an early version of Toucaan (< 1.0.0). Our documentation and tooling is in the state of flux and you're likely to encounter a few breaking changes in the next few weeks. 
+This is the first stable version of Toucaan (0.0.9). Our documentation and tooling is _still_ in the state of flux and you're likely to encounter a few breaking changes in the next few weeks. 
 :::
 
 

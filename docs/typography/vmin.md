@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Default unit: VMIN 
 
-Toucaan defaults to (and strongly recommends) using the `vmin` unit as the single unit of design for all styling needs and sizing. No other css unit comes close to offering the kind of intrinsic control and determinism that the viewport minimum unit can. 
+Toucaan defaults to (and strongly recommends) using _only_ the `vmin` unit as the single unit of design for all styling needs and element sizing. No other css unit comes close to offering the kind of control and determinism that the viewport minimum unit can. 
 
 ### Block-Scoping Text Size
 The `--fs` unit utility variable can be used to assign size to an element just like any other css unit `em`, `px`, or similar. 
