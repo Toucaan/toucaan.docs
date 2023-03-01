@@ -4,20 +4,20 @@ sidebar_position: 4
 
 # Environment Variables
 
-Sprinkling css into an application is a lot like configuring the **Environment Variables** of your app to render correctly on the client side. Setting up the environment on the client side is also about understanding the context of fronted design that one must accept while filling the viewport with their app. 
+Sprinkling css into an application is like setting **Environment Variables** on the client side for your app to render correctly. To do so, one must understand the context of the viewport and the underlying capabilities of the device to get to the best frontend experience. 
 
-Toucaan makes it easy to configure and deliver a _fully realized_ browser client environment with appropriate settings for your app from one place.
+Toucaan makes it easy to configure and deliver a _fully realized_ browser client environment with appropriate settings for your app. It separates the available stylistic choices according to the (industrial) category of the device using a [css router](./core-concepts/router.md), and allows you to manage the desired experience from one place.
 
 ### Vendor Normalization
 
-The first soft layer of setting up environment variables for your application is handling vendor inconsistencies up and close. 
+The first soft layer of setting up environment variables for your application is handling the vendor inconsistencies up and close. 
 
-Traditionally, applications have required injecting a fairly heavy reset, reboot, or normalize css file before other application styles could be included. Toucaan **does not use this** strategy. 
+Traditionally, applications have required injecting a fairly stable reset, reboot, or normalize css before any other application styles could be included. 
 
-Toucaan uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.
+Toucaan **does not use this** strategy. It uses the [baseline method](https://bubblin.io/blog/baseline-css) instead.
 
 :::info Why no Normalize?
-A to-do app will likely not require the block of normalization code meant for the `video` tag, for example. One could shed unused css programmatically at the build stage, but such a set up often leads to dead code within the project.
+To follow the HTML vocabulary of your app. A to-do app, for example, will likely not require the block of normalization code meant for a `video` tag. Alternatively, one could shed unused css programmatically at the build stage, but such a set up would often lead to a lot of dead code within the project. Toucaan forces you to make this careful choice early on.
 :::
 
 
@@ -29,8 +29,8 @@ Open the `env` folder inside `toucaan` submodule to reveal its contents:
 
 Inside the `env` folder you'll find two subfolders named `helpers` and `tags` each carrying a few initial defaults. Only a few baseline tags and pseudo-classes are included in the environment by default but you can add more into the context as needed. 
 
-:::tip vocabulary
-The `env` must be customized according to the actual HTML vocabulary of your app. 
+:::tip HTML vocabulary
+The `env` must carry all the vendor normalization code according to the actual HTML vocabulary of your app. 
 :::
 
 

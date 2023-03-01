@@ -267,6 +267,7 @@ html[data-theme="dark"] .markdown h3 {
   background-color: var(--color-link-background);
   padding-left: 3px;
   padding-right: 3px;
+  color: #0035ff;
 }
 
 html[data-theme="dark"] .markdown a {
