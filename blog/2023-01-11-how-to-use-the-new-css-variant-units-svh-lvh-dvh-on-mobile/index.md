@@ -44,7 +44,7 @@ According to the spec, the small viewport is when the browser interface (the url
 :::caution Broken on The Desktop
 Apparently, the new height variant unit is broken on the [macos desktop](https://bugs.webkit.org/show_bug.cgi?id=242758). 
 
-But since Toucaan uses a css router to separate stylesheets according to mediums, usage of the new viewport variants is recommended for only the mobile interfaces. The desktop can continue to be solved with the older viewport units. 
+But since Toucaan uses a css router to separate and serve stylesheets according to the class of medium, we can restrict usage of the new viewport variants to only the mobile and tablet interfaces where the support is guaranteed. We can continue to solve the desktop UI with the older viewport units. 
 :::
 
 

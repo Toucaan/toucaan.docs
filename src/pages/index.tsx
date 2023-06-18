@@ -57,7 +57,7 @@ export default function Home(): JSX.Element {
         <WaveBottomShapeDivider />
         <HeroTitleSecondary
           title="Create intrinsically scaling apps that belong to user's device."
-          ctaText="Start from the basics. 🔥🔥🔥"
+          ctaText="Learn the basics. 📖"
           ctaLink="/docs/category/core-concepts"
         />
         <SponsorLogos />

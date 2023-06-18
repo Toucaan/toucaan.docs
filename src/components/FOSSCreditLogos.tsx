@@ -27,7 +27,7 @@ const CreditList: CreditItem[] = [
 export default function FossCreditLogos(): JSX.Element {
   return (
     <section className="container hide-on-mobile">
-      <p className={styles.title}>Hosting & Safety Credits: </p>
+      <p className={styles.title}>Credits: </p>
       <div className={clsx(styles.logoContainer, "container", "padding-horiz-md")} >
         <div className={styles.logos}>
           {CreditList.map(({ imageSrc, alt }: CreditItem, idx) => {
