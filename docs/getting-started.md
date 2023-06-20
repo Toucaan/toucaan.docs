@@ -29,7 +29,7 @@ Toucaan's [sourcecode](https://github.com/Toucaan/toucaan) is also documented in
 :::
 
 :::caution 
-This is the first stable version of Toucaan (0.1.0). Our documentation and tooling is _still_ in the state of flux and you're likely to encounter a few breaking changes in the next few weeks. 
+This is the first stable version of Toucaan (1.0.0). Our documentation and tooling is _still_ in the state of flux and you're likely to encounter a few breaking changes in the next few weeks. 
 :::
 
 [^1]: Please add and commit the `.gitmodules` file to your project.

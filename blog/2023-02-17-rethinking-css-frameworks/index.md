@@ -13,27 +13,29 @@ _This article was originally featured on the [The Bubblin Blog](https://bubblin.
 
 # Introduction
 
-2023 is ~~almost~~ here.
+Welcome to web design in 2023.
 
-While the world continues to race towards space age or AI (LLM) driven publishing, let's turn our gaze towards the other more pressing frontier of technology that is relevant to our lives: 
+While the world continues to race towards space age and AI (LLM) driven publishing, we can turn our gaze towards the other more pressing frontier of technology that is relevant to us: 
 
 CSS. 🙂
 
 <!--truncate-->
 
-Let's look at how we could use the newest powers of css to layout and style our modern web applications. In this post, we will start from the basics of a webpage, i.e., HTML & CSS, and develop a [new, more strategic, intelligent, fresh, and maintainable approach](../2022-08-10-intrinsic-web-design/) to writing css (and framework). 
+Let's revisit how we could use the newest and the oldest powers of css to style modern web applications. In this post, we will start from the basics of a webpage, i.e., HTML & CSS, and develop a [new, more strategic, intelligent, fresh, and a more maintainable approach](../2022-08-10-intrinsic-web-design/) to writing css from the ground up.
 
-This new framework will be created from scratch and will _not_ follow the aging principles of responsive design. I have named our new css framework [Toucaan](https://toucaan.com), and you can join me on the journey of building it together. The complete code of this project is available on its [official repositories](https://github.com/Toucaan) on GitHub, along with a noddy Toucan logo that I designed using css.
+Heads up: Our new framework will be created from scratch and will _not_ follow the aging principles of responsive design. 
+
+I have named our new css framework [Toucaan](https://toucaan.com), and you can join me on the journey of building it together. The complete code of this project is available on its [official repositories](https://github.com/Toucaan) on GitHub, along with a noddy Toucan logo that I designed using css.
 
 ![Total Banchod Toucaan](./toucaan-total-banner.jpg)
 
-# Toucaan–The Tropical css Framework.
+# Toucaan–The Tropical CSS Framework.
 
 Qualitatively speaking, Toucaan intends to weed out all the unwanted
 css that a framework no longer needs. It is a deep dive into the available css standards of the day to discover new and valuable patterns
-according to [the landscape of new web](https://bubblin.io/blog/the-new-landscape-of-the-web) today.
+according to [the landscape of new web](https://bubblin.io/scrolls/blog/the-new-landscape-of-the-web) today.
 
-Who knows, we might even identify a few industry-wide anti-patterns in the process, and we can address those with a few suggestions as we go about building Toucaan ground up.
+Who knows, we might even identify a few industry-wide anti-patterns in the process, and we can address those with some new ideas as we go about building Toucaan ground up.
 
 :::info Official Handbook 
 The latest [official handbook](https://bubblin.io/book/the-toucaan-framework-by-marvin-danig#frontmatter) containing some of the more profound ideas and experiments that went into building Toucaan is out!
@@ -167,11 +169,9 @@ The web before the iPhone was desktop-only. It was a simple time then. With the 
 
 Width-based MQ approach worked great initially, switching the layout between the desktop and the mobile web only, but now with so many devices and form factors to serve, we need a new strategy. 
 
-Hardcoded screen width MQs are an anti-pattern. While it would be nice to continue doing what we have been doing for years with it, deep inside, we all know that this simplistic approach does not scale. 
+Hardcoded screen width MQs are an anti-pattern. While it would be nice to continue doing what we have been doing for years with it, deep inside, we all know that this simplistic approach does not scale. We should do away with this anti-pattern first. But is there a better way? 
 
-We should do away with these first. But is there a better way? 
-
-In the next chapter, we'll discuss that with [orientation querying](../2023-02-28-orientation-switch-media-query/).
+In the next chapter, we'll discuss that with [Orientation Querying](../2023-02-28-orientation-switch-media-query/).
 
 
 ---
