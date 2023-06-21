@@ -1,6 +1,6 @@
 ---
-slug: using-git-submodule-as-package-manager
-title: Using git submodule system as a package distribution manager.
+slug: using-git-submodule-as-package-distribution-manager
+title: Using Git Submodules for Distribution.
 authors: [marvin]
 tags: [toucaan, git, submodules, setup]
 ---

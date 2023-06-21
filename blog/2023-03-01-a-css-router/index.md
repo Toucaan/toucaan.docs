@@ -1,5 +1,5 @@
 ---
-slug: a-css-touter
+slug: a-css-router
 title: A CSS Router 
 authors: [marvin]
 tags: [toucaan, css, router, intrinsic, design]
@@ -10,25 +10,25 @@ _This article was originally featured on the [The Bubblin Blog](https://bubblin.
 
 ---
 
-Welcome to the newest chapter on Intrinsic Web Design with the [Toucaan CSS framework](https://toucaan.com). In this chapter, we will implement [a CSS router](https://bubblin.io/blog/a-css-router) that allows you to import a medium-specific stylesheet that "belongs" to a device. 
+Welcome to the newest chapter on [rethinking css frameworks](./rethinking-css-frameworks) with the Toucaan. In this chapter, we will implement [a css router](https://bubblin.io/blog/a-css-router) that allows us to isolate and deliver only medium-specific stylesheets that "belong" to the device. 
 
+This css router will form the backbone of [Intrinsic Web Design Principles](../docs/core-concepts/intrinsic). Therefore it is advised to read the ideas discussed in this post carefully.
+
+<!--truncate-->
 ### Two States of Web Design
 
-The first seemingly innocuous-looking fact about all digital mediums is that everything is a _rectangle_. All screens are rectangular. Even the [notched phones](https://bubblin.io/blog/notch) and bendable screens are practically rectangular. 
 
-The only device I could find with a genuinely non-rectangular screen is the circular Moto 360 Watch, but it, too, under all that glass, renders the content in [rectangular shape](https://play.google.com/store/apps/details?id=com.appfour.wearbrowser&hl=en_US&gl=US). Just like any other digital screen. 
+The first seemingly innocuous-looking fact about all digital mediums is that everything is a simple _rectangle_. All screens are rectangular. The notched, bendable, and foldable screens are also practically rectangular. 
 
-The point here is that since the viewing area of the glowing glass of pixels is _always_  a rectangle, a rectangle is the final state of any and every web design or render, no matter what. Furthermore, since a rectangle can be viewed in only two ways: in portrait or landscape orientation, we have just the **two states of web design** that exist. 
+The only device I could find with a genuinely non-rectangular screen is the circular Moto 360 Watch, but it, too, under the glass, rendered all the content in [shape of a rectangle](https://play.google.com/store/apps/details?id=com.appfour.wearbrowser&hl=en_US&gl=US), just like any other device. 
 
-<div class="center">
-  <img src="https://raw.githubusercontent.com/marvindanig/assets/master/axes-of-symmetry.jpg" alt="Common axes of symmetry for a rectangle." width="100%" style="max-width:100%;">
-    <em> A rectangle can sit on its two sides.  </em>
-</div>
-<br/>
+The point to note here is that since the viewing area of the glowing glass is _always_  a rectangle, the rectangle is the final state of any and every web design or render, no matter what. And since a rectangle has only two orientations: portrait and landscape, we have just the **two states of web design** to master for web designing. 
+
+![Common axes of symmetry for a rectangle.](https://raw.githubusercontent.com/marvindanig/assets/master/axes-of-symmetry.jpg)
 
 Cool? Let us use this fact to kickstart our CSS router first:
 
-A rectangular viewport can display content in either a standing position (portrait, like a mobile) or a lying position (landscape, like on a desktop). 
+Since a rectangular viewport can be viewed in portrait (like a mobile) or landscape position (like on a desktop) only, we can start with the first level of [Orientation Querying](./orientation-querying-with-switch-media-query) like so: 
 
 
 ```html
@@ -62,9 +62,9 @@ A rectangular viewport can display content in either a standing position (portra
 
 Looks simple enough? 
 
-From the code above, one can see that we have split our styles along the two axes of intrinsic web design, where the orientation is the first intrinsic quality of a rectangular screen against our visual horizon or [eye-level](https://courses.byui.edu/art110_new/art110/week01/eye_level.html) or the [field of view](https://biology.stackexchange.com/questions/24046/if-human-eyes-watch-an-area-whats-the-shape-of-its-capturing-shape-rectangula).
+From the code above, one can see that we have split our styles along the two axes of intrinsic web design, where the orientation is the first inherent quality of a rectangular screen against our visual horizon or [eye-level](https://courses.byui.edu/art110_new/art110/week01/eye_level.html) or the [field of view](https://biology.stackexchange.com/questions/24046/if-human-eyes-watch-an-area-whats-the-shape-of-its-capturing-shape-rectangula).
 
-Let us turn this orthogonal separation of styles into the first level of our router using an asynchronous CSS @import call, like so:
+Let us turn this orientation switch to our first level of the router using an asynchronous CSS @import call like so:
 
 ```html
 <style>
@@ -84,20 +84,19 @@ Let us turn this orthogonal separation of styles into the first level of our rou
 
 Our router will now serve only one stylesheet into the browser environment according to the device's orientation or the shape of the browser window in case of a resizable browser like on the desktop. 
 
-Meaning, if a user resizes their browser on their desktop to a point where the viewable window (rectangle) switches from landscape to portrait, then our CSS router will match `portrait.css` and fetch the new file. That said, the router will likely serve `landscape.css` on the desktop more because we generally use the desktop browser in landscape shape.
+Meaning if the user resizes their desktop browser to a point where the viewable window (rectangle) switches orientation from landscape to portrait, then our CSS router will prioritize `portrait.css` over `landscape.css.` Note that the router will likely continue to serve `landscape.css` even though it doesn't get applied because that is how the css standards expect the browsers to behave.
 
 Perfect.
 
 We can now scale our UI along one axis and not worry about how the website would appear on the other.
 
-> Info "The Curious Case of CSS @import."
-> There are plenty of articles on the web that claim that a CSS `@import` [performs poorly](https://csswizardry.com/2018/11/css-and-network-performance/). This claim is not entirely correct. 
->
-> The performance of CSS `@import` depends on how it is being used. If an `@import` fetch uses an inline declaration from the head of a document _without_ sequential chaining of multiple applicable stylesheets that could lead to a waterfall, it would be just as fast as any `link` statement. 
->
-> In other words, if there is just one stylesheet to prioritize into the DOM, using an `@import` or `link` statement does not make a difference. 
-> 
-> Note, the browser may [still fetch all the other stylesheets](https://blog.jim-nielsen.com/2021/conditional-style-loading-not-so-fast/) linked in the document but with lower priority and future applicability.
+:::info "The Curious Case of CSS @import."
+There are plenty of articles on the web that claim that a CSS `@import` [performs poorly](https://csswizardry.com/2018/11/css-and-network-performance/). This claim is not entirely correct. 
+
+The performance of CSS `@import` depends on how it is being used. If an `@import` fetch uses an inline declaration from the head of a document _without_ sequential chaining of multiple applicable stylesheets that could lead to a waterfall, it would be just as fast as any `link` statement. 
+:::
+
+In other words, if there is just one stylesheet to prioritize over and apply on the DOM, using an `@import` statement or a `link` statement will not make a difference. Note, the browser may [still fetch all the other stylesheets](https://blog.jim-nielsen.com/2021/conditional-style-loading-not-so-fast/) linked in the document, but those will come in with a lower priority and not get applied to the render since they're not relevant.
 
 ### Axes of Intrinsic Web Design
 
@@ -107,13 +106,7 @@ We can now drill down further into each axis to understand how our UI can scale 
 
 Consider the following design space:
 
-<br>
-<div class="center">
-  <img src="https://raw.githubusercontent.com/marvindanig/assets/master/intrinsic-design-space.jpg" alt="Axes of Intrinsic Web Design." width="100%" style="max-width:100%;">
-    <em class="small"> The axes of Intrinsic Web Design.   </em>
-</div>
-
-<br>
+![The axes of Intrinsic Web Design. ](https://raw.githubusercontent.com/marvindanig/assets/master/intrinsic-design-space.jpg)
 
 The second quality to consider for intrinsic web design is the physical size of a screen. From the plot of the design space above, one can see that the physical size of the rectangle increases a lot going up from a Watch to an LCD TV or projector (See the y-axis, for example). 
 
@@ -144,12 +137,8 @@ If we were to scale an app on the portrait axis of intrinsic web design, then ac
 - (E) A TV-set mounted on a wall in portrait mode (retail display or airport flight information display) to
 - (F) A 120" wall-mounted projector screen in portrait mode.
 
-<br>
-<div class="center">
-  <img src="https://raw.githubusercontent.com/marvindanig/assets/master/portrait-axis.jpg" alt="Device viewports along portrait axis." width="100%" style="max-width:100%;">
-    <em> Increasing physical size of devices held or mounted in portrait orientation.   </em>
-</div>
-<br>
+
+![Increasing physical size of devices held or mounted in portrait orientation.](https://raw.githubusercontent.com/marvindanig/assets/master/portrait-axis.jpg)
 
 Looks fair so far?
 
@@ -171,11 +160,7 @@ Go watch-first.
 
 The most remarkable quality of an Apple Watch is that it has a tiny screen—a sub-inch rectangular viewport if the bezel area around the Watch is discounted. Our fingertip can cover almost 25% of the real estate available on the Watch, so the UI components need to be scaled up for accessibility.
 
-<div class="center">
-  <img src="https://raw.githubusercontent.com/marvindanig/assets/master/apple-watch-four-quadrants.jpg" alt="Four UI quadrants on an Apple Watch." width="100%" style="max-width:100%;">
-    <em> A finger-tip can cover a quarter of the screen on a Watch.   </em>
-</div>
-<br/>
+![A finger-tip can cover a quarter of the screen on a Watch.](https://raw.githubusercontent.com/marvindanig/assets/master/apple-watch-four-quadrants.jpg)
 
 Designing for a medium that small can be particularly challenging. 
 
@@ -195,7 +180,7 @@ Getting back to our router:
 
 /*** Route-in or @import wearables first. ***/
 /*** 1. Apple Watch 6 for men = 44mm. Resolution: 368 x 448 pixels ***/
-/*** 2. Apple Watch 6 for women = 40mm.  324 x 394 pixels   ***/
+/*** 2. Apple Watch 6 for women = 40mm. 324 x 394 pixels   ***/
 /*** 3. Moto 360 Watch = 46mm. Resolution: 360 x 330 pixels ***/
 
 @import url('./toucaan/app/portrait/watch.css') 
@@ -215,7 +200,7 @@ Combining the above ruleset with a level-4 media query, we get a very accurate h
 
 /*** Route-in or @import wearables first. ***/
 /*** 1. Apple Watch 6 for men = 44mm. Resolution: 368 x 448 pixels ***/
-/*** 2. Apple Watch 6 for women = 40mm.  324 x 394 pixels   ***/
+/*** 2. Apple Watch 6 for women = 40mm. 324 x 394 pixels   ***/
 /*** 3. Moto 360 Watch = 46mm. Resolution: 360 x 330 pixels ***/
 
 /* Wearables */
@@ -283,7 +268,7 @@ Continuing on the portrait arm of our css router, let us hash out the remaining 
 
 /*** Route-in for @import watch.css ***/
 /*** a. Apple Watch 6 for men = 44mm. Resolution: 368 x 448 pixels ***/
-/*** b. Apple Watch 6 for women = 40mm.  324 x 394 pixels   ***/
+/*** b. Apple Watch 6 for women = 40mm. 324 x 394 pixels   ***/
 /*** c. Moto 360 Watch = 46mm. Resolution: 360 x 330 pixels ***/
 
 /* Wearables */
@@ -445,20 +430,14 @@ With our router's portrait-arm, we scale our landscape UI along the x-axis of In
 - (D) A TV-set mounted on a wall in landscape 
 - (E) A 120" wall-mounted projector screen in landscape.
 
-<div class="center">
-  <img src="https://raw.githubusercontent.com/marvindanig/assets/master/landscape-axis.jpg" alt="Device viewports along landscape axis." width="100%" style="max-width:100%;">
-    <em> Increasing physical size of the viewport in landscape mode.   </em>
-</div>
-<br>
+![Increasing physical size of the viewport in landscape mode.](https://raw.githubusercontent.com/marvindanig/assets/master/landscape-axis.jpg)
+
 
 > The instance of a V9 browser displayed on a desktop-sized tablet dashboard fixed in landscape mode at the center console of a Tesla Model 3 is not shown above. 
 
 Ultra-widescreen monitors can also be thrown into the mix and targeted with an eccentric layout that fits the medium intrinsically. After adding all the routes on the landscape arm, our application CSS will look something like this:
 
-<div class="center">
-  <img src="https://raw.githubusercontent.com/marvindanig/assets/master/css-structure.jpg" alt="Intrinsic monorepo style CSS architecture with IWD router." width="60%" style="max-width:100%;">
-</div>
-<br>
+![A mono-repo style architecture for css.](https://raw.githubusercontent.com/marvindanig/assets/master/css-structure.jpg)
 
 Our router will replace the traditional link to the stylesheet in the head of a document: 
 
@@ -484,12 +463,10 @@ That is it. Our CSS router is ready.
 
 We can now replace the old and rather lifeless `link` tag in the document's head with some critical router CSS and quickly transform our app into an intrinsically designed one. 
 
-Feel free to peruse the source code of the above router on the [Toucaan](https://github.com/Toucaan/toucaan) repository. PRs for improvements are most welcome.
+Feel free to peruse the source code of the above router on the [Toucaan](https://github.com/Toucaan/toucaan) submodule repository. PRs are welcome.
 
 Share thoughts in the comments below.
 
 ---
 
-By: 
-
-Marvin Danig, Founder of [Bubblin](https://bubblin.io) and the [Red Goose](https://goose.red) with editing help from [AJ Alkasmi](https://twitter.com/alkasmi27) and [Sonica Arora](https://twitter.com/sonicaaaaaa). Follow me on [Twitter](https://twitter.com/marvindanig) or on [Github](https://github.com/marvindanig) if you like.
+Credits: With thanks to [AJ Alkasmi](https://twitter.com/alkasmi27) and [Sonica Arora](https://twitter.com/sonicaaaaaa) for all the editing help. 

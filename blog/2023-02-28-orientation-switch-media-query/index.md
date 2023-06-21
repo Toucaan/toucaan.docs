@@ -1,5 +1,5 @@
 ---
-slug: orientation-switch-media-query
+slug: orientation-querying-with-switch-media-query
 title: Orientation Querying.
 authors: [marvin]
 tags: [toucaan, css, intrinsic, design]
@@ -16,6 +16,8 @@ In the [last chapter](../2023-02-17-rethinking-css-frameworks/index.md) we float
 Where do we start?
 
 ### A Blank Page
+
+<!--truncate-->
 
 Let's start with a [blank page](https://raw.githubusercontent.com/Toucaan/toucaan.research/master/examples/example0.html) on your machine and load that blank page into your favorite browser (desktop).
 
@@ -69,7 +71,7 @@ Reference [data and plots](https://ux.stackexchange.com/questions/64749/are-ipad
 
 # The Two Axes of [Intrinsic Design.](../../docs/core-concepts/intrinsic)
 
-From the usage and the knowledge of fact that there are only two possible orientations in which a webpage could be rendered, we can split the art and science of web designing along the two axes of orientation. 
+From the usage and the knowledge of fact that there are only two possible orientations in which a webpage could be rendered, we can split the art and science of web designing along the two axes of orientation. This topic is discussed at length in the next chapter [A CSS Router](./a-css-router).
 
 This will be our first level of querying (the framework architecture) to avoid using the anti-pattern of hardcoded width-based breakpoints to switch layouts. Let's wire up the basic idea of orientation querying:
 
@@ -100,5 +102,5 @@ The advantage of Orientation Querying is that we can restrict our stylistic choi
 
 The ruleset shown above may not seem like much at this stage but this orientation switch media query is exactly how Toucaan will deliver scaled type and intrinsic designs to the browser. 
 
-We'll discuss that in the next chapter [The CSS Router] ().
+We'll discuss that in the next chapter [The CSS Router](./a-css-router).
 

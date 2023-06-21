@@ -109,7 +109,9 @@ Notice the use of **asynchronous CSS @import** (and not SASS @import) in the rou
 
 Read more about Toucaan's [css router](https://bubblin.io/blog/a-css-router) and its implementation philosophy.
 
-:::info CSS @import vs. SASS @import Toucaan uses both css @imports and sass @imports. As a framework convention, Toucaan puts css imports to use for framework code only, whereas sass imports are meant for **user-defined** or application style. :::
+:::info CSS @import vs. SASS @import 
+Toucaan uses both css @imports and sass @imports. As a framework convention, Toucaan puts css imports to use for framework code only, whereas sass imports are meant for **user-defined** or application style. 
+:::
 
 The basic HTML linking configuration shown above is included with the Toucaan [submodule](https://github.com/Toucaan/toucaan/blob/master/_config.scss) (that you installed earlier). Ensure the paths to the router assets (i.e. css files like `portrait.css` and `landscape.css`) and the compiled assets (i.e. **user-defined stylesheets** for device specific distribution) are correct and accessible over the wire.
 
