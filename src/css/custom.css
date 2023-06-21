@@ -264,10 +264,12 @@ html[data-theme="dark"] .markdown h3 {
 }
 
 .markdown a {
-  background-color: var(--color-link-background);
+  /* background-color: var(--color-link-background); */
   padding-left: 3px;
   padding-right: 3px;
   color: #0035ff;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
 }
 
 html[data-theme="dark"] .markdown a {

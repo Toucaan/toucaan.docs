@@ -13,29 +13,27 @@ _This article was originally featured on the [The Bubblin Blog](https://bubblin.
 
 # Introduction
 
-Welcome to web design in 2023.
+2023 is ~~almost~~ here.
 
-While the world continues to race towards space age and AI (LLM) driven publishing, we can turn our gaze towards the other more pressing frontier of technology that is relevant to us: 
+While the world continues to race towards space age or AI (LLM) driven publishing, let's turn our gaze towards the other more pressing frontier of technology that is relevant to our lives: 
 
 CSS. 🙂
 
 <!--truncate-->
 
-Let's revisit how we could use the newest and the oldest powers of css to style modern web applications. In this post, we will start from the basics of a webpage, i.e., HTML & CSS, and develop a [new, more strategic, intelligent, fresh, and a more maintainable approach](../2022-08-10-intrinsic-web-design/) to writing css from the ground up.
+Let's look at how we could use the newest powers of css to layout and style our modern web applications. In this post, we will start from the basics of a webpage, i.e., HTML & CSS, and develop a [new, more strategic, intelligent, fresh, and maintainable approach](./intrinsic-design) to writing css (and framework). 
 
-Heads up: Our new framework will be created from scratch and will _not_ follow the aging principles of responsive design. 
-
-I have named our new css framework [Toucaan](https://toucaan.com), and you can join me on the journey of building it together. The complete code of this project is available on its [official repositories](https://github.com/Toucaan) on GitHub, along with a noddy Toucan logo that I designed using css.
+This new framework will be created from scratch and will _not_ follow the aging principles of responsive design. I have named our new css framework [Toucaan](https://toucaan.com), and you can join me on the journey of building it together. The complete code of this project is available on its [official repositories](https://github.com/Toucaan) on GitHub, along with a noddy Toucan logo that I designed using css.
 
 ![Total Banchod Toucaan](./toucaan-total-banner.jpg)
 
-# Toucaan–The Tropical CSS Framework.
+# Toucaan–The Tropical css Framework.
 
 Qualitatively speaking, Toucaan intends to weed out all the unwanted
 css that a framework no longer needs. It is a deep dive into the available css standards of the day to discover new and valuable patterns
-according to [the landscape of new web](https://bubblin.io/scrolls/blog/the-new-landscape-of-the-web) today.
+according to [the landscape of new web](https://bubblin.io/blog/the-new-landscape-of-the-web) today.
 
-Who knows, we might even identify a few industry-wide anti-patterns in the process, and we can address those with some new ideas as we go about building Toucaan ground up.
+Who knows, we might even identify a few industry-wide anti-patterns in the process, and we can address those with a few suggestions as we go about building Toucaan ground up.
 
 :::info Official Handbook 
 The latest [official handbook](https://bubblin.io/book/the-toucaan-framework-by-marvin-danig#frontmatter) containing some of the more profound ideas and experiments that went into building Toucaan is out!
@@ -53,8 +51,7 @@ Besides, Toucan is a beautiful bird. This aggressive little arboreal ramphastida
 
 Occasionally—though rarely—we may even spar with other css frameworks using our "colorful, mean and oversized" bill. Therefore—say hello to **Toucaan**—the tropical css framework for the web.
 
-> 👉 CSS may be hard… but if Toucaan—you can too!
-
+> 👉 CSS is hard. But if Toucaan, then you can too.
 
 ![At each increase of knowledge…](https://raw.githubusercontent.com/marvindanig/assets/master/charlesbabbage.jpg)
 
@@ -89,11 +86,11 @@ One shouldn't forget about the low-powered devices on the budget end of the mark
 
 Given the diversity of devices and the scale of connectivity today, it is safe to assume that the range of devices available today is on a **linear continuum of screen size and form factor**; that the slate of glass or the touch screen is practically resizable freely just like the browser itself.
 
-# The First Issue of Older CSS Frameworks
+# The First Issue 
 
 The web is enormous now, and it is undoubtedly much harder to scale apps between the lowest and the highest options available today. Notice that we are not even talking about vendor inconsistencies at this point. 
 
-The range of hardware itself is large enough to void the very first assumption made by nearly all the major frameworks:
+The range of hardware itself is vast enough to void the very first assumption taken by nearly all the major frameworks:
 
 > **Hardcoded breakpoints using device width.**.
 
@@ -161,23 +158,23 @@ Even typography and spacing need scaling according to the silo in play.
   +typography-size('fullhd')
 ```
 
-Every existing css framework follows this pattern. Every time a new device or phone with a higher resolution is rolled out, a new breakpoint is added to the framework. 
+Every existing css framework follows this pattern. A new breakpoint is added to the framework every time the manufacturer rolls out a new device segment. The question is: How many breakpoints will cover everything on the web today? And at what point will there be all too many? 
 
-The question is: How many breakpoints will cover everything on the web today? And at what point will there be all too many? 
+The web before the iPhone was desktop-only. It was a simple time then. With the rise of smartphones, we got _the mobile web_, and in the process, we walked into this tunnel vision of using width-based breakpoints. But what now?
 
-The web before the iPhone was desktop-only. It was a simple time then. With the rise of smartphones, the web slowly percolated into our lives in the shape of _the mobile web_, and in the process, we were led to this tunnel vision of using width-based breakpoints _only_. 
+Width-based MQ approach worked great initially, with context switching between desktop and mobile only, but now with so many types of devices and form factors to serve on, boy, do we need a new strategy. 
 
-Width-based MQ approach worked great initially, switching the layout between the desktop and the mobile web only, but now with so many devices and form factors to serve, we need a new strategy. 
+While it would be nice to continue doing what we have been doing for years, deep inside, we all agree that hardcoded MQs based on screen width are anti-patterns. 
 
-Hardcoded screen width MQs are an anti-pattern. While it would be nice to continue doing what we have been doing for years with it, deep inside, we all know that this simplistic approach does not scale. We should do away with this anti-pattern first. But is there a better way? 
+Toucaan will try to do away with these first. But is there a better way? 
 
-In the next chapter, we'll discuss that with [Orientation Querying](../2023-02-28-orientation-switch-media-query/).
+The next chapter discusses that with [Orientation Querying](./orientation-switch-media-query/).
 
 
 ---
 
 #### Credits:
 
-Super thankful to [Sonica Arora](https://bubblin.io/sonica), Abigail Rennmeyer, Varun Singh, and <a rel= "nofollow noopener noreferrer" href=" https://nilesh.trivedi.pw/">Nilesh Trivedi</a> for helping me review this post for accuracy.
+Super thankful to [Sonica Arora](https://bubblin.io/sonica), Abigail Rennmeyer, Varun Singh, and [Nilesh Trivedi](https://nilesh.trivedi.pw/) for reviewing this post for clarity.
 
 
