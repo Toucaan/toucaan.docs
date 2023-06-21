@@ -10,9 +10,9 @@ _This article was originally featured on the [The Bubblin Blog](https://bubblin.
 
 ---
 
-Welcome to the newest chapter on [rethinking css frameworks](./rethinking-css-frameworks) with the Toucaan. In this chapter, we will implement [a css router](https://bubblin.io/blog/a-css-router) that allows us to isolate and deliver only medium-specific stylesheets that "belong" to the device. 
+Welcome to the newest chapter on [rethinking css frameworks](./blog/rethinking-css-frameworks) with the Toucaan. In this chapter, we will implement [a css router](./blog/a-css-router) that will allow us to isolate and deliver only medium-specific stylesheets that "belong" to the device. 
 
-This css router will form the backbone of [Intrinsic Web Design Principles](../docs/core-concepts/intrinsic). Therefore it is advised to read the ideas discussed in this post carefully.
+This css router will form the backbone of [Principles of Intrinsic Design](./docs/core-concepts/intrinsic). Therefore it is advised to read the ideas discussed in this post carefully.
 
 <!--truncate-->
 ### Two States of Web Design

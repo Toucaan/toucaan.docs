@@ -168,7 +168,7 @@ While it would be nice to continue doing what we have been doing for years, deep
 
 Toucaan will try to do away with these first. But is there a better way? 
 
-The next chapter discusses that with [Orientation Querying](./orientation-switch-media-query/).
+The next chapter discusses that with [Orientation Querying](./orientation-querying-with-switch-media-query).
 
 
 ---
