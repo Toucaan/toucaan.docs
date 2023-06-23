@@ -30,23 +30,29 @@ You're required to check-in the `.gitmodules` file into your project. git uses t
 
 By default, the `.gitmodules` file references its source repository (the master Toucaan repository on GitHub) using an absolute `https` url. 
 
-I usually change this url to a relative one, to allow both `ssh` and `https` type of authentication, and also to point the installed submodule to a private repository within my organization first, like so:
+I usually change this url to a relative one, like so:
 ```
 [submodule "app/assets/stylesheets/toucaan"]
 	path = app/assets/stylesheets/toucaan
 	url = ../toucaan.git 👈🏻
 ```
 
-Then I sync up all the submodule(s) and check-in the edited `.gitmodules` to my project. This step ensures that I have a full copy of all the submodules that my project at my organization privately and that the modules are synced as well with the main project at root. 
+This allows git authentication with both `ssh` and `https`, and it also helps me to point the installed submodule to a private repository within my organization.
+
+Then I sync up all the submodule(s) that project uses and check-in the edited `.gitmodules` file into the main project. This step ensures that my organization has a full copy of all the submodules of the project privately and also syncs the module with the main repository. 
 
 ```git
 $ git submodule sync
 $ git submodule update --init --recursive --remote
 ```
 
-### Setting Up A Private Repository
+### Branch Naming Convention
 
-To do this I step inside the `toucaan` submodule that was checked out inside the `MyProject` repo and create a new branch called `MyProject` of Toucaan to keep all the future changes specific to `MyProject` in `toucaan` at one place. Then save the submodule with all the local code into the freshly created empty and private repository in my GitHub organization, like so:
+For the Toucaan submodule, I step inside the `toucaan` folder inside `MyProject` and create a new branch called `MyProject` of Toucaan to keep all the app-specific changes relevant to `MyProject` in that branch. 
+
+For example, in our rails app [Bubblin](https://bubblin.io) all submodules have a branch named `bubblin` to push production level code into. This way, we can leave the `master` or `main` branch of the submodule up to the maintainers for updates. 
+
+Basically, these steps:
 
 ```git
 $ cd ./MyProject/assets/stylesheets/toucaan/
@@ -55,11 +61,11 @@ git remote add MyProject https://github.com/my-organization/toucaan.git
 git push -u origin MyProject
 ```
 
-Note that I have also labeled the `MyProject` branch as the new origin of my _instance of_ the Toucaan submodule. 
+Note that `MyProject` branch is also labeled as the new `origin` for my _instance of_ the Toucaan submodule. 
 
 ### Managing Remote Repositories
 
-This is what the remote urls will look inside your instance of the Toucaan submodule upon installation:
+This is what the original remote urls will look like inside the Toucaan submodule upon installation:
 
 ```git
 $ git remote -v
@@ -67,14 +73,16 @@ origin	https://github.com/Toucaan/toucaan (fetch)
 origin	https://github.com/Toucaan/toucaan (push)
 ```
 
-To change the origin to the private repo within your GitHub organization:
+Set the origin to your own private repository within your organization:
 
 ```git
 $ git remote set-url --add --fetch https://github.com/my-organization/toucaan.git
 $ git remote set-url origin https://github.com/my-organization/toucaan.git
 ```
 
-This way we can leave the maintainer's master alone and not affect the upstream lifecycle of the FOSS repository. This is how the remote urls look inside my local submodule after:
+This will guarantee that all the app-specific downstream changes and additions to the Toucaan submodule will always be saved, and the upstream lifecycle of the FOSS repository remains unaffected. 
+
+This is how the remote urls look inside my local submodule afterwards:
 
 ```
 $ git remote -v
@@ -86,7 +94,7 @@ master	https://github.com/Toucaan/toucaan (fetch)
 master	https://github.com/Toucaan/toucaan (push)
 ```
 
-Setting the origin this way ensures that all the downstream work done inside of the Toucaan submodule for the `MyProject` app gets saved privately with full history attached and it is also _not_ pushed out in the open or into the maintainer's repository accidentally (which would of course would get rejected).
+Developing and maintaining submodules this way offers great freedom in managing the direction of downstream work inside of any submodule, along with access to full history of mainstream FOSS community which may or may not always be aligned with your goals. It also helps keep the footprint of your overall project small and modular with the full power of `git` to jump to any place on the timeline created by your team or outsiders for each submodule separately.
 
 ### Recursive Git Config 
 
@@ -100,7 +108,7 @@ So this is how I use the `git submodule` system to manage and distribute the Tou
 
 ### Main Advantages
 
-1. Independence from complicated and unrelated package managers such as `npm`, `yarn`, `pip`, `bundler` or similar.
+1. Independence from complicated and unrelated package managers such as `npm`, `yarn`, `pip`, `bundler` or similar. Good ol' freedom!
 2. Access to full history of the submodule both from maintainer's side and your own.
 3. Stronger control, better access, and improved maintainability of project internal dependencies. While the repository of the Toucaan submodule lives inside of the project `MyProject` it still has a separate git history and doesn't "pollute" the git log with the detailed check-ins of the changes made to the submodule. 
 
