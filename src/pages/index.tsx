@@ -31,7 +31,7 @@ function HomepageHeader() {
         </a>
         <h1 className="hero__title">Meet Intrinsic Design with <span className="fascinate">Toucaan</span>.</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p className="hero__subsubtitle">(Version 0.1.0) </p>
+        <p className="hero__subsubtitle">(Version 0.2.0) </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"

@@ -1,6 +1,6 @@
 ---
 slug: a-css-router
-title: A CSS Router 
+title: A CSS Router.
 authors: [marvin]
 tags: [toucaan, css, router, intrinsic, design]
 ---
@@ -12,7 +12,7 @@ _This article was originally featured on the [The Bubblin Blog](https://bubblin.
 
 Welcome to the newest chapter on [rethinking css frameworks](./blog/rethinking-css-frameworks) with the Toucaan. In this chapter, we will implement [a css router](./blog/a-css-router) that will allow us to isolate and deliver only medium-specific stylesheets that "belong" to the device. 
 
-This css router will form the backbone of [Principles of Intrinsic Design](./docs/core-concepts/intrinsic). Therefore it is advised to read the ideas discussed in this post carefully.
+This css router will form the backbone of [Principles of Intrinsic Design](./docs/core-concepts/intrinsic). It is advisable to read the ideas shared in this post carefully.
 
 <!--truncate-->
 ### Two States of Web Design
@@ -26,7 +26,7 @@ The point to note here is that since the viewing area of the glowing glass is _a
 
 ![Common axes of symmetry for a rectangle.](https://raw.githubusercontent.com/marvindanig/assets/master/axes-of-symmetry.jpg)
 
-Cool? Let us use this fact to kickstart our CSS router first:
+Cool? Let us use this fact to kickstart our CSS router:
 
 Since a rectangular viewport can be viewed in portrait (like a mobile) or landscape position (like on a desktop) only, we can start with the first level of [Orientation Querying](./orientation-querying-with-switch-media-query) like so: 
 

@@ -1,22 +1,20 @@
 ---
 slug: how-to-use-the-new-css-variant-units-svh-lvh-dvh-on-mobile
-title: How to use the new css variant units svh, lvh, or dvh on mobile?
+title: Using svh, lvh, or dvh with Toucaan
 authors: [marvin]
 tags: [toucaan, intrinsic, deterministic, design]
 ---
 
-CSS viewport units like `vw`, `vh`, `vmin`, and `vmax` have had great browser support over the years. While these units work just fine in almost all scenarios there is one particular case on the mobile medium where the height viewport unit fails subtly. 
+CSS has had viewport units like `vw`, `vh`, `vmin`, and `vmax` for years with a great browser support. These units work fine in nearly all the scenarios except on a mobile where the height of the viewport (unit) changes as the page is scrolled up and the browser interface hides away. 
 
-![New CSS Units are like Marvel Variants](https://i.redd.it/i73598e01ti31.jpg 'Marvel Artwork by Mark Bagley')
+Recently, a few new level-4 css units were announced as browser standards to address this issue.
 
 <!--truncate-->
 
-As per standard implementation, since the year 2015, the value of `100vh` has usually matched the larger viewport state (see figure below). The problem with this implementation is that some of the UX/UI of a "full screen" web-app tends to fall below the fold due to the browser interface taking up space at the top. When the viewport state is small (or the browser is in expanded state), `100vh` would be longer than the available height on the screen. It appears like a minor nit, but it has had a significant impact on mobile design experience over the year.
-
-To resolve this issue, we now have a few new css level - 4 viewport units to play with. 
+Since 2015, the value of `100vh` has usually matched the larger viewport state (see figure below). The problem with this implementation was that some of the UX/UI of a "full screen" app fell below-the-fold due to the browser interface taking up that much space. This may appear like a minor nit, but it has had a significant impact on mobile web experience over the years.
 
 
-### Meet `svw`, `lvh`, and `dvh` 
+## The `svw`, `lvh`, and `dvh` units 
 
 1. `svh` - small viewport height.
 2. `lvh` - long viewport height.

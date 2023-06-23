@@ -54,6 +54,7 @@ const config = {
           editUrl:
             'https://github.com/Toucaan/toucaan.docs/blob/master/',
           blogTitle: 'The Intrinsic Design & CSS Blog',
+          blogSidebarCount: 15,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css')
