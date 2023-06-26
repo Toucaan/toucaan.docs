@@ -10,7 +10,7 @@ tags: [fit-to-width, intrinsic, typography]
 
 Scaling the digital type across mediums has always been a difficult problem. In this post, we will talk about an **intrinsically scaling typographic system** that we have discovered while building our [css framework](https://toucaan.com). 
 
-As you'll see, this new system resolves most, if not all, of the challenges of web design faced by a developer. Let's start by solving this meme first: 
+As you'll see, this new system resolves most, if not all, of the challenges faced by a web developer. Let's start by solving this meme first: 
 
 ![CSS is Awesome!](./cssisawesome.jpg)
 
