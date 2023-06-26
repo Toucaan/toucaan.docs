@@ -8,15 +8,17 @@ tags: [fit-to-width, intrinsic, typography]
 
 # Intrinsic Typography.
 
-Scaling the digital type across mediums has always been a complex problem. In this post, we will talk about an **intrinsically scaling typographic system** that we have discovered while building our [css framework](https://toucaan.com). As you'll see, this system will resolve most, if not all, of the challenges we designers face worldwide. 
+Scaling the digital type across mediums has always been a difficult problem. In this post, we will talk about an **intrinsically scaling typographic system** that we have discovered while building our [css framework](https://toucaan.com). 
 
-Let's start by solving this meme first: 
+As you'll see, this new system resolves most, if not all, of the challenges of web design faced by a developer. Let's start by solving this meme first: 
 
-![CSS is Awesome!](https://raw.githubusercontent.com/marvindanig/assets/master/cssisawesome.png)
+![CSS is Awesome!](./cssisawesome.jpg)
 
 <!--truncate-->
 
-### Keeping text within a box!
+### CSS IS AWESOME!
+
+We'll prevent the overflow and scale the type dynamically according to the dimensions of the element.
 Consider the following HTML:
 
 ```html
@@ -52,8 +54,11 @@ From the code above, you can make out that it is our [Orientation Query](./orien
 
 From the code above, we can draw the following two axioms:
 
-1st axiom: `100vh` in landscape mode = `100vw` in portrait mode. 
-2nd axiom: `vmin` is **always** the shorter side of the rectangle. 
+> **1st axiom:** 
+>  - `100vh` in landscape mode = `100vw` in portrait mode. 
+
+> **2nd axiom:** 
+>  - `vmin` is **always** the shorter side of the rectangle. 
 
 The first axiom is very simple. `vw` and `vh` units are interrelated and can be swapped easily according to viewport orientation. One can say that device orientation is _intrinsic_ to viewport units.
 
@@ -173,9 +178,11 @@ With this `vmin` based solution, the text in the box will scale correctly with s
 
 Feel free to [test the demo](https://codepen.io/marvindanig/full/bGGRZdE). 
 
-Do you like this technique of scaling content with a simple `vmin` unit of css? I love the simplicity of this solution and its ability to help us avoid using multiple css units to achieve the same/similar effect. It also helps me avoid the hardcoded breakpoints on media queries, `clamp(),` and the unwieldily syntax of container queries, which requires yet another combination of alternative css units. 
+### Conclusion
 
-`vmin` is simple. And I think `vmin` can rule Intrinsic Typography without any difficulty. What do you think? Please do share your thoughts.
+Do you like this technique of scaling content with a simple `vmin` unit of css? I love the simplicity of this solution and its ability to help us avoid using combination of multiple css units to achieve the same/similar effect. It also helps me avoid using hardcoded media queries, hardcoded `clamp(),` and the unwieldily syntax of container queries, which requires yet another combination of alternative css units. 
+
+`vmin` is simple. And I think `vmin` can rule the entire space of Intrinsic Typography in the future. What are your thoughts? Have you tried web designing with `vmin`? If not, that's exactly what we'll talk about in our next post by extending our solution above to a more generic layout. Hang on tightly!
 
 
 ---

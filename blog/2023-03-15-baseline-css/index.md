@@ -1,6 +1,6 @@
 ---
 slug: baseline-css
-title: Modern Baseline.
+title: A Modern Baseline.
 authors: [marvin]
 tags: [toucaan, css, reset]
 ---
