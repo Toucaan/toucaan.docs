@@ -11,6 +11,8 @@ We often use the terms `width` and `height` to specify the dimensions of an elem
 
 However, by using these colloquial terms of web design, we also make an unwitting assumption: 
 
+<!--truncate-->
+
 > That the screen in front of the user is always vertical. 
 
 While this was true back in the day, in the desktop era, when a monitor would sit on the desk, and the display would premise such usage. The viewport of a desktop was always on the vertical plane. 
