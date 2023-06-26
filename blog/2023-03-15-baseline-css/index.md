@@ -17,11 +17,12 @@ In a previous chapter, we started with a [blank file](https://raw.githubusercont
 
 Touch a new file on the disk and [open](https://raw.githubusercontent.com/bookiza/toucaan/master/examples/example0.html) it on a browser like Chrome:
 
+```bash
+$ touch example0.html     // Create a new blank file.
+```
 <!--truncate-->
 
 ```bash
-$ touch example0.html     // Create a new blank file.
-
 $ chrome example0.html    // Open this 0-byte file on your favorite browser.
 ```
 
@@ -244,7 +245,6 @@ Below is `baseline.css` on the Toucaan submodule for your feisty eyes:
       body {
         min-height: -webkit-fill-available;
       }
-
 
 </style>
 

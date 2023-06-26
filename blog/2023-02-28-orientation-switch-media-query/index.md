@@ -11,13 +11,20 @@ _This article was originally featured on the [The Bubblin Blog](https://bubblin.
 
 ---
 
-In the [last chapter](../2023-02-17-rethinking-css-frameworks/index.md) we floated the idea of replacing the first anti-pattern that's common between all the traditional css frameworks. Imagine a cascading order of MQs that doesn't use hardcoded values as breakpoints at all. Imagine a clear separation of styling code that allows the developer to go deep into scope they're designing for, without ever thinking about how their application would look or behave on another device. 
+In the [last chapter](../2023-02-17-rethinking-css-frameworks/index.md) we floated the idea of replacing the first anti-pattern that pervades nearly all of the traditional css frameworks. 
 
-Where do we start?
+Here's a quick recap: 
 
-### A Blank Page
+> _Hardcoded width-based MQ breakpoints that separate styles between desktop, mobile, and other category of devices is an anti-pattern._
 
 <!--truncate-->
+
+Imagine a cascading order of MQs that doesn't use hardcoded values as breakpoints at all. Imagine a clear isolation of your design scope that allows you to go deep into the experience you're designing for. 
+
+Sounds fun? Great! Let's start with a blank page.
+
+### The Blank Page
+
 
 Let's start with a [blank page](https://raw.githubusercontent.com/Toucaan/toucaan.research/master/examples/example0.html) on your machine and load that blank page into your favorite browser (desktop).
 

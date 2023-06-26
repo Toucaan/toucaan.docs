@@ -10,13 +10,12 @@ _This article was originally featured on the [The Bubblin Blog](https://bubblin.
 
 ---
 
-Welcome to the newest chapter on [rethinking css frameworks](./blog/rethinking-css-frameworks) with the Toucaan. In this chapter, we will implement [a css router](./blog/a-css-router) that will allow us to isolate and deliver only medium-specific stylesheets that "belong" to the device. 
+Welcome to the newest chapter on [Rethinking CSS Frameworks](./blog/rethinking-css-frameworks) with the Toucaan. In this chapter, we will implement [A CSS Router](./blog/a-css-router) that will allow us to isolate and deliver only medium-specific stylesheets that make our apps "belong" to the device. 
 
-This css router will form the backbone of [Principles of Intrinsic Design](./docs/core-concepts/intrinsic). It is advisable to read the ideas shared in this post carefully.
+This css router will eventually form the backbone of [Principles of Intrinsic Design](./docs/core-concepts/intrinsic), therefore, we recommend the end user to read this post carefully.
 
 <!--truncate-->
 ### Two States of Web Design
-
 
 The first seemingly innocuous-looking fact about all digital mediums is that everything is a simple _rectangle_. All screens are rectangular. The notched, bendable, and foldable screens are also practically rectangular. 
 
