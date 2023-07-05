@@ -2,7 +2,7 @@
 slug: a-css-router
 title: A CSS Router.
 authors: [marvin]
-tags: [toucaan, css, router, intrinsic, design]
+tags: [toucaan, router, intrinsic]
 ---
 
 ---
@@ -417,7 +417,7 @@ Responsive web design can be considered a subset of intrinsic web design, in tha
 
 Intrinsic can also differ significantly from responsive depending on how deep an implementation builds UX/UIs that utilize the intrinsic capabilities and thus "belong." On the plot of design space of intrinsic web design (diagram shown above), RWD focuses on mobile and desktop, and the point of intersection is where the design meets its media-query breakpoint.
 
-Looking closely, RWD tries to implement a similar separation of design states, but it fails to establish a boundary. It does not push the designer to think UI independent of the other device. This, in my opinion, is a significant drawback of responsive web design and prevents it from scaling according to [the new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web).
+Looking closely, RWD tries to implement a similar separation of design states, but it fails to establish a boundary. It does not push the designer to think UI independent of the other device. This, in my opinion, is a significant drawback of responsive web design and prevents it from scaling according to [the new landscape of the web](./the-new-landscape-of-the-web).
 
 ### The complete router
 

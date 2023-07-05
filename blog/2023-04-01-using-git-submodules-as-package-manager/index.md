@@ -2,7 +2,7 @@
 slug: using-git-submodule-as-package-distribution-manager
 title: Using Git Submodules for Distribution.
 authors: [marvin]
-tags: [toucaan, git, submodules, setup]
+tags: [git, submodules, distribution]
 ---
 
 Some of you reached out to understand how I was using the [git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) tooling as a package manager for some of my projects, a few of which are private repositories on GitHub. Well, here it is:

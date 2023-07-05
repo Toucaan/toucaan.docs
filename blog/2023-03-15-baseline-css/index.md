@@ -2,7 +2,7 @@
 slug: baseline-css
 title: A Modern Baseline.
 authors: [marvin]
-tags: [toucaan, css, reset]
+tags: [reset, reboot, normalization]
 ---
 
 ---

@@ -31,7 +31,7 @@ This new framework will be created from scratch and will _not_ follow the aging 
 
 Qualitatively speaking, Toucaan intends to weed out all the unwanted
 css that a framework no longer needs. It is a deep dive into the available css standards of the day to discover new and valuable patterns
-according to [the landscape of new web](https://bubblin.io/blog/the-new-landscape-of-the-web) today.
+according to [the landscape of new web](./the-new-landscape-of-the-web) today.
 
 Who knows, we might even identify a few industry-wide anti-patterns in the process, and we can address those with a few suggestions as we go about building Toucaan ground up.
 

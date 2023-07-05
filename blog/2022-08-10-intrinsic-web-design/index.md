@@ -21,15 +21,15 @@ Toucaan is a **stack-agnostic vanilla styling framework for mobile apps and the 
 <!--truncate-->
 
 
-Toucaan can be used to design intrinsically capable web and mobile apps using the web stack. It is easy to [start using](/docs/getting-started) Toucaan in your project. 
+Toucaan can be used to design intrinsically scaled web and mobile apps using the web stack. It is easy to [start using](/docs/getting-started) Toucaan in your project. 
 
-Clone the `toucaan` submodule inside your project and start designing your mockups. Read more about [setting up](/docs/getting-started.md) and [configuration](/docs/configuration.md).
+Clone the `toucaan` submodule inside your project and start designing your mockups. Read more about [setting up](/docs/getting-started) and [configuration](/docs/configuration).
 
 # What is Intrinsic Design?
 
 Intrinsic in the context of application design implies designing for an experience that _belongs_ to the user's device. This term was coined by the one and only Jen Simmons while working at Mozilla on flex and grid-based layouts, but a curious mind could easily hop layouts and explore what _belongs_ and what doesn't on a given medium for a whole other lot of design vocabulary. 
 
-Moreover, there is a need to know [what devices are on the web](https://bubblin.io/scrolls/blog/the-new-landscape-of-the-web) today because users are no longer limited to mobile or desktop. 
+Moreover, there is a need to know [what devices are on the web](./the-new-landscape-of-the-web) today because users are no longer limited to mobile or desktop. 
 
 ## How is Toucaan different from other css frameworks?
 

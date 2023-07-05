@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     image: "/img/undraw-mg-mundo.svg",
     description: (
       <>
-        Design for <a href='https://bubblin.io/blog/the-new-landscape-of-the-web'>The New Web</a>. Serve thoughtful experiences to users on desktop, mobile, tablet, smartwatch, TVs, and EVs.
+        Design for <a href='https://toucaan.com/blog/the-new-landscape-of-the-web'>The New Web</a>. Serve thoughtful experiences to users on desktop, mobile, tablet, smartwatch, TVs, and EVs.
       </>
     ),
   },
