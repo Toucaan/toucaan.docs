@@ -68,7 +68,7 @@ The new landscape of the web is like a new frontier, a giant canvas, a wilder, w
 
 As mentioned earlier, our existing design systems are poorly equipped for the new web. There are subtle differences in how people come across and access information on new surfaces. 
 
-For example, the real estate on a smartwatch is barely an inch. Combine that with the low _viewing distance_ from the watch to the viewer's eye (which is just under a foot) and the fact that most users cannot hold their watch up longer than a few seconds at a time—and you'll know that the accessibility situation of a smartwatch is entirely different from anything we've seen or considered before. 
+For example, the real estate on a smartwatch is [barely an inch](./web-design-for-the-apple-watch). Combine that with the low _viewing distance_ from the watch to the viewer's eye (which is just under a foot) and the fact that most users cannot hold their watch up longer than a few seconds at a time—and you'll know that the accessibility situation of a smartwatch is entirely different from anything we've seen or considered before. 
 
 The reduction of UX and scale-up of UI for a watch are far beyond the limits of responsive design. We need new rules to deal with the design challenges at that level of miniaturization. 
 

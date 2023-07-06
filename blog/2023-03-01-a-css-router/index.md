@@ -6,6 +6,7 @@ tags: [toucaan, router, intrinsic]
 ---
 
 ---
+
 _This article was originally featured on the [The Bubblin Blog](https://bubblin.io/scrolls/blog)._
 
 ---
