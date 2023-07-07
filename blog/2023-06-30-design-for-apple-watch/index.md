@@ -66,7 +66,8 @@ More generally:
 ```html
 <img src="single)resource_url" width="100%" style="max-width:100%;" />
 ```
-- The Apple Watch displays in portrait mode only. It may allow displaying in landscape orientation in the future, but Toucaan already accounts for such a scenario with its [intrinsic css router](./a-css-router).
+- The Apple Watch displays in portrait mode only. It may allow displaying in landscape orientation in the future, but Toucaan already accounts for such a future scenario with its [intrinsic css router](./a-css-router).
+- The `webkit` browser on the watch displays contents in fullscreen mode as much as possible. The browser UI (URL bar) is usually hidden away on the top. 
 - Using pixels or pixel-based css units like `em` or `rem` is not ideal. For example, width-based MQ breakpoints in pixels will fail to distinguish between a mobile and a watch. 
 - Practice minimalism to the extreme. Design with only one or two UI elements per page, or your users will experience the "fat finger" inaccessibility.
 - Optimize for both short viewing distance and short attention span. The viewing distance on an Apple Watch is approximately 7 to 12 inches from the viewer's eye. In comparison, a smartphone is viewed at about one and a half feet distance on average.
@@ -90,12 +91,13 @@ WebKit will now know it doesn't need to scale down your webpage and will render 
 
 As expected, the form controls on the watch will pop you into fullscreen mode for each input. Labeling your form elements correctly and attaching the appropriate ARIA roles to the fields is essential.
 
-Designing for the watching is easy. There is only one rule to follow: 
+Designing for the Apple Watch is easy. There is only one rule to abide by: 
 
+:::tip
+Adopt extreme minimalism in every situation.
+:::
 
-> Adopt extreme minimalism in every situation.
-
-Now that you understand the smartwatch better, you can also design for it.
+Now that you understand the watch browser better, you can also design for it.
 
 
 ---
