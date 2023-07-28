@@ -8,7 +8,7 @@ tags: [watch, website, design]
 
 ---
 
-_This article was originally featured on the [The Bubblin Blog](https://bubblin.io/scrolls/blog). It has since been updated following migration to the Toucaan blog._
+_This article was originally featured on the [The Bubblin Blog](https://bubblin.io/scrolls/blog). It has since been updated and migrated over to the Toucaan blog because it is relevant here._
 
 ---
 

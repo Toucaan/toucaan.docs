@@ -1,33 +1,217 @@
 ---
-slug: mdx-blog-post
-title: MDX Blog Post
-authors: [satie]
-tags: [toucaan]
+
+layout: post
+title:  Handle the notch on the new iPhones and Google Pixel with CSS. 💡
+description: "Meet Bubblin–the binge reader on web."
+date: 2018-09-13
+
+banner: freestocks-hRVrvH9-dG0-unsplash.jpg 
+
+category: toucaan
+tags: [css, web, responsive]
+canonical_url: https://bubblin.io/blog/notch
+
+
+published: true
+author: marvin
+
+
+ 
 ---
 
-Blog posts support [Markdown features](https://toucaan.com/docs/markdown-features), and smarter ones such as [MDX](https://mdxjs.com/).
+> **Update-1**: Google has announced that Pixel 3 and 4—like the new iPhones—will carry a notch. The following blog post explains a graceful technique to handle the bezel notch correctly in landscape and portrait modes. No JavaScript or device-specific css hacks has been used to design around the notched screen. 
 
-:::tip
+> **Update-2: March 9, 2020**: The meta tag for the notched phones isn't enough anymore. Apple now recommends using a `@supports(padding:max(0px)) { env() }` query detection to fix the notched environment for your website on iOS Safari (iPhones). I hate them for doing this, but this is the only way the notch could be tackled on the new iPhones. 
+>
+> Also note, the notch issue cannot be fixed on iPhone Google Chrome or iPhone Firefox at the time of this update.
 
-Use the power of React to create interactive blog posts.
 
-```js
-<button onClick={() => alert('button clicked!')}>Click me!</button>
+Raise your hands if you love the notched iPhones and Google Pixel. 🙋‍♀️🙋‍♂️
+
+
+Okay. 
+
+Not many hands went up there but I am sure as a web developer or designer you like some extra real estate for your app. A beautiful edge to edge "bezel less" display—well, almost—makes the notch not appear as a quirk for most users.
+
+
+At least to me, the notch hasn't been an issue so far. I mean in portrait orientation.
+
+<br/>
+<img src="https://raw.githubusercontent.com/marvindanig/assets/master/notch.png" alt="Notched iPhones are in!" />
+<br/>
+<br/>
+
+
+As long as I am surfing the web in portrait mode most websites look okay and work great, and the notched bezel doesn't appear on my list of nits to fret about.
+
+<br/>
+<img src="https://raw.githubusercontent.com/marvindanig/assets/master/notch-portrait.png" width="100%" alt="Notch on Dev.to in portrait!" />
+<br/>
+<br/>
+
+
+It is the landscape mode, however, where the notch pokes me in the eye. 
+
+Take a look at The Dev Blog site, for example:
+
+
+<br/>
+<img src="https://raw.githubusercontent.com/marvindanig/assets/master/notch-landscape-landscape-devblog.png" width="100%" alt="Safe gutters on dev.to" />
+<br/>
+<br/>
+
+
+You will immediately see that the header on the website ends abruptly, on both sides, leaving behind a feeling of a broken interface. A bug in the layout according to my 'designer self'. 
+
+What is worse is that the layout breaks even when `width: 100%;` is specified on the CSS-which is kind of super weird if you look at what the web standards have to say. 
+
+Does 100% width of the screen no longer mean 100% of the screen anymore? 
+
+Is it only 100% within a "safe area" now? Like a snowflake. Lame.
+
+While I rarely read The Dev Blog with my phone in landscape orientation the situation is worse for Youtube. A broad header broken at the edges in deep red color is just horrible, I think.
+
+
+<br/>
+<img src="https://raw.githubusercontent.com/marvindanig/assets/master/notch-landscape-landscape-youtube.png" width="100%" alt="Default gutters on youtube.com" />
+<br/>
+<br/>
+
+
+
+The bug hurts more on Youtube because we generally watch videos in the landscape mode. And everytime a video ends there is this glaring bug in blood written all over the page. I don't blame the folks at Youtube for missing out this issue because they _have_ set the width to 100% on their layout. I checked. The 100% width declaration fails only on the notched phones.
+
+
+
+There is blank gutter area on both sides of the webpage because mobile browsers like Safari (on iOS 12+) and [Chrome v69](https://developers.google.com/web/updates/2018/09/nic69#notch) and above introduce or rather force these gutter areas on the webpage by adding a little bit of extra margin. They do this to avoid content getting obscured by the notch even though it also means that some of our basic assumptions about how CSS works are no longer true. 
+
+
+This extra gutter margin thing is called the 'safe area margin' as mentioned earlier in the post and has been introduced for non-rectangular screens only. Now the question is how to handle the notch correctly for your website. And can we do it without using any sort of non-standard CSS hacks like the safe area margins?
+
+
+## Enter viewport-fit meta tag!
+
+Here's a simple fix to use all the extra space:
+
+To tell the browser to expand into the display cutout (notched) area, set the viewport-fit property to cover like so:
+
+```html
+<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+```
+This should do the trick, especially for the `sticky` header on top.
+
+> Update-2 (repeated): The meta tag above isn't enough anymore. You'll need the following rules to make sure that the declared width of 100% on your css actually means 100% of the screen width. This is the only way this is going to work on iOS Safari on the notched iPhones at this time.
+
+
+```css
+
+@supports(padding:max(0px)) {
+    body, header, footer {
+        padding-left: min(0vmin, env(safe-area-inset-left));
+        padding-right: min(0vmin, env(safe-area-inset-right));
+    }
+}
+
 ```
 
-<button onClick={() => alert('button clicked!')}>Click me!</button>
+These rules should do the trick but if you want to make sure that your content or body actually doesn't go under the notch, you can use a container class like so:
 
-:::
 
-<details>
-<summary>Why is it called swizzling?</summary>
+```css
 
-**The name comes from Objective-C and Swift-UI**: [method swizzling](https://pspdfkit.com/blog/2019/swizzling-in-swift/) is the process of changing the implementation of an existing selector (method).
+.content {
+  padding: 16px;
+  padding-left: env(safe-area-inset-left); /* Apply safe area */
+  padding-right: env(safe-area-inset-right);
+}
 
-**For Docusaurus, component swizzling means providing an alternative component that takes precedence over the component provided by the theme.**
+/*** The are four safe-area padding options:
+*
+*   padding: env(safe-area-inset-top)
+*           env(safe-area-inset-right)
+*           env(safe-area-inset-bottom)
+*           env(safe-area-inset-left);
+****/
 
-You can think of it as [Monkey Patching](https://en.wikipedia.org/wiki/Monkey_patch) for React components, enabling you to override the default implementation. Gatsby has a similar concept called [theme shadowing](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/).
+```
 
-To gain a deeper understanding of this, you have to understand [how theme components are resolved](./advanced/client.md#theme-aliases).
+As you can see there are four options to handle all four sides of the notched phone. This way you can guarantee a safe area for content no matter what the orientation of the phone is. While these insets do solve the issue at hand mostly I recommend not using these special non-standard properties (or hacks if you allow me) created specifically for the non-rectangular viewports. 
 
-</details>
+It is lame and unmaintainable both.
+
+There's a much simpler solution to avoid the clash of content with the notch using simple and standard CSS properties. We'll use ordinary width definitions per single responsive @media-query, like so:
+
+```css
+
+/* scss snippet */
+
+@media only screen and (orientation: portrait) {
+    body {
+        .shrink {
+            width: 95%;
+        }
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        .shrink {
+            width: 90%;      /* Shrink a little more to avoid the notch. */
+        }
+    }
+}
+
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+```
+
+That's it. In your HTML, apply the css class `.shrink` on the `<main>` container element to make it work across all devices and all viewports on the planet. One rule to rule them all!
+
+```html
+<header>
+    <!--Sticky header with 100% width running across the notched screen -->
+<header>
+<main class="shrink center">
+    <!-- Body here -->
+</main>
+<footer>
+    <!-- Full screen width under the notch -->
+</footer>
+
+```
+
+I prefer this approach because it helps avoid using device specific hacks (the `safe-area-insets`) on the layout. That's how [Bubblin](https://bubblin.io) is able to scale from an Apple Watch all the way up to an OLED TV. 🎩
+
+I noticed that there are quite a few other solutions floating around the web using javascript but I do not recommend such a solution. CSS is suited for solving this layout nit whereas JavaScript is not. Also, less code means better maintainability, better scalability etc.
+
+<br/>
+<img src="https://raw.githubusercontent.com/marvindanig/assets/master/notch-landscape-cover.jpg" width="100%" alt="Bubblin Superbooks" />
+<br/>
+<br/>
+
+
+<br/>
+<img src="https://raw.githubusercontent.com/marvindanig/assets/master/notch-landscape-landscape-superbook.png" width="100%" alt="Superbook landscape mode" />
+<br/>
+<br/>
+
+
+
+That's all for now folks. 
+
+To sum up my feelings with this post: if the notch has poked you in the eye ever, it is time for you to poke it back on your UI! ❤️
+
+Shine away, you crazy diamond.
+
+---
+
+Follow me on [Twitter](https://twitter.com/marvindanig) or on [Github](https://github.com/marvindanig).
+
+**P.S.:** Did you know that [Bubblin Superbooks](https://bubblin.io) is to books what Youtube is to videos? Minus the invasive ads, of course. 
+
