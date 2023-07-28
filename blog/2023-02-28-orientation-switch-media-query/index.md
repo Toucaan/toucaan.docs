@@ -76,9 +76,9 @@ iPad users, for example, prefer landscape over portrait about ~80% of the time, 
 Reference [data and plots](https://ux.stackexchange.com/questions/64749/are-ipads-used-horizontally-or-vertically).
 
 
-# The Two Axes of [Intrinsic Design.](../../docs/core-concepts/intrinsic)
+# The Two Axes of [Intrinsic Design.](./docs/core-concepts/intrinsic)
 
-From the usage and the knowledge of fact that there are only two possible orientations in which a webpage could be rendered, we can split the art and science of web designing along the two axes of orientation. This topic is discussed at length in the next chapter [A CSS Router](./a-css-router).
+From the usage and the knowledge of fact that there are only two possible orientations in which a webpage could be rendered, we can split the art and science of web design along the two axes of orientation. This topic is discussed at length in the next chapter [A CSS Router](./a-css-router).
 
 This will be our first level of querying (the framework architecture) to avoid using the anti-pattern of hardcoded width-based breakpoints to switch layouts. Let's wire up the basic idea of orientation querying:
 
