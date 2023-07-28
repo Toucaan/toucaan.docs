@@ -14,11 +14,12 @@ _This article was originally featured on the [The Bubblin Blog](https://bubblin.
 
 # The Standards Way
 
-Have you ever tried using the [INCH](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units) css unit, i.e., `in`, in your web designs? 
+Have you ever tried using the [INCH](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units) css unit, i.e., `in`, in your web designs? No? 
 
-No? 
+Well, let's do it today. 🏁
 
-Well, let's do it today. I propose the following:
+
+I propose the following bit of code:
 
 ```css
 /* Somewhere inside the <head> element of your page, add the following: */
@@ -26,6 +27,8 @@ Well, let's do it today. I propose the following:
 @import url('path/to/portrait.css') only screen and (orientation: portrait);
 @import url('path/to/landscape.css') only screen and (orientation: landscape);
 ```
+
+<!--truncate-->
 
 The css above will prioritize and import the desired stylesheet according to the orientation of the viewport. Then on the portrait (or landscape) css, we'll put the inch unit (`in`) to use like so:
 
@@ -103,7 +106,7 @@ But this was in 2011. More than a decade ago.
 What about now? Has anything changed in 2023?
 
 
-# The Way of The Variables
+# The New Way of The CSS Variables
 
 Let's use one of the finest frontiers of modern-day css, [CSS Custom Properties or CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) to teach some standard units to the browser. 
 
