@@ -6,7 +6,7 @@ Live site ⤏ [https://toucaan.com](https://toucaan.com)
 
 Contributors are invited to submit pull requests for any changes that they wish to see on the docs. Or on the framework. 
 
-We accept opinions and blog posts from CSS aficionados. If you have an insight for us to look at and learn from, please do share your link here on the repo by raising an issue.
+We accept opinions and blog posts from CSS aficionados. If you have an insight to share, please do drop a link of your post or work here on the repo by raising an issue.
 
 🙏🏻
 

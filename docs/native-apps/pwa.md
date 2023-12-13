@@ -8,7 +8,7 @@ As the support for the service worker api grows, going PWA by default is an abso
 
 ### Quick reloads, performance, transitions, and strong caching
 
-Performance, transitions, and caching depend significantly on the app's internal architecture and the stack under the hood. Shared below is a [sample code](/blog/mobile-apps-with-red-goose#pwa-or-twa) of a generic service worker that allows **strong caching** of static content. 
+Performance, transitions, and caching depend significantly on the app's internal architecture and the stack under the hood. Shared below is a [sample code](https://www.toucaan.com/blog/mobile-apps-with-red-goose#pwa-or-twa) of a generic service worker that allows **strong caching** of static content. 
 
 ```js title="Service Worker API"
 (function (λ) {

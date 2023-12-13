@@ -108,7 +108,7 @@ Everything else, every other HTML tag that your application would use, will requ
 All things considered, a reset's size would depend on the nature of each app. A video hosting site like Youtube will need to reset the `video` tag, for example, whereas a blog app would reset tags like `article,` `p,` and heading tags, and so on.
 
 This is a strategic position that we're flexible about. What are your thoughts on the inclusion/exclusion of other HTML tags on the baseline?
-Before you jump to answer this question, have you considered [designing mobile apps with app-like design language](./mobile-apps-with-red-goose) and how that would affect the baseline?
+Before you jump to answer this question, have you considered [designing mobile apps with app-like design language](https://goose.red/content/blog/mobile-apps-with-red-goose/) and how that would affect the baseline?
 
 ### The Trends
 
