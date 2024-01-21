@@ -1,7 +1,7 @@
 ---
 slug: intrinsic-design
 title: Meet Intrinsic Design
-authors: [marvin, sonica, satie]
+authors: [marvin, sonica]
 tags: [design, toucaan, css, intrinsic]
 ---
 

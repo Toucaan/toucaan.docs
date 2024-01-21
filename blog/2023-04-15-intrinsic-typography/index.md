@@ -60,9 +60,12 @@ From the code above, we can draw the following two axioms:
 > **2nd axiom:** 
 >  - `vmin` is **always** the shorter side of the rectangle. 
 
+#### The Test of Element Squarish-ness.
 The first axiom is very simple. `vw` and `vh` units are interrelated and can be swapped easily according to viewport orientation. One can say that device orientation is _intrinsic_ to viewport units.
 
-The second axiom implies that a typographic unit based on the short side of the screen has the lowest delta, i.e., the least variation upon resizing the browser. Even as the window is resized to the point where the orientation is switched—from landscape to portrait—the `vmin` unit continues to be the lower of the two values smoothly, and it does so with the absolute minimum change in the value. Of course, `vmax` does the opposite—it reflects the maximum possible change in the unit value.
+The second axiom informs that a typographic unit based on the shorter side of the viewport has the lowest variability or delta upon resizing. On the desktop, as the browser window is resized we reach a point where the rectangular orientation switches from landscape to portrait; this is the point, the point of a square viewport, where the `vmin` unit flips from referring to the value of `vh` instead of `vw` since `vh` becomes the smaller of the two.
+
+And `vmin` continues to change smoothly with an minimum absolute change reflected in its value. Of course, the `vmax` unit does the opposite, since it reflects the maximum possible change in the unit value of the resized rectangle.
 
 Returning to the meme problem, we know the box around the text is square. This means that its sides are equal. Also, remember—in the world of resizable rectangles, a square is that geometrical point of inflection where the viewport orientation flips. 
 

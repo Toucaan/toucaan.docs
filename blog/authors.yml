@@ -2,16 +2,10 @@ marvin:
   name: Marvin Danig
   title: Creator & maintainer of Toucaan
   url: https://github.com/marvindanig
-  image_url: https://goose.red/images/static/marvin.jpg
-
-satie:
-  name: Satie Sharma
-  title: Full Snack Engineer @ Red Goose
-  url: https://github.com/satie
-  image_url: https://goose.red/images/static/satie.jpg
+  image_url: /img/marvin.jpg
 
 sonica:
   name: Sonica Arora
   title: Toucaan maintainer
-  url: https://github.com/orgs/bookiza/people/sonicaarora
-  image_url: https://goose.red/images/static/sonica.jpg
+  url: https://github.com/soarora
+  image_url: /img/sonica.jpg

@@ -4,7 +4,7 @@ sidebar_position: 4
 
 # 4. Framework Architecture
 
-Toucaan's Design Principle: **"Everything that is used by an app, lives within the app!"**
+Toucaan follows a tenet that everything in use by the app, _lives in it._ This implies that any css that the application layer introduces into the DOM, has to sit within the root folder of the local copy of Toucaan; starting from `reset` or normalization classes if any at the [baseline](./baseline.md). 
 
 ### Base Structure
 

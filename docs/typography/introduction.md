@@ -4,27 +4,35 @@ sidebar_position: 1
 
 # Introduction
 
-Toucaan utilizes a singular [utility variable](../variables.md) called the `--fs` to scale content across **all** mediums for your application. 
+## Scaling Text
+Toucaan utilizes two [utility variables](../variables.md) namely the `--fs` and `--lh` to scale type and tracking[^1] across **all** mediums.
+The value of the `--fs` utility variable depends on factors like: 
 
-The value of the `--fs` unit variable is set according to the type and orientation of the device being served using the [criteria of "viewport squarish-ness"](https://bubblin.io/blog/magical-powers-of-css-vmin-unit#how-to-use-vmin-on-our-css-then). The variable name `--fs` stands for Font Size.
+1. The orientation of the viewport, 
+2. The physical size of the medium at hand, and 
+3. The nature of content being served using the [Test of "Element Squarishness"](../../blog/2023-04-15-intrinsic-typography#the-test-of-element-squarish-ness/) along the principles of intrinsic design. 
+
+The variable name `--fs` stands for Font Size and `--lh` stands for Line Height. Refer the list of default utility-variables[^2] available on Toucaan.
 
 ```css
-.element {
-  font-size: calc(4 * var(--fs));  /* A contrived example. */
+:root {
+  --vmin: 1vmin;
+  --fs: calc(4 * var(--vmin));  /* A contrived example. */
 }
 ```
 
-A more involved and close to real world example using the `--fs` utility variable would be something like this: 
+A more involved and close to real world use based on the `--fs` utility variable will be something like this: 
+
+1. Define the "extrinsic size" of the element using the `--fs` utility variable. 
+2. Set the intrinsic font-size of text according to the width of the containing element.
 
 ```css
-/* Define the element width to 25 times the value of --fs (usually set to 1vmin). */
 --element-width: calc(25 * var(--fs));
-/* The number of letters that you want to fit into one line within your `div.element`. */
---letter-count: 40;                       
+--factor: 40; /* The value of the factor is arrived at by the end-user as per need. */
 
 .element {
   width: var(--element-width);
-  font-size: calc(var(--element-width) / var(--letter-count));
+  font-size: calc(var(--element-width) / var(--factor));
 }
 ```
 
@@ -103,8 +111,8 @@ And then your buttons and elements can go like:
 
 ```
 
-:::warning Do not use this in production
-This is an experimental chapter with an immature technology. It is not safe for use in production for any kind of service that your users may rely on.
+:::warning Experimental Only
+This is an experimental chapter with an immature technology. It is not recommended for use in production or any kind of critical service that your users may rely on.
 :::
 
 
@@ -115,3 +123,6 @@ CSS Custom Properties can potentially reverse and solve for this past requiremen
 :::
 
 
+[^1]: Toucaan introduces the concept of line tracking on the web. See [demo](https://bubblin.io/book/herland-by-charlotte-perkins-gilman/1).
+
+[^2]: The list is in under rapid development and in a state of flux.
