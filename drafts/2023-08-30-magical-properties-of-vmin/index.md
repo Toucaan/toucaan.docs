@@ -130,7 +130,7 @@ Now, the custom property `--vmin` is available on our css to use anywhere.
 
 There are three unique qualities of the `vmin` css unit that may not be immediately evident to a developer:
 
-1. `vmin` is always from the shorter side of the screen. So in mathematical speak, it is from the breadth (B) of a rectangle and not the length (L). Read more about how this is used on our [CSS router](https://bubblin.io/blog/a-css-router) while orientation matching.
+1. `vmin` is always from the shorter side of the screen. So in mathematical speak, it is from the breadth (B) of a rectangle and not the length (L). Read more about how this is used on our [CSS router](https://www.toucaan.com/blog/a-css-router) while orientation matching.
 2. Upon resizing the browser window, the rate of change exhibited by `vmin` is much lower than the rate of change on `vmax`, i.e. Δvmin << Δvmax. This makes `vmin` far more straightforward to scale with than the `vmax`.
 3. For a rigid viewport, the value of a `vmin` is a constant no matter what the underlying pixel resolution or setting of the display might be. Meaning the physical measure of `1vmin` unit on the screen of the following two mobile phones will be equal even though both have unequal screen resolutions or dpi:
 

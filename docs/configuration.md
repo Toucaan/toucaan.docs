@@ -27,7 +27,7 @@ Copy the following [block of code](https://github.com/Toucaan/toucaan/blob/maste
     /* Router level-0 Start*/
     :root {
         /* Do not remove or alter the lines within this block     */
-        /* Recommended reading: https://bubblin.io/blog/a-css-router */
+        /* Recommended reading: https://www.toucaan.com/blog/a-css-router */
         --portrait-axis: /toucaan/router/portrait.css;
         --landscape-axis: /toucaan/router/landscape.css;
     }
@@ -107,7 +107,7 @@ Copy the following [block of code](https://github.com/Toucaan/toucaan/blob/maste
 
 Notice the use of **asynchronous CSS @import** (and not SASS @import) in the routing code above!
 
-Read more about Toucaan's [css router](https://bubblin.io/blog/a-css-router) and its implementation philosophy.
+Read more about Toucaan's [css router](https://www.toucaan.com/blog/a-css-router) and its implementation philosophy.
 
 :::info CSS @import vs. SASS @import 
 Toucaan uses both css @imports and sass @imports. As a framework convention, Toucaan puts css imports to use for framework code only, whereas sass imports are meant for **user-defined** or application style. 

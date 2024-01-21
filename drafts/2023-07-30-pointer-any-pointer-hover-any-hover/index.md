@@ -18,7 +18,7 @@ canonical_url: https://bubblin.io/blog/level-4-media-queries/
 
 ---
 
-In the past few articles, we looked at the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web) and developed a modest [css router](https://bubblin.io/blog/a-css-router) that allows designers to create and deploy an intrinsic design system for their web applications. How does it really work?
+In the past few articles, we looked at the [new landscape of the web](https://bubblin.io/blog/the-new-landscape-of-the-web) and developed a modest [css router](https://www.toucaan.com/blog/a-css-router) that allows designers to create and deploy an intrinsic design system for their web applications. How does it really work?
 
 Toucaan uses a bunch of media-query combinations to "fine match" a device category. It takes into account various physical and technical capabilities at the environment level to arrive at the right stylesheet for a device. Then it uses a standard @import rule to prioritize the matched css on the path of delivered assets.
 
