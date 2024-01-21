@@ -10,7 +10,7 @@ The value of the `--fs` utility variable depends on factors like:
 
 1. The orientation of the viewport, 
 2. The physical size of the medium at hand, and 
-3. The nature of content being served using the [Test of "Element Squarishness"](https://www.toucaan.com/blog/intrinsic-typography#the-test-of-element-squarish-ness/) along the principles of intrinsic design. 
+3. The nature of content being served using the [criteria of "Element Squarishness"](https://www.toucaan.com/blog/intrinsic-typography#the-test-of-element-squarish-ness/) along the principles of intrinsic design. 
 
 The variable name `--fs` stands for Font Size and `--lh` stands for Line Height. Refer the list of default utility-variables[^2] available on Toucaan.
 
