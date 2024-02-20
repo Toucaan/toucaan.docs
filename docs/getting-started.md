@@ -14,7 +14,7 @@ git submodule add https://github.com/Toucaan/toucaan
 
 The command above will install Toucaan to your project like a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules)[^1]. That's it. Now you can start **implementing your application's multiple frontends** with Toucaan.
 
-Go to the [next step](./configuration) and configure your HTML to start using Toucaan.
+Go to the [next step](./installation) and configure your HTML to start using Toucaan.
 
 ---
 

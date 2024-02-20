@@ -1,16 +1,18 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
-# Basic Configuration
+# App Setup/Config
 
-Toucaan has a unique way of connecting stylesheets to your app's HTML. Unlike the traditional css frameworks, it does not use a link tag.
+Toucaan has a unique way of connecting stylesheets to your app's HTML. 
+
+Unlike the traditional css frameworks, it does not use a `link` tag, like so:
 
 ```HTML
- <link href="/some/stylesheet.css" rel="stylesheet"/> ← Do not use! 🚫
+ <link href="/some/stylesheet.css" rel="stylesheet"/> ← Do not use this! 🚫
 ```
 
-Toucaan uses [a css router](core-concepts/router.md) instead to _prioritize_ and serve the right stylesheet according to user's medium or _class_ of device. Critical rules of css that may be important for your app's design or the brand layer may also be served along with the router as shown below.
+Toucaan uses [a css router](core-concepts/router.md) instead to _prioritize_ and serve the right stylesheet according to user's medium or _class_ of device. [Critical rules of css](https://github.com/Toucaan/toucaan/blob/master/_critical.scss) that would be important for your app's design or the brand layer may be served along with the router code as shown below.
 
 ### The CSS Router
 

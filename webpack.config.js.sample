@@ -1,25 +1,3 @@
----
-sidebar_position: 4
----
-
-# Preprocessor (SASS)
-Toucaan uses [sass-lang](https://sass-lang.com/) preprocessor (default) to process _user written_ styles. 
-
-### Sample Code:
-
-Shown below are code samples for the sass compilation pipeline in your project. 
-
-:::info PRs Welcome
-PRs with sample code for other build and setup tools are super welcome.
-:::
-
-#### Webpack
-
-Displayed below is a sample webpack config for a typical `node/express` app.Observe the separation of stylesheets (or modules) for the desktop, tablet, mobile, smartwatch, electric vehicles, and other _classes_ of devices that are on the web today. 
-
-Toucaan treats each device as a separate class of medium, thus allowing the designer to isolate and incorporate as much _intrinsicality_ (like physical size, viewable distance, pointer fine or coarse etc.) into their designs as possible. 
-
-```js title="webpack.config.js"
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries')
@@ -51,7 +29,6 @@ module.exports = {
     mobile: path.resolve(`${__dirname}/public/toucaan/app/mobile/mobile.scss`),
     tablet: path.resolve(`${__dirname}/public/toucaan/app/tablet/tablet.scss`),
     desktop: path.resolve(`${__dirname}/public/toucaan/app/desktop/desktop.scss`),
-    vehicle: path.resolve(`${__dirname}/public/toucaan/app/vehicle/vehicle.scss`),
     television: path.resolve(`${__dirname}/public/toucaan/app/television/television.scss`),
     App: path.resolve(`${__dirname}/public/javascripts/app.js`),
     swa: path.resolve(`${__dirname}/public/javascripts/swa.js`)
@@ -89,13 +66,6 @@ module.exports = {
           chunks: 'all',
           enforce: true,
         },
-        vehicleStyles: {
-          name: 'vehicle',
-          test: (m, c, entry = 'vehicle') =>
-            m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
-          chunks: 'all',
-          enforce: true,
-        },
         televisionStyles: {
           name: 'television',
           test: (m, c, entry = 'television') =>
@@ -114,8 +84,10 @@ module.exports = {
     }),
     new CompressionPlugin()
   ],
-  …
-  …
+  output: {
+    path: path.resolve(__dirname, 'public', 'dist'),
+    filename: '[name].bundle.js'
+  },
   module: {
     rules: [
       {
@@ -128,16 +100,42 @@ module.exports = {
         ],
         include: path.resolve(__dirname, 'public', 'toucaan')
       },
-      // …other rules. 
+      {
+        test: /\.js$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      },
+      {
+        test: /\.(png|jpe?g)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              outputPath: './dist/'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              outputPath: './dist/'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+        type: 'asset/inline'
+      }
     ]
   }
 }
-```
-Read more about the [Principles of Intrinsic Design](./core-concepts/space.md) to understand how Toucaan arrives at the separation of stylesheets as shown above. The [sample code](https://github.com/Toucaan/toucaan.docs/blob/master/webpack.config.js.sample) is available for reference and customization. 
-
-:::info web frameworks
-Since each web framework is different and follows a slightly different set of conventions, setting up the preprocessing pipeline with `sass` or another preprocessor like `less` or `stylus` is left as an exercise.
-:::
-
-
-Go to [next step](./environment.md) and set up Environment Variables of your app.

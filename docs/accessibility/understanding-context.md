@@ -24,8 +24,9 @@ Toucaan also helps in avoiding a giant leap that one had to take between a touch
 It helps with a macro-optimization of delivering only relevant CSS for a given device. Users on a mobile, for example, do not need to download and parse six thousand lines of desktop css and override it.
 
 ### Micro-Optimization
+
 It separates the CSS modules according to industry-wide categories and not according to the device specifications. If Apple were to release a new iPhone of a different resolution or pixel density tomorrow, our router would be able to serve the new phone with the same mobile.css because it falls under the mobile category.
 
 The design thinking accounts for the orientation, physical size, accessibility constraints, and screen-specific capabilities (touch or pointer-driven) in a way that web design can “belong to” a device. Going intrinsic is perhaps the best way to design and develop native mobile apps using the building blocks of the web-aka, HTML, CSS, JavaScript, and WebAssembly.
 
-It affords better maintainability with proper scoping of stylesheets according to the { app: device } combinations. It helps the developer organize CSS like a mono-repo and keep the designs separate according to medium.
+It affords better maintainability with proper scoping of stylesheets according to the \{ app: device \} combinations. It helps the developer organize CSS like a mono-repo and keep the designs separate according to medium.

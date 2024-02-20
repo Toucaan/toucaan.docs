@@ -9,13 +9,19 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require("prism-react-renderer/themes/github")
-const darkCodeTheme = require("prism-react-renderer/themes/dracula")
+// const lightCodeTheme = require("prism-react-renderer/themes/github")
+// const darkCodeTheme = require("prism-react-renderer/themes/dracula")
+
+import { themes } from 'prism-react-renderer';
+
+const lightCodeTheme = themes.github;
+const darkCodeTheme = themes.dracula;
+
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Toucaan CSS Framework',
-  tagline: 'A stack-agnostic vanilla styling (css) framework for universal progressive applications.',
+  tagline: 'A stack-agnostic vanilla styling (css) framework for modern web applications.',
   url: 'https://toucaan.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',

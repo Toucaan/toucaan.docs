@@ -2,7 +2,7 @@
 slug: a-css-router
 title: A CSS Router.
 authors: [marvin]
-tags: [toucaan, router, intrinsic]
+tags: [router, intrinsic]
 ---
 
 ---
@@ -16,6 +16,7 @@ Welcome to the newest chapter on [Rethinking CSS Frameworks](./blog/rethinking-c
 This css router will eventually form the backbone of the [Applied Principles of Intrinsic Design](./docs/core-concepts/intrinsic), therefore, we recommend the end user to read this post carefully.
 
 <!--truncate-->
+
 ### Two States of Web Design
 
 The first seemingly innocuous-looking fact about all digital mediums is that everything is a simple _rectangle_. All screens are rectangular. The notched, bendable, and foldable screens are also practically rectangular. 
@@ -84,19 +85,21 @@ Let us turn this orientation switch to our first level of the router using an as
 
 Our router will now serve only one stylesheet into the browser environment according to the device's orientation or the shape of the browser window in case of a resizable browser like on the desktop. 
 
-Meaning if the user resizes their desktop browser to a point where the viewable window (rectangle) switches orientation from landscape to portrait, then our CSS router will prioritize `portrait.css` over `landscape.css.` Note that the router will likely continue to serve `landscape.css` even though it doesn't get applied because that is how the css standards expect the browsers to behave.
+Meaning if the user resizes their desktop browser to a point where the viewable window (rectangle) switches orientation from landscape to portrait, then our CSS router will prioritize `portrait.css` over `landscape.css`. Note that the router will likely continue to serve `landscape.css` even though it doesn't get applied because that is how the css standards expect the browsers to behave.
 
 Perfect.
 
 We can now scale our UI along one axis and not worry about how the website would appear on the other.
 
 :::info "The Curious Case of CSS @import."
-There are plenty of articles on the web that claim that a CSS `@import` [performs poorly](https://csswizardry.com/2018/11/css-and-network-performance/). This claim is not entirely correct. 
+There are quite a few articles on the web that establish that a CSS `@import` [performs poorly](https://csswizardry.com/2018/11/css-and-network-performance/) due to waterfall. While this analysis is true, it is often not correctly applied to how Toucaan uses it. 
 
-The performance of CSS `@import` depends on how it is being used. If an `@import` fetch uses an inline declaration from the head of a document _without_ sequential chaining of multiple applicable stylesheets that could lead to a waterfall, it would be just as fast as any `link` statement. 
+The performance of CSS `@import` degrades only when it is chain-sequenced into a waterfall of requests. If instead an `@import` fetches (prioritizes) only one "applicable" stylesheet from within the head of a document _without_ further sequential chaining of multiple applicable stylesheets then there would be no meaningful waterfall. 
+
+It would be just as fast as any `link` statement. 
 :::
 
-In other words, if there is just one stylesheet to prioritize over and apply on the DOM, using an `@import` statement or a `link` statement will not make a difference. Note, the browser may [still fetch all the other stylesheets](https://blog.jim-nielsen.com/2021/conditional-style-loading-not-so-fast/) linked in the document, but those will come in with a lower priority and not get applied to the render since they're not relevant.
+In other words, if there is just one stylesheet to prioritize over and serve, using an `@import` statement instead of a `link` tag will not make a difference. Note, the browser may [still fetch all the other stylesheets](https://blog.jim-nielsen.com/2021/conditional-style-loading-not-so-fast/) @imported into the document, but those will come in with a lowered priority and also not get applied to the render since they are irrelvant
 
 ### Axes of Intrinsic Web Design
 
@@ -142,7 +145,7 @@ If we were to scale an app on the portrait axis of intrinsic web design, then ac
 
 Looks fair so far?
 
-One can tell that we are heading towards "category-specific" breakpoints on our CSS router from the list above. Category-specific as in, from wearables → phone → tablet →… → projector in portrait orientation only.
+One can tell that we are heading towards "category-specific" breakpoints on our CSS router from the list above. Category-specific as in, from wearables → phone → tablet → … → projector in portrait orientation only.
 
 > The instance of a V9 browser displayed on a desktop-sized tablet fixed in portrait mode at the center console of a Tesla Model S is not shown on the plot above. 
 > It falls somewhere between a tablet and a desktop.
@@ -166,7 +169,7 @@ Designing for a medium that small can be particularly challenging.
 
 Think of finding a UXI optimum for a super coarse pointer where every interactive action is the complete UI displayed on a Watch.
 
-> Recommended reading: [Designing Web Apps for Apple Watch](https://bubblin.io/blog/web-design-recommendations-for-the-apple-watch).
+> Recommended reading: [Designing Web Apps for Apple Watch](./blog/web-design-for-the-apple-watch).
 
 The Watch, therefore, cannot be supported with responsive web design unless generic automatic scaling (0.51 scale of responsive) is enough for your use case. The responsive approach cannot even differentiate between a mobile and a watch. 
 
@@ -384,7 +387,6 @@ Warning: Poor support for CSS Grids, level 4 media queries, and several other CS
 
 WebOS from LG is pointer-driven.
 */
-
 ```
 
 The router rules above match the industry-wide categories as on date instead of the device-inspired breakpoints in use with Responsive Web Design. Furthermore, the level-4 media queries also add another intrinsic quality of the device at hand on the delivered css.  
@@ -406,11 +408,11 @@ Similarly, routing CSS according to intrinsic capabilities along the axes of IWD
 
 4. The design thinking accounts for the orientation, physical size, accessibility constraints, and screen-specific capabilities (touch or pointer-driven) in a way that web design can "belong to" a device. Going intrinsic is perhaps the best way to design and develop native mobile apps using the building blocks of the web-aka, HTML, CSS, JavaScript, and WebAssembly. 
 
-5. It affords better maintainability with proper scoping of stylesheets according to the { app: device } combinations. It helps the developer organize CSS like a monorepo and keep the designs separate according to medium.
+5. It affords better maintainability with proper scoping of stylesheets according to the \{ app: device \} combinations. It helps the developer organize CSS like a monorepo and keep the designs separate according to medium.
 
 #### Disadvantage
 
-It might appear like much CSS to maintain, but if we were to look at a real production-scale app, with all of the `reset.css` `framework.css` and `app.css,` plus the many workarounds over the limitations of RWD, the intrinsic approach is a far more maintainable choice. More often than not, a router would likely split CSS near the past hardcoded MQ breakpoints of RWD.  
+It might appear like much CSS to maintain, but if we were to look at a real production-scale app, with all of the `reset.css` `framework.css` and `app.css`, plus the many workarounds over the limitations of RWD, the intrinsic approach is a far more maintainable choice. More often than not, a router would likely split CSS near the past hardcoded MQ breakpoints of RWD.  
 
 ### Intrinsic vs. Responsive Design
 
@@ -469,4 +471,4 @@ Share thoughts in the comments below.
 
 ---
 
-Credits: With thanks to [AJ Alkasmi](https://twitter.com/alkasmi27) and [Sonica Arora](https://twitter.com/sonicaaaaaa) for all the editing help. 
+Credits: With thanks to AJ Alkasmi and [Sonica Arora](https://bubblin.io/sonicaaaaaa) for helping me edit this article.
