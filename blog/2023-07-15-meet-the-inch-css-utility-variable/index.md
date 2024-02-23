@@ -63,7 +63,7 @@ I know, you must be thinking—but does it even work? Can we use physical inches
 Well, the answer is both yes and no. 
 
 :::tip The `--inch` Utility Variable
-Checkout the documentation on the [--inch](./typography/introduction#case-of-physical-units).
+Checkout the documentation on the [--inch](/docs/typography/introduction#case-of-physical-units).
 :::
 
 Note the `in` unit (css inch) used in the width-based media query above is _already_ offered by vendors as part of the specification. So _yes_, using `in` units like this is valid css. That's for the yes part. 

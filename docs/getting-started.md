@@ -29,7 +29,7 @@ Toucaan's [sourcecode](https://github.com/Toucaan/toucaan) is also documented in
 :::
 
 :::caution 
-This is a partially stable version of Toucaan (0.5.0). Our documentation and tooling is in the state of flux and a few breaking changes in the next few weeks are likely. 
+This is a partially stable version of Toucaan (0.6.0). Our documentation and tooling is in the state of flux and a few breaking changes in the next few weeks are likely. 
 :::
 
 [^1]: Please add and commit the `.gitmodules` file to your repository. Refer the following guide on [how to use git submodules](https://www.toucaan.com/blog/using-git-submodule-as-package-distribution-manager) to manage packages in your project.
