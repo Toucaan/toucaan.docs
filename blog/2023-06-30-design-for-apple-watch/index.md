@@ -12,9 +12,9 @@ _This article was originally featured on the [The Bubblin Blog](https://bubblin.
 
 ---
 
-One of the capabilities of [Toucaan](https://toucaan.com) is prioritizing and delivering the most _intrinsically_ suitable stylesheet for a smartwatch. Toucaan uses [a css router](./blog/a-css-router) to accomplish this.
+One of the capabilities of [Toucaan](https://toucaan.com) is prioritizing and delivering the most _intrinsically_ suitable stylesheet for a smartwatch. Toucaan uses [a css router](/blog/a-css-router) to accomplish this.
 
-Let's look at what it takes to design a website (or web app) for the [tiniest viewport](./blog/the-new-landscape-of-the-web) on the web—the Apple Watch.
+Let's look at what it takes to design a website (or web app) for the [tiniest viewport](/blog/the-new-landscape-of-the-web) on the web—the Apple Watch.
 
 
 <!--truncate-->
@@ -66,7 +66,7 @@ More generally:
 ```html
 <img src="single)resource_url" width="100%" style="max-width:100%;" />
 ```
-- The Apple Watch displays in portrait mode only. It may allow displaying in landscape orientation in the future, but Toucaan already accounts for such a future scenario with its [intrinsic css router](./a-css-router).
+- The Apple Watch displays in portrait mode only. It may allow displaying in landscape orientation in the future, but Toucaan already accounts for such a future scenario with its [intrinsic css router](/blog/a-css-router).
 - The `webkit` browser on the watch displays contents in fullscreen mode as much as possible. The browser UI (URL bar) is usually hidden away on the top. 
 - Using pixels or pixel-based css units like `em` or `rem` is not ideal. For example, width-based MQ breakpoints in pixels will fail to distinguish between a mobile and a watch. 
 - Practice minimalism to the extreme. Design with only one or two UI elements per page, or your users will experience the "fat finger" inaccessibility.

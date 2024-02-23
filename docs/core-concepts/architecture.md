@@ -51,7 +51,7 @@ Toucaan organizes _all_ the css that your application will require.
 
 ### Device Coverage 
 
-Toucaan follows a simple styling architecture that mirrors the diversity of devices on the web _today_. It covers support for **[all the web devices](./blog/the-new-landscape-of-the-web)** possible using **[Principles of Intrinsic Design](space.md)**. 
+Toucaan follows a simple styling architecture that mirrors the diversity of devices on the web _today_. It covers support for **[all the web devices](/blog/the-new-landscape-of-the-web)** possible using **[Principles of Intrinsic Design](space.md)**. 
 
 Here is what its internal structure looks like: 
 

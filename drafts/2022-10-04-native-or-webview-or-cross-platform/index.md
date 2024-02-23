@@ -42,7 +42,7 @@ That's not how mobile apps are designed.
 
 We'll talk about Toucaan here in a second, but first, some code.
 
-Consider a [css router](../../docs/core-concepts/router) like so: 
+Consider a [css router](../../core-concepts/router) like so: 
 
 ```css title="Check the physical orientation of the viewport first:"
 
@@ -194,7 +194,7 @@ Now on `mobile.css,` you can go after an "app-like" environment with the followi
 }
 ``` 
 
-There are a few more tips w.r.t mobile app design that you can refer [here](./../../docs/mobile-apps/general-tips).
+There are a few more tips w.r.t mobile app design that you can refer [here](./../../mobile-apps/general-tips).
 
 ### Meet Toucaan
 

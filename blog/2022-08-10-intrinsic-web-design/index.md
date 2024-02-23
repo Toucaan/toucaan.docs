@@ -29,7 +29,7 @@ Clone the `toucaan` submodule inside your project and start designing your mocku
 
 Intrinsic in the context of application design implies designing for an experience that _belongs_ to the user's device. This term was coined by the one and only Jen Simmons while working at Mozilla on flex and grid-based layouts, but a curious mind could easily hop layouts and explore what _belongs_ and what doesn't on a given medium for a whole other lot of design vocabulary. 
 
-Moreover, there is a need to know [what devices are on the web](./the-new-landscape-of-the-web) today because users are no longer limited to mobile or desktop. 
+Moreover, there is a need to know [what devices are on the web](/blog/the-new-landscape-of-the-web) today because users are no longer limited to mobile or desktop. 
 
 ## How is Toucaan different from other css frameworks?
 
@@ -41,7 +41,7 @@ Toucaan avoids several common anti-patterns and hardcoded assumptions that other
 
 Briefly, Toucaan outshines the traditional css frameworks on at least four major fronts:
 
-1. Complete separation of the design language for different classes of devices. Toucaan uses [a css router](./a-css-router) to serve the suitable stylesheet.
+1. Complete separation of the design language for different classes of devices. Toucaan uses [a css router](/blog/a-css-router) to serve the suitable stylesheet.
 2. A mathematically grounded and [intrinsically scaling type](./intrinsic-typography) system.
 3. No heavy `reset` or `normalize` css to bulldoze the web browser anymore. Toucaan replaces the reset with a flexible [baseline](./baseline-css) that can be customized for each app differently.
 

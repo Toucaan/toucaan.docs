@@ -12,6 +12,6 @@ By design, Toucaan is **intrinsic, mutative, and deterministic** in nature. Mean
 2. _It allows customization of the framework defaults starting from vendor normalization and upwards, and_
 3. _It affords deterministic control over UX/UI instead of an assumptive one with arbitrary breakpoints._
 
-Toucaan is also great way to organize your application css. Add support for [the new kind of devices on the web](./blog/the-new-landscape-of-the-web) and go beyond just mobile and desktop.
+Toucaan is also great way to organize your application css. Add support for [the new kind of devices on the web](/blog/the-new-landscape-of-the-web) and go beyond just mobile and desktop.
 
 Take a look at the Architecture of Toucaan in the [next chapter](architecture.md).

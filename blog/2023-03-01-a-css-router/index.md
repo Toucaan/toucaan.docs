@@ -11,9 +11,9 @@ _This article was originally featured on the [The Bubblin Blog](https://bubblin.
 
 ---
 
-Welcome to the newest chapter on [Rethinking CSS Frameworks](./blog/rethinking-css-frameworks) with the Toucaan. In this chapter, we will implement [A CSS Router](./blog/a-css-router) that will allow us to isolate and deliver only medium-specific stylesheets that make our apps "belong" to the device. 
+Welcome to the newest chapter on [Rethinking CSS Frameworks](/blog/rethinking-css-frameworks) with the Toucaan. In this chapter, we will implement [A CSS Router](/blog/a-css-router) that will allow us to isolate and deliver only medium-specific stylesheets that make our apps "belong" to the device. 
 
-This css router will eventually form the backbone of the [Applied Principles of Intrinsic Design](./docs/core-concepts/intrinsic), therefore, we recommend the end user to read this post carefully.
+This css router will eventually form the backbone of the [Applied Principles of Intrinsic Design](/docs/core-concepts/intrinsic), therefore, we recommend the end user to read this post carefully.
 
 <!--truncate-->
 
@@ -169,7 +169,7 @@ Designing for a medium that small can be particularly challenging.
 
 Think of finding a UXI optimum for a super coarse pointer where every interactive action is the complete UI displayed on a Watch.
 
-> Recommended reading: [Designing Web Apps for Apple Watch](./blog/web-design-for-the-apple-watch).
+> Recommended reading: [Designing Web Apps for Apple Watch](./web-design-for-the-apple-watch).
 
 The Watch, therefore, cannot be supported with responsive web design unless generic automatic scaling (0.51 scale of responsive) is enough for your use case. The responsive approach cannot even differentiate between a mobile and a watch. 
 
@@ -420,7 +420,7 @@ Responsive web design can be considered a subset of intrinsic web design, in tha
 
 Intrinsic can also differ significantly from responsive depending on how deep an implementation builds UX/UIs that utilize the intrinsic capabilities and thus "belong." On the plot of design space of intrinsic web design (diagram shown above), RWD focuses on mobile and desktop, and the point of intersection is where the design meets its media-query breakpoint.
 
-Looking closely, RWD tries to implement a similar separation of design states, but it fails to establish a boundary. It does not push the designer to think UI independent of the other device. This, in my opinion, is a significant drawback of responsive web design and prevents it from scaling according to [the new landscape of the web](./the-new-landscape-of-the-web).
+Looking closely, RWD tries to implement a similar separation of design states, but it fails to establish a boundary. It does not push the designer to think UI independent of the other device. This, in my opinion, is a significant drawback of responsive web design and prevents it from scaling according to [the new landscape of the web](/blog/the-new-landscape-of-the-web).
 
 ### The complete router
 
