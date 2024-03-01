@@ -2,21 +2,17 @@
 sidebar_position: 3
 ---
 
-# App Setup/Config
+# Setup/Configuration 
 
-Toucaan has a unique way of connecting stylesheets to your app's HTML. 
+Toucaan has a unique way of connecting stylesheets to your app's HTML. Unlike the traditional css frameworks, Toucaan uses [critical css](https://github.com/Toucaan/toucaan/blob/master/_critical.scss) and [a css router](core-concepts/router.md) to include Toucaan on your page instead of the `link` tag. 
 
-Unlike the traditional css frameworks, it does not use a `link` tag, like so:
 
+### Critical CSS
 ```HTML
  <link href="/some/stylesheet.css" rel="stylesheet"/> ← Do not use this! 🚫
 ```
 
-Toucaan uses [a css router](core-concepts/router.md) instead to _prioritize_ and serve the right stylesheet according to user's medium or _class_ of device. [Critical rules of css](https://github.com/Toucaan/toucaan/blob/master/_critical.scss) that would be important for your app's design or the brand layer may be served along with the router code as shown below.
-
-### The CSS Router
-
-Copy the following [block of code](https://github.com/Toucaan/toucaan/blob/master/_config.scss) and paste it directly into your document's head tag:
+The [critical rules of css](https://github.com/Toucaan/toucaan/blob/master/_critical.scss) go directly into the head of your HTML, and it contains rules that are important for your app's design, layout, or the brand layer. Paste it directly into your document's head within a `style` tag:
 
 ```css title="CSS router level-0, @font-faces, and other initial critical css."
 <style>
@@ -107,14 +103,18 @@ Copy the following [block of code](https://github.com/Toucaan/toucaan/blob/maste
 </style>
 ```
 
-Notice the use of **asynchronous CSS @import** (and not SASS @import) in the routing code above!
+Notice how the router files are called from within the critical css above.
 
-Read more about Toucaan's [css router](https://www.toucaan.com/blog/a-css-router) and its implementation philosophy.
+### The CSS Router
+
+Toucaan's [css router](core-concepts/router.md) automatically _prioritizes_ and serves the right stylesheet according to user's medium or _class of device_. 
+
+Notice the use of **asynchronous CSS @import** (not SASS @import) in the routing code embedded above! You can read more about how Toucaan's [css router](https://www.toucaan.com/blog/a-css-router) works and its implementation philosophy.
 
 :::info CSS @import vs. SASS @import 
 Toucaan uses both css @imports and sass @imports. As a framework convention, Toucaan puts css imports to use for framework code only, whereas sass imports are meant for **user-defined** or application style. 
 :::
 
-The basic HTML linking configuration shown above is included with the Toucaan [submodule](https://github.com/Toucaan/toucaan/blob/master/_config.scss) (that you installed earlier). Ensure the paths to the router assets (i.e. css files like `portrait.css` and `landscape.css`) and the compiled assets (i.e. **user-defined stylesheets** for device specific distribution) are correct and accessible over the wire.
+The basic HTML linking configuration shown above is included with the Toucaan [submodule](https://github.com/Toucaan/toucaan/blob/master/_critical.scss) (that you installed earlier). Ensure the paths to the router assets (i.e. css files like `portrait.css` and `landscape.css`) and the compiled assets (i.e. **user-defined stylesheets** for device specific distribution) are correct and accessible over the wire.
 
 Go to the [next chapter](./processor) and set up SASS pipeline for your application's style.
