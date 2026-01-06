@@ -1,0 +1,33 @@
+/* TEAM */
+Developer & Designer: Marvin Danig
+Site: https://marvindanig.com
+Twitter: @marvindanig
+Location: Global
+
+/* THANKS */
+Framework: Docusaurus
+Community: Open Source Contributors
+Hosting: Vercel/Netlify
+
+/* SITE */
+Last update: 2026/01/06
+Language: English / en-US
+Standards: HTML5, CSS3, ES6+
+Components: React, TypeScript
+Doctype: HTML5
+IDE: VSCode, Warp Terminal
+
+/* FRAMEWORK */
+Name: Toucaan CSS Framework
+Version: 0.6.1
+License: See LICENSE file
+Repository: https://github.com/Toucaan/toucaan
+Documentation: https://toucaan.com
+Philosophy: Intrinsic Design
+Focus: Mobile-first, Responsive, Accessible
+
+/* ORGANIZATION */
+Company: Red Goose, Inc.
+Copyright: Red Goose Inc.
+Website: https://goose.red
+Contact: Via GitHub Issues

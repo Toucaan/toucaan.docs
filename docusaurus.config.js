@@ -26,6 +26,24 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
+  
+  // Markdown configuration
+  markdown: {
+    format: 'mdx',
+    mermaid: true,
+    preprocessor: ({filePath, fileContent}) => {
+      return fileContent;
+    },
+    mdx1Compat: {
+      comments: true,
+      admonitions: true,
+      headingIds: true,
+    },
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+      onBrokenMarkdownImages: 'warn',
+    },
+  },
   favicon: 'img/favicon.ico',
   trailingSlash: false,
 
@@ -33,6 +51,72 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   // organizationName: 'toucaan', // Usually your GitHub org/user name.
   // projectName: 'toucaan.docs', // Usually your repo name.
+
+  // Internationalization config for multi-language support
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  // Enhanced HTML head metadata
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'dns-prefetch',
+        href: 'https://fonts.googleapis.com',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'author',
+        content: 'Red Goose, Inc.',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:type',
+        content: 'website',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        property: 'og:site_name',
+        content: 'Toucaan CSS Framework',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+    },
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'twitter:site',
+        content: '@toucaancss',
+      },
+    },
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'canonical',
+        href: 'https://toucaan.com',
+      },
+    },
+  ],
   themes: [
     [
       require.resolve("@easyops-cn/docusaurus-search-local"),
@@ -70,6 +154,12 @@ const config = {
           priority: 0.5,
           ignorePatterns: ['/tags/**'],
           filename: 'sitemap.xml',
+          lastmod: 'date',
+          createSitemapItems: async (params) => {
+            const {defaultCreateSitemapItems, ...rest} = params;
+            const items = await defaultCreateSitemapItems(rest);
+            return items.filter((item) => !item.url.includes('/page/'));
+          },
         }
       }),
     ]
@@ -78,7 +168,7 @@ const config = {
     [
       '@docusaurus/plugin-pwa',
       {
-        debug: true,
+        debug: false,
         offlineModeActivationStrategies: [
           'appInstalled',
           'standalone',
@@ -93,12 +183,22 @@ const config = {
           {
             tagName: 'link',
             rel: 'manifest',
-            href: '/manifest.json' // your PWA manifest
+            href: '/site.webmanifest'
           },
           {
             tagName: 'meta',
             name: 'theme-color',
-            content: 'rgb(37, 194, 160)'
+            content: '#25c2a0'
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-capable',
+            content: 'yes'
+          },
+          {
+            tagName: 'meta',
+            name: 'apple-mobile-web-app-status-bar-style',
+            content: 'default'
           }
         ]
       }
@@ -234,9 +334,47 @@ const config = {
       metadata: [
         {
           name: 'keywords',
-          content: 'css4, css, blog, intrinsic, app, design, system'
+          content: 'css framework, intrinsic design, responsive design, mobile-first css, web design, toucaan, vanilla css, stack-agnostic, progressive web apps, css4, css methodology'
+        },
+        {
+          name: 'robots',
+          content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1'
+        },
+        {
+          name: 'googlebot',
+          content: 'index, follow'
+        },
+        {
+          property: 'og:locale',
+          content: 'en_US'
+        },
+        {
+          name: 'application-name',
+          content: 'Toucaan CSS Framework'
+        },
+        {
+          name: 'apple-mobile-web-app-capable',
+          content: 'yes'
+        },
+        {
+          name: 'apple-mobile-web-app-status-bar-style',
+          content: 'default'
+        },
+        {
+          name: 'apple-mobile-web-app-title',
+          content: 'Toucaan'
+        },
+        {
+          name: 'format-detection',
+          content: 'telephone=no'
+        },
+        {
+          name: 'mobile-web-app-capable',
+          content: 'yes'
         }
-      ]
+      ],
+      image: 'img/meta-data-image-wave.png',
+      announcementBar: undefined
     })
 }
 

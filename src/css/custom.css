@@ -144,8 +144,9 @@ html[data-theme="dark"] .navbar__link:hover {
 html[data-theme="dark"] .hero__logo {
   width: 20vmin;
   height: 15vmin;
-  background-image: url(/img/logo-dm.svg);
+  background-image: url(/img/logo.svg);
   background-size: auto auto;
+  filter: brightness(1.2);
 }
 
 .hero__title {

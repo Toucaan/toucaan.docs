@@ -1,0 +1,6 @@
+Contact: https://github.com/Toucaan/toucaan.docs/security/advisories/new
+Expires: 2027-01-06T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://toucaan.com/.well-known/security.txt
+Policy: https://github.com/Toucaan/toucaan.docs/blob/master/SECURITY.md
+Acknowledgments: https://github.com/Toucaan/toucaan.docs/blob/master/CONTRIBUTORS.md
