@@ -20,6 +20,15 @@
   width: 200px;
 }
 
+.featureCard {
+  padding: 1.5rem 1rem;
+  transition: transform 0.2s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+}
+
 .logoContainer {
   width: 65%;
   background-color: #d07698;

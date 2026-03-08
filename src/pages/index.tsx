@@ -15,8 +15,6 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import WaveBottomShapeDivider from "@site/src/components/WaveBottomShapeDivider";
 import WaveTopShapeDivider from "@site/src/components/WaveTopShapeDivider";
-import SponsorLogos from "@site/src/components/SponsorLogos";
-import FOSSCreditLogos from "@site/src/components/FOSSCreditLogos";
 import HeroTitleSecondary from "@site/src/components/HeroTitleSecondary";
 import HomePageMetadata from "@site/src/components/HomePageMetadata";
 import styles from "./index.module.css";
@@ -26,18 +24,32 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero--primary", styles.heroBanner)}>
       <div className="container">
-        <a href="http://toucaan.com">
-          <picture className="hero__logo"></picture>
+        <a href="https://toucaan.com" aria-label="Toucaan CSS Framework homepage">
+          <img
+            className="hero__logo"
+            src="/img/logo.svg"
+            alt="Toucaan CSS Framework logo"
+            width="120"
+            height="120"
+          />
         </a>
-        <h1 className="hero__title">Meet Intrinsic Design with <span className="fascinate">Toucaan</span>.</h1>
+        <h1 className="hero__title">
+          Meet Intrinsic Design with{" "}
+          <span className="fascinate">Toucaan</span>.
+        </h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <p className="hero__subsubtitle">(Version 0.6.1) </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/getting-started"
           >
             Get started →
+          </Link>
+          <Link
+            className="button button--outline button--lg margin-left--md"
+            to="/docs/category/core-concepts"
+          >
+            Core concepts
           </Link>
         </div>
       </div>
@@ -56,12 +68,11 @@ export default function Home(): JSX.Element {
         <HomepageFeatures />
         <WaveBottomShapeDivider />
         <HeroTitleSecondary
-          title="Create apps that belong to the user's device."
-          ctaText="Start from basics. 📖"
+          title="Build apps that feel native to every device."
+          subtitle="From smartwatches to electric vehicles — Toucaan's intrinsic approach adapts your UI to the medium, not just the viewport."
+          ctaText="Learn the fundamentals"
           ctaLink="/docs/category/core-concepts"
         />
-        <SponsorLogos />
-        <FOSSCreditLogos />
       </main>
     </Layout>
   );

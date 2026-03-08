@@ -11,15 +11,11 @@ type CreditItem = {
 const CreditList: CreditItem[] = [
   {
     imageSrc: "/img/logos/CF_logo_horizontal_blktype.jpg",
-    alt: "Cloudflare"
-  },
-  {
-    imageSrc: "/img/logos/Netlify_logo.svg",
-    alt: "Netlify",
+    alt: "Cloudflare — CDN and deployment platform",
   },
   {
     imageSrc: "/img/logos/GitHub_Logo.png",
-    alt: "Github",
+    alt: "GitHub — Source code hosting and collaboration",
   },
 ];
 

@@ -130,22 +130,14 @@ html[data-theme="dark"] .navbar__link:hover {
 /* Hero */
 
 .hero__logo {
-  background-image: url(/img/logo.svg);
-  background-size: auto;
-  background-repeat: no-repeat;
   display: block;
-  width: 22vmin;
-  height: 22vmin;
-  margin: 0 auto;
-  padding: 0;
-  border: 0;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 1rem;
+  object-fit: contain;
 }
 
 html[data-theme="dark"] .hero__logo {
-  width: 20vmin;
-  height: 15vmin;
-  background-image: url(/img/logo.svg);
-  background-size: auto auto;
   filter: brightness(1.2);
 }
 
@@ -196,13 +188,6 @@ html[data-theme="dark"] .hero__subtitle {
   color: #fff;
 }
 
-.hero__subsubtitle {
-  color: #232946;
-}
-
-html[data-theme="dark"] .hero__subsubtitle {
-  color: #fff;
-}
 
 /* Footer */
 

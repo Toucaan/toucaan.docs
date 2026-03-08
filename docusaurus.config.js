@@ -372,7 +372,7 @@ const config = {
           content: 'yes'
         }
       ],
-      image: 'img/meta-data-image-wave.png',
+      image: 'img/meta-data-image-wave.jpg',
       announcementBar: undefined
     })
 }

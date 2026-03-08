@@ -5,7 +5,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 
 export default function HomePageMetadata(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
-  const imageUrl = useBaseUrl("/img/meta-data-image-wave.png");
+  const imageUrl = useBaseUrl("/img/meta-data-image-wave.jpg");
   const fullImageUrl = `https://toucaan.com${imageUrl}`;
 
   return (
@@ -33,7 +33,7 @@ export default function HomePageMetadata(): JSX.Element {
       <meta property="og:image" content={fullImageUrl} />
       <meta property="og:image:secure_url" content={fullImageUrl} />
       <meta property="og:image:alt" content="Toucaan CSS Framework - Intrinsic Design" />
-      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:locale" content="en_US" />
