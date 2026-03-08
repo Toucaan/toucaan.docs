@@ -25,7 +25,6 @@ const config = {
   url: 'https://toucaan.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   
   // Markdown configuration
   markdown: {

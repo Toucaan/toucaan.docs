@@ -24,27 +24,27 @@
     "@docusaurus/plugin-pwa": "^3.9.2",
     "@docusaurus/plugin-sitemap": "^3.9.2",
     "@docusaurus/preset-classic": "^3.9.2",
+    "@docusaurus/theme-common": "^3.9.2",
     "@docusaurus/theme-mermaid": "^3.9.2",
-    "@easyops-cn/docusaurus-search-local": "^0.52.2",
+    "@easyops-cn/docusaurus-search-local": "^0.55.1",
     "@mdx-js/react": "^3.1.1",
     "clsx": "^2.1.1",
-    "mermaid": "11.12.2",
+    "mermaid": "^11.12.3",
     "react": "^19.2.3",
     "react-dom": "^19.2.3"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.28.5",
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/types": "3.9.2",
+    "@eslint/js": "^9.0.0",
     "@tsconfig/docusaurus": "^2.0.7",
+    "@types/react": "^19.0.0",
     "eslint": "^9.39.2",
-    "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-header": "^3.1.1",
-    "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
+    "globals": "^16.0.0",
     "prettier": "^3.7.4",
     "stylelint": "^16.26.1",
     "typescript": "^5.9.3"
@@ -62,6 +62,7 @@
     ]
   },
   "engines": {
-    "node": ">=23.0.0"
-  }
+    "node": ">=18.0.0"
+  },
+  "packageManager": "yarn@4.13.0"
 }
